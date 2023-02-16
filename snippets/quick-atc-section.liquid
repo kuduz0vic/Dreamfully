@@ -1,0 +1,86 @@
+<div class="quick-atc-section">
+    <div class="page-padding">
+      <div class="container_v2">
+        <div class="quick-atc-inner-container">
+          <div class="quick-atc-half">
+            <div class="product-slider">
+              <div id="Product-Images-Slider" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div id="swiper-wrapper" class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="{{ 'image_1.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 15vw" srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w" alt="" class="product-img-slide"></div>
+                  <div class="swiper-slide"><img src="{{ 'image_1.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 15vw" srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w" alt="" class="product-img-slide"></div>
+                  <div class="swiper-slide"><img src="{{ 'image_1.png' | asset_url }}" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 15vw" srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w" alt="" class="product-img-slide"></div>
+                </div>
+                <div class="product-swiper-nav">
+                  <div id="product-left-arrow" class="product-swiper-arrow"><img src="{{ 'ic20-arrow-right-1.svg' | asset_url }}" loading="lazy" alt="" class="slider-arrow-icon"></div>
+                  <div class="swiper-pagination-pdp swiper-pagination-bullets swiper-pagination-horizontal">
+                    <div class="swiper-pagaintion-bullet"></div>
+                  </div>
+                  <div id="product-right-arrow" class="product-swiper-arrow"><img src="{{ 'ic20-arrow-right.svg' | asset_url }}" loading="lazy" alt="" class="slider-arrow-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quick-atc-half">
+            <div class="quick-atc-content">
+              <div class="atc-h1">{{ 't4da73824' | t }}</div>
+              <div class="reviews-flex"><img src="{{ 'stars.svg' | asset_url }}" loading="lazy" alt="" class="quick-atc-review-stars">
+                <div class="text-block-4">{{ 't75070b86' | t }}</div>
+              </div>
+              <div class="description">{{ 'tn38e00da8' | t }}</div>
+              <p class="quick-atc-description">{{ 'tn38e00da8' | t }}</p>
+              <div class="quick-atc-area">
+                <div class="quick-atc-price-wrapper">
+                  <div class="price-wrapper">
+                    <div class="before-price">{{ 'tn57533e42' | t }}</div>
+                    <div class="price-h1">{{ 'tn3c733989' | t }}</div>
+                  </div>
+                  <div class="save-tag">{{ 'tn594fd03c' | t }}</div>
+                </div>
+                <div class="quick-atc-shipping">
+                  <div class="div-block-4"></div>
+                  <div><strong>{{ 't31c6b4e2' | t }}</strong>{{ 't62cc60e1' | t }}</div>
+                </div>
+                <div class="atc-zone-quick">
+                  <div class="form-block w-form">
+                    {%- form "contact",  class: "form" -%}<label for="contact[email]">{{ 't3ff5b7c' | t }}</label><input type="email" name="contact[email]" class="w-input" required=""><input type="submit" value="Add To Cart - €49,95" data-wait="Adding to cart..." class="primary-button quick-atc w-button">
+                      <div class="input-counter-component">
+                        <div class="fs_inputcounter-1_embed w-embed w-script">
+                          <!--  [Finsweet Attributes] Input Counter  -->
+                          <script>(()=>{var t="https://cdn.jsdelivr.net/npm/@finsweet/attributes-inputcounter@1/inputcounter.js",e=document.querySelector(`script[src="${t}"]`);e||(e=document.createElement("script"),e.async=!0,e.src=t,document.head.append(e));})();</script>
+                        </div>
+                        <div class="fs_inputcounter-1_wrapper">
+                          <div aria-controls="fs-inputcounter-1-input" fs-inputcounter-element="decrement" role="button" aria-label="Decrement input value" tabindex="0" class="fs_inputcounter-1_button">
+                            <div>{{ 't2d' | t }}</div>
+                          </div><input type="text" fs-inputcounter-element="input" class="fs_inputcounter-1_input w-input" fs-inputcounter-initial="0" maxlength="256" name="contact[counter]" data-name="Counter" placeholder="" id="fs-inputcounter-1-input" required="">
+                          <div aria-controls="fs-inputcounter-1-input" fs-inputcounter-element="increment" role="button" aria-label="Increment input value" tabindex="0" class="fs_inputcounter-1_button">
+                            <div>{{ 't2b' | t }}</div>
+                          </div>
+                        </div>
+                      </div>
+                    {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
+                    <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
+                      <div>{{ 't5a0ea5a1' | t }}</div>
+                    </div>
+                    {%- unless form_success -%}<div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
+                      <div>{%- render "form-errors", form_errors: form_errors -%}</div>
+                    </div>{%- endunless -%}
+                  </div>
+                </div>
+                <div class="upsell-bar quick">
+                  <div class="atc-bar-first"><img src="{{ 'image.png' | asset_url }}" loading="lazy" alt="" class="upsell-img">
+                    <div class="upsell-title-wrapper">
+                      <div class="upsell-title">{{ 'tn3da767e1' | t }}</div>
+                      <div>{{ 'tn3c91ae66' | t }}</div>
+                    </div>
+                  </div>
+                  <div class="upsell-atc-btn"><img src="{{ 'cart.svg' | asset_url }}" loading="lazy" alt="" class="cart-icon"></div>
+                </div>
+                <div class="payment-methods quick"><img src="{{ 'group-300.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-319.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-318.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'mastercard.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-315.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-314.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-313.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"><img src="{{ 'group-310.svg' | asset_url }}" loading="lazy" alt="" class="payment-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="waves reverse"><img src="{{ 'reversed-wave.svg' | asset_url }}" loading="lazy" alt="" class="desktop-img"><img src="{{ 'tweede-mob-wave.svg' | asset_url }}" loading="lazy" alt="" class="mobile-img"></div>
+  </div>

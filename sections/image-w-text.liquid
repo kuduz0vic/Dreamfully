@@ -1,0 +1,44 @@
+
+    <div class="page-padding">
+      <div class="content-container">
+        <div class="w-layout-grid content-grid">
+          <div id="w-node-b753902d-4767-134b-55d8-08ec231f6693-231f668f" class="content-block">
+            <div id="w-node-b753902d-4767-134b-55d8-08ec231f6694-231f668f" class="content-title-wrapper">
+              <h2 class="h2-product-section">{{ section.settings.heading }}</h2>
+            </div>
+            <p class="product-paragraph opacity-56">{{ section.settings.description | newline_to_br }}</p>
+          </div>
+          <div id="w-node-b753902d-4767-134b-55d8-08ec231f669c-231f668f" class="content-image-block">{%- if section.settings.main_image == nil -%}<img src="{{ 'meddy-bear_2meddy-bear.png' | asset_url }}" srcset="{{ 'meddy-bear_2-p-500.png' | asset_url }} 500w, {{ 'meddy-bear_2-p-800.png' | asset_url }} 800w, {{ 'meddy-bear_2-p-1080.png' | asset_url }} 1080w, {{ 'meddy-bear_2meddy-bear.png' | asset_url }} 1222w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 45vw" alt="" class="content-image">{%- else -%}<img src="{{ section.settings.main_image.src | img_url: 'master' }}" alt="{{ section.settings.main_image.alt | escape }}" class="content-image" srcset="{{ section.settings.main_image | img_url: '1920x' }} 1920w,{{ section.settings.main_image | img_url: '1600x' }} 1600w,{{ section.settings.main_image | img_url: '1366x' }} 1366w,{{ section.settings.main_image | img_url: '1024x' }} 1024w,{{ section.settings.main_image | img_url: '768x' }} 768w,{{ section.settings.main_image | img_url: '640x' }} 640w">{%- endif -%}</div>
+        </div>
+      </div>
+    </div>
+  
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","info-section");</script>
+        
+{% schema %}
+{
+  "name": "Image w Text",
+  "tag": "div",
+  "class": "info-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Struggling to get your child to relax and fall asleep?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques.With the meditation bear, your child can learn to manage stress and emotions through guided breathing and relaxation exercises. The bear's soft and cozy design makes it a comforting presence for your child to snuggle up with during bedtime or anytime they need to take a break and relax."
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    }
+  ]
+}
+{% endschema %}
