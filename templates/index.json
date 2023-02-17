@@ -1,0 +1,202 @@
+{
+  "sections": {
+    "store-name": {
+      "type": "store-name",
+      "settings": {
+      }
+    },
+    "93beaad6-9c90-4656-873f-900345e84de6": {
+      "type": "hero",
+      "settings": {
+        "button_label": "Shop the Meddybear",
+        "heading": "A Fun and Effective Way to Help Your Child Relax and De-stress",
+        "description": "The meditation bear helps children learn how to relax and manage stress in a fun and interactive way.",
+        "button_link": "",
+        "button_link_text": "Button"
+      }
+    },
+    "91a3ad01-e37f-4f92-8880-08845d5d80c2": {
+      "type": "why-section",
+      "blocks": {
+        "afaffaca-0da7-4db8-96af-23b26b6cea08": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        },
+        "41eac3f7-dc5e-42fe-9197-1c41f809a967": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        },
+        "c41007ee-dc92-4868-a73c-adbb039f8076": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        }
+      },
+      "block_order": [
+        "afaffaca-0da7-4db8-96af-23b26b6cea08",
+        "41eac3f7-dc5e-42fe-9197-1c41f809a967",
+        "c41007ee-dc92-4868-a73c-adbb039f8076"
+      ],
+      "settings": {
+        "heading": "Why you need the Meddybear"
+      }
+    },
+    "3b4e7604-984c-4fb5-870c-4c76a1507959": {
+      "type": "how-to-section",
+      "blocks": {
+        "ac8890be-78dc-40f5-a067-6fb7596a181a": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        },
+        "eda028bb-4285-4d4c-823e-b5c15f60cc11": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        },
+        "aa0c5d2e-d6b4-4016-9fed-5edbee152f78": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        }
+      },
+      "block_order": [
+        "ac8890be-78dc-40f5-a067-6fb7596a181a",
+        "eda028bb-4285-4d4c-823e-b5c15f60cc11",
+        "aa0c5d2e-d6b4-4016-9fed-5edbee152f78"
+      ],
+      "settings": {
+        "heading": "But how does it work?",
+        "block_label": "Shop the Meddybear",
+        "block_url": "",
+        "block_url_text": "Button"
+      }
+    },
+    "4c470b6e-0fba-4e00-8934-08022b75f47b": {
+      "type": "statistics",
+      "blocks": {
+        "c63ac4a3-b04d-4271-ae89-57e0337f5cbc": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "04a349ab-80ce-49c2-bab7-c550c5434cdc": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "b5d8f1c9-5f51-4f85-bda9-5c7638169c82": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "38aeea61-bb7c-4687-a642-4a9a6d7c4e45": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        }
+      },
+      "block_order": [
+        "c63ac4a3-b04d-4271-ae89-57e0337f5cbc",
+        "04a349ab-80ce-49c2-bab7-c550c5434cdc",
+        "b5d8f1c9-5f51-4f85-bda9-5c7638169c82",
+        "38aeea61-bb7c-4687-a642-4a9a6d7c4e45"
+      ],
+      "settings": {
+        "heading": "Meditation by the Numbers",
+        "description": "The meditation bear is made with high-quality materials and has a soft design."
+      }
+    },
+    "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055": {
+      "type": "quick-atc",
+      "settings": {
+        "main-product": "",
+        "product-upsell": ""
+      }
+    },
+    "8a1cfeb4-c163-4ce5-9724-54830c60bedc": {
+      "type": "testimonials",
+      "blocks": {
+        "31a05c2d-05eb-433d-82c6-2faa5065dc7b": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        },
+        "d30051a4-5c6c-4722-871d-b0f844e014f1": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        },
+        "9c821713-6ae8-4d5a-9a53-262133212409": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        }
+      },
+      "block_order": [
+        "31a05c2d-05eb-433d-82c6-2faa5065dc7b",
+        "d30051a4-5c6c-4722-871d-b0f844e014f1",
+        "9c821713-6ae8-4d5a-9a53-262133212409"
+      ],
+      "settings": {
+        "heading": "Customers Love the Meddybear",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    },
+    "82c82a98-3463-4f17-93a0-d72efa33f62d": {
+      "type": "instagram-gallery",
+      "settings": {
+        "heading": "Mindful Moments with the Meditation Bear",
+        "description": "Follow Us On Our Socials",
+        "button_label": "Follow us",
+        "button_url": "",
+        "button_url_text": "Button"
+      }
+    }
+  },
+  "order": [
+    "store-name",
+    "93beaad6-9c90-4656-873f-900345e84de6",
+    "91a3ad01-e37f-4f92-8880-08845d5d80c2",
+    "3b4e7604-984c-4fb5-870c-4c76a1507959",
+    "4c470b6e-0fba-4e00-8934-08022b75f47b",
+    "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055",
+    "8a1cfeb4-c163-4ce5-9724-54830c60bedc",
+    "82c82a98-3463-4f17-93a0-d72efa33f62d"
+  ]
+}

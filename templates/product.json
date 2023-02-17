@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "template": {
+      "type": "main-product",
+      "settings": {
+      }
+    },
+    "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a": {
+      "type": "image-w-text",
+      "settings": {
+        "heading": "Struggling to get your child to relax and fall asleep?",
+        "description": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques.With the meditation bear, your child can learn to manage stress and emotions through guided breathing and relaxation exercises. The bear's soft and cozy design makes it a comforting presence for your child to snuggle up with during bedtime or anytime they need to take a break and relax."
+      }
+    },
+    "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
+      "type": "faq-section",
+      "blocks": {
+        "ffa83a1e-42f6-4848-9993-b6f040472ed4": {
+          "type": "faq_block",
+          "settings": {
+            "question": "What types of sounds does the Meddybear have?",
+            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
+          }
+        },
+        "d139f39c-67b4-477d-9b77-3011d8884cf3": {
+          "type": "faq_block",
+          "settings": {
+            "question": "What types of sounds does the Meddybear have?",
+            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
+          }
+        },
+        "b17cc16f-ca39-4307-a8da-678f7321feda": {
+          "type": "faq_block",
+          "settings": {
+            "question": "What types of sounds does the Meddybear have?",
+            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
+          }
+        }
+      },
+      "block_order": [
+        "ffa83a1e-42f6-4848-9993-b6f040472ed4",
+        "d139f39c-67b4-477d-9b77-3011d8884cf3",
+        "b17cc16f-ca39-4307-a8da-678f7321feda"
+      ],
+      "settings": {
+        "heading": "Questions? We have got answers.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+      }
+    },
+    "ede47aa0-a9a6-4214-8feb-fee6009286af": {
+      "type": "product-statistic-section",
+      "blocks": {
+        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "c8c3cf9e-662f-4877-9c8d-f59cadce5479": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        },
+        "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
+          "type": "statistics_block",
+          "settings": {
+            "number_sign": "100+",
+            "number_value": "100",
+            "block_description": "5-star reviews"
+          }
+        }
+      },
+      "block_order": [
+        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305",
+        "c8c3cf9e-662f-4877-9c8d-f59cadce5479",
+        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb",
+        "17fa070d-a45b-4052-9bea-b6f81a36cebb"
+      ],
+      "settings": {
+        "heading": "Meditation by the Numbers",
+        "description": "The meditation bear is made with high-quality materials and has a soft design."
+      }
+    },
+    "a9354b90-797c-4989-b7dc-a52bf02ba495": {
+      "type": "product-testimonial",
+      "blocks": {
+        "0ebc3bfc-c18d-4369-9707-435ceb8c2c29": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        },
+        "48029d39-2dda-4eca-9b93-3a02474a2518": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        },
+        "0d10b845-7dbb-47a9-9537-9e776bac4af9": {
+          "type": "review_block",
+          "settings": {
+            "person_name": "Marieke van der Meer",
+            "person_location": "Uden, Noord Brabant",
+            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+          }
+        }
+      },
+      "block_order": [
+        "0ebc3bfc-c18d-4369-9707-435ceb8c2c29",
+        "48029d39-2dda-4eca-9b93-3a02474a2518",
+        "0d10b845-7dbb-47a9-9537-9e776bac4af9"
+      ],
+      "settings": {
+        "heading": "Customers Love the Meddybear",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    },
+    "a81f76ec-9369-4a58-9290-03418fa49fe0": {
+      "type": "why-section",
+      "blocks": {
+        "6040b76a-8749-4786-bd15-18d2db097104": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        },
+        "a5a93068-c780-4a13-a423-934285880cea": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        },
+        "e5a44772-8c63-4740-963a-ca699f5824ae": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids."
+          }
+        }
+      },
+      "block_order": [
+        "6040b76a-8749-4786-bd15-18d2db097104",
+        "a5a93068-c780-4a13-a423-934285880cea",
+        "e5a44772-8c63-4740-963a-ca699f5824ae"
+      ],
+      "settings": {
+        "heading": "Why you need the Meddybear"
+      }
+    },
+    "1aeace6b-03c5-4033-8716-b660131661d4": {
+      "type": "instagram-gallery",
+      "settings": {
+        "heading": "Mindful Moments with the Meditation Bear",
+        "description": "Follow Us On Our Socials",
+        "button_label": "Follow us",
+        "button_url": "",
+        "button_url_text": "Button"
+      }
+    }
+  },
+  "order": [
+    "template",
+    "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a",
+    "3f0ab3ec-1832-4a6a-a615-4793a4311657",
+    "ede47aa0-a9a6-4214-8feb-fee6009286af",
+    "a9354b90-797c-4989-b7dc-a52bf02ba495",
+    "a81f76ec-9369-4a58-9290-03418fa49fe0",
+    "1aeace6b-03c5-4033-8716-b660131661d4"
+  ]
+}
