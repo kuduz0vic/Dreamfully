@@ -1,7 +1,64 @@
 {
   "sections": {
+    "store-name": {
+      "type": "store-name",
+      "settings": {
+      }
+    },
     "93beaad6-9c90-4656-873f-900345e84de6": {
       "type": "hero",
+      "blocks": {
+        "927b7464-714f-47fe-8b47-b785b5aede24": {
+          "type": "left_image_slide",
+          "settings": {
+          }
+        },
+        "b0896cfb-f2ee-4b32-9a68-7a20446da124": {
+          "type": "left_image_slide",
+          "settings": {
+          }
+        },
+        "7745bbf5-e5b0-4153-889b-14dd1e7027b1": {
+          "type": "left_image_slide",
+          "settings": {
+          }
+        },
+        "61f22aa0-a607-4ef9-b240-a633bf0d3706": {
+          "type": "left_image_slide",
+          "settings": {
+          }
+        },
+        "1298d144-76ff-4852-8113-500e538e2f0d": {
+          "type": "right_image_slide",
+          "settings": {
+          }
+        },
+        "fe083438-7883-41ed-952c-75ce6aa019a2": {
+          "type": "right_image_slide",
+          "settings": {
+          }
+        },
+        "e381e5dc-f7aa-4c7c-a712-2bb71f97c72d": {
+          "type": "right_image_slide",
+          "settings": {
+          }
+        },
+        "f126486c-ae6a-40df-a3db-ac00634eefa9": {
+          "type": "right_image_slide",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "927b7464-714f-47fe-8b47-b785b5aede24",
+        "b0896cfb-f2ee-4b32-9a68-7a20446da124",
+        "7745bbf5-e5b0-4153-889b-14dd1e7027b1",
+        "61f22aa0-a607-4ef9-b240-a633bf0d3706",
+        "1298d144-76ff-4852-8113-500e538e2f0d",
+        "fe083438-7883-41ed-952c-75ce6aa019a2",
+        "e381e5dc-f7aa-4c7c-a712-2bb71f97c72d",
+        "f126486c-ae6a-40df-a3db-ac00634eefa9"
+      ],
       "settings": {
         "button_label": "Shop the Meddybear",
         "heading": "A Fun and Effective Way to Help Your Child Relax and De-stress",
@@ -185,6 +242,7 @@
     }
   },
   "order": [
+    "store-name",
     "93beaad6-9c90-4656-873f-900345e84de6",
     "91a3ad01-e37f-4f92-8880-08845d5d80c2",
     "3b4e7604-984c-4fb5-870c-4c76a1507959",
