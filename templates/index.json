@@ -1,10 +1,5 @@
 {
   "sections": {
-    "store-name": {
-      "type": "store-name",
-      "settings": {
-      }
-    },
     "93beaad6-9c90-4656-873f-900345e84de6": {
       "type": "hero",
       "settings": {
@@ -190,7 +185,6 @@
     }
   },
   "order": [
-    "store-name",
     "93beaad6-9c90-4656-873f-900345e84de6",
     "91a3ad01-e37f-4f92-8880-08845d5d80c2",
     "3b4e7604-984c-4fb5-870c-4c76a1507959",
