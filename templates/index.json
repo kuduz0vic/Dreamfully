@@ -236,8 +236,12 @@
     "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055": {
       "type": "quick-atc",
       "settings": {
-        "main-product": "",
-        "product-upsell": ""
+        "main-product": "the-meddybear-the-meditation-bear-for-kids",
+        "product-upsell": "upsell-test",
+        "review-number": "160",
+        "shipping-text": "<p><strong>Free Shipping<\/strong> - Ordered before 22:00, Tomorrow in house.<\/p>",
+        "upsell-description": "Add my meditation pillow to this order",
+        "product-description": "Introducing the Meditation Bear - the perfect bedtime companion for kids. Help your child relax and unwind with guided meditation and breathing exercises."
       }
     },
     "8a1cfeb4-c163-4ce5-9724-54830c60bedc": {

@@ -1,4 +1,33 @@
 {
   "current": {
+    "sections": {
+      "announcment-bar": {
+        "type": "announcment-bar",
+        "settings": {
+          "announcment-text": "<p>Try 30 days <strong>FREE<\/strong> | Pay later or in 3 installments<\/p>"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "enable_quick_shopping": true,
+          "main-menu_desktop": "main-menu",
+          "main-menu_mobile": "mobile-menu",
+          "quick-shop-title": "Quick Shop",
+          "quick-product": "the-meddybear-the-meditation-bear-for-kids",
+          "product-title": "The Meddybear",
+          "product-button-text": "Shop",
+          "product-button-link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }
