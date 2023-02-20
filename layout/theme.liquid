@@ -17,6 +17,7 @@
     {% endif %}
   </head>
   <body class="{{ bodyClasses }} {{ "template-" | append: request.page_type | handle }}">
+    {% section 'announcment-bar' %}
     {% section 'header' %}
     <main
       id="main"

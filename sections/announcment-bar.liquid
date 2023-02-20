@@ -1,0 +1,16 @@
+<div class="announcement-bar">{{ section.settings.announcment-text }}</div>
+
+{% schema %}
+  {
+    "name": "Announcment Bar",
+    "tag": "div",
+    "class": "announcment-bar",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "announcment-text",
+        "label": "Announcment Text"
+      }
+    ]
+  }
+{% endschema %}

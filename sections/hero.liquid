@@ -1,116 +1,40 @@
 <div class="ugc-hero-slider-mobile">
+
+
   <div class="animatedugcsrowmobile">
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-72.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-72-p-500.png' | asset_url }} 500w, {{ 'rectangle-72.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't65a82e19' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-71.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't347a358' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-73.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-73-p-500.png' | asset_url }} 500w, {{ 'rectangle-73.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't1b0d7a' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-72.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-72-p-500.png' | asset_url }} 500w, {{ 'rectangle-72.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't65a82e19' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-71.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't347a358' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-73.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-73-p-500.png' | asset_url }} 500w, {{ 'rectangle-73.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't1b0d7a' | t }}</div>
-    </div>
+    {%- for block in section.blocks -%}
+      {%- if block.type == "mobile-slide" -%}
+        <div class="ugc-slide"><img
+            src="{{ block.settings.mobile-slide-image | img_url: 'master' }}"
+            loading="lazy"
+            sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
+            srcset="{{ block.settings.mobile-slide-image | img_url: 'master' }} 500w, {{ block.settings.mobile-slide-image | img_url: 'master' }} 612w"
+            alt=""
+            class="ugcimg">
+          <div class="ugc-emoji-mobile">{{ block.settings.mobile-slide-emoji }}</div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
+
+
   <div class="animatedugcsrowmobile-2">
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-72.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-72-p-500.png' | asset_url }} 500w, {{ 'rectangle-72.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't65a82e19' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-71.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't347a358' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-73.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-73-p-500.png' | asset_url }} 500w, {{ 'rectangle-73.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't1b0d7a' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-72.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-72-p-500.png' | asset_url }} 500w, {{ 'rectangle-72.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't65a82e19' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-71.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't347a358' | t }}</div>
-    </div>
-    <div class="ugc-slide"><img
-        src="{{ 'rectangle-73.png' | asset_url }}"
-        loading="lazy"
-        sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-        srcset="{{ 'rectangle-73-p-500.png' | asset_url }} 500w, {{ 'rectangle-73.png' | asset_url }} 612w"
-        alt=""
-        class="ugcimg">
-      <div class="ugc-emoji-mobile">{{ 't1b0d7a' | t }}</div>
-    </div>
+    {%- for block in section.blocks -%}
+      {%- if block.type == "mobile-slide" -%}
+        <div class="ugc-slide"><img
+            src="{{ block.settings.mobile-slide-image | img_url: 'master' }}"
+            loading="lazy"
+            sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
+            srcset="{{ block.settings.mobile-slide-image | img_url: 'master' }} 500w, {{ block.settings.mobile-slide-image | img_url: 'master' }} 612w"
+            alt=""
+            class="ugcimg">
+          <div class="ugc-emoji-mobile">{{ block.settings.mobile-slide-emoji }}</div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
+
+
   <div class="w-embed">
     <style>
       .ugc-hero-slider-mobile {
@@ -151,14 +75,14 @@
                   class="image-list-item"
                   block.shopify_attributes>
                   <div id="w-node-b1ab2243-2996-2a5a-f264-78d2a5d92da5-a5d92d61" class="hero-slide-wrapper"><img
-                      src="{{ 'rectangle-71.png' | asset_url }}"
+                      src="{{ block.settings.left-slide_image | img_url: 'master' }}"
                       loading="lazy"
                       id="w-node-b1ab2243-2996-2a5a-f264-78d2a5d92da6-a5d92d61"
                       sizes="(max-width: 991px) 100vw, 21vw"
-                      srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
+                      srcset="{{ block.settings.left-slide_image | img_url: 'master' }} 500w, {{ block.settings.left-slide_image | img_url: 'master' }} 612w"
                       alt=""
                       class="hero-slide-img">
-                    <div class="emoji-content">{{ 't347a358' | t }}</div>
+                    <div class="emoji-content">{{ block.settings.left-slide_emoji }}</div>
                   </div>
                 </div>
               {%- endif -%}
@@ -172,14 +96,14 @@
                   class="image-list-item"
                   block.shopify_attributes>
                   <div id="w-node-b1ab2243-2996-2a5a-f264-78d2a5d92dab-a5d92d61" class="hero-slide-wrapper"><img
-                      src="{{ 'rectangle-71.png' | asset_url }}"
+                      src="{{ block.settings.right-slide_image | img_url: 'master' }}"
                       loading="lazy"
                       id="w-node-b1ab2243-2996-2a5a-f264-78d2a5d92dac-a5d92d61"
                       sizes="(max-width: 991px) 100vw, 21vw"
-                      srcset="{{ 'rectangle-71-p-500.png' | asset_url }} 500w, {{ 'rectangle-71.png' | asset_url }} 612w"
+                      srcset="{{ block.settings.right-slide_image | img_url: 'master' }} 500w, {{ block.settings.right-slide_image | img_url: 'master' }} 612w"
                       alt=""
                       class="hero-slide-img">
-                    <div class="emoji-content">{{ 't347a358' | t }}</div>
+                    <div class="emoji-content">{{ block.settings.right-slide_emoji }}</div>
                   </div>
                 </div>
               {%- endif -%}
@@ -268,10 +192,52 @@
     "blocks": [
       {
         "name": "Left Image Slide",
-        "type": "left_image_slide"
+        "type": "left_image_slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "left-slide_emoji",
+            "label": "Slide Emoji",
+            "default": "😴️"
+          }, {
+            "type": "image_picker",
+            "id": "left-slide_image",
+            "label": "Slide Image"
+
+          }
+        ]
       }, {
         "name": "Right Image Slide",
-        "type": "right_image_slide"
+        "type": "right_image_slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "right-slide_emoji",
+            "label": "Slide Emoji",
+            "default": "😴️"
+          }, {
+            "type": "image_picker",
+            "id": "right-slide_image",
+            "label": "Slide Image"
+
+          }
+        ]
+      }, {
+        "name": "Mobile Image Slide",
+        "type": "mobile-slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "mobile-slide-emoji",
+            "label": "Slide Emoji",
+            "default": "😴️"
+          }, {
+            "type": "image_picker",
+            "id": "mobile-slide-image",
+            "label": "Slide Image"
+
+          }
+        ]
       }
     ]
   }

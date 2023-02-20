@@ -11,41 +11,85 @@
         "927b7464-714f-47fe-8b47-b785b5aede24": {
           "type": "left_image_slide",
           "settings": {
+            "left-slide_emoji": "😴️",
+            "left-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "b0896cfb-f2ee-4b32-9a68-7a20446da124": {
           "type": "left_image_slide",
           "settings": {
+            "left-slide_emoji": "😴️",
+            "left-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "7745bbf5-e5b0-4153-889b-14dd1e7027b1": {
           "type": "left_image_slide",
           "settings": {
+            "left-slide_emoji": "😴️",
+            "left-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "61f22aa0-a607-4ef9-b240-a633bf0d3706": {
           "type": "left_image_slide",
           "settings": {
+            "left-slide_emoji": "😴️",
+            "left-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "1298d144-76ff-4852-8113-500e538e2f0d": {
           "type": "right_image_slide",
           "settings": {
+            "right-slide_emoji": "😴️",
+            "right-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "fe083438-7883-41ed-952c-75ce6aa019a2": {
           "type": "right_image_slide",
           "settings": {
+            "right-slide_emoji": "😴️",
+            "right-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "e381e5dc-f7aa-4c7c-a712-2bb71f97c72d": {
           "type": "right_image_slide",
           "settings": {
+            "right-slide_emoji": "😴️",
+            "right-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         },
         "f126486c-ae6a-40df-a3db-ac00634eefa9": {
           "type": "right_image_slide",
           "settings": {
+            "right-slide_emoji": "😴️",
+            "right-slide_image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
+          }
+        },
+        "816964d3-e549-4c77-84aa-72afcbc70a15": {
+          "type": "mobile-slide",
+          "settings": {
+            "mobile-slide-emoji": "😴️",
+            "mobile-slide-image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
+          }
+        },
+        "ab4666d4-21d5-45b2-a65f-86a14b46ebed": {
+          "type": "mobile-slide",
+          "settings": {
+            "mobile-slide-emoji": "😴️",
+            "mobile-slide-image": "shopify:\/\/shop_images\/63eb7019ef27e0056bb13b4d_Rectangle_73.png"
+          }
+        },
+        "a843c395-ea36-402b-930d-a59e618f9dca": {
+          "type": "mobile-slide",
+          "settings": {
+            "mobile-slide-emoji": "😴️",
+            "mobile-slide-image": "shopify:\/\/shop_images\/63eb7019ef27e0a68bb13b49_Rectangle_72.png"
+          }
+        },
+        "443fa0d0-3627-46db-a4a2-8dee8ac91360": {
+          "type": "mobile-slide",
+          "settings": {
+            "mobile-slide-emoji": "😴️",
+            "mobile-slide-image": "shopify:\/\/shop_images\/63eb7019ef27e0c18db13b48_Rectangle_71.png"
           }
         }
       },
@@ -57,7 +101,11 @@
         "1298d144-76ff-4852-8113-500e538e2f0d",
         "fe083438-7883-41ed-952c-75ce6aa019a2",
         "e381e5dc-f7aa-4c7c-a712-2bb71f97c72d",
-        "f126486c-ae6a-40df-a3db-ac00634eefa9"
+        "f126486c-ae6a-40df-a3db-ac00634eefa9",
+        "816964d3-e549-4c77-84aa-72afcbc70a15",
+        "ab4666d4-21d5-45b2-a65f-86a14b46ebed",
+        "a843c395-ea36-402b-930d-a59e618f9dca",
+        "443fa0d0-3627-46db-a4a2-8dee8ac91360"
       ],
       "settings": {
         "button_label": "Shop the Meddybear",
@@ -144,7 +192,7 @@
         "c63ac4a3-b04d-4271-ae89-57e0337f5cbc": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
+            "number_sign": "+",
             "number_value": "100",
             "block_description": "5-star reviews"
           }
@@ -152,7 +200,7 @@
         "04a349ab-80ce-49c2-bab7-c550c5434cdc": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
+            "number_sign": "+",
             "number_value": "100",
             "block_description": "5-star reviews"
           }
@@ -160,7 +208,7 @@
         "b5d8f1c9-5f51-4f85-bda9-5c7638169c82": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
+            "number_sign": "+",
             "number_value": "100",
             "block_description": "5-star reviews"
           }
@@ -168,7 +216,7 @@
         "38aeea61-bb7c-4687-a642-4a9a6d7c4e45": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
+            "number_sign": "+",
             "number_value": "100",
             "block_description": "5-star reviews"
           }

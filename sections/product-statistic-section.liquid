@@ -10,12 +10,15 @@
         </div>
         <div class="w-layout-grid statistics-list">
           {%- for block in section.blocks -%}
-            {%- if block.type == "statistics_block" -%}
-              <div class="statistics-block" block.shopify_attributes>
-                <div class="heading-style-h2">{{ block.settings.number_sign }}</div>
+            {% case block.type %}
+              {% when 'statistics_block' %}
+              <div class="statistics-block">
+                <div class="heading-style-h2">
+                  <span class="counterup">{{ block.settings.number_value }}</span>
+                  {{ block.settings.number_sign }}</div>
                 <div>{{ block.settings.block_description }}</div>
               </div>
-            {%- endif -%}
+            {%- endcase -%}
           {%- endfor -%}
         </div>
       </div>
@@ -37,6 +40,7 @@
     </div>
   </div>
 </div>
+
 
 
 <script>
@@ -80,7 +84,7 @@
             "type": "text",
             "id": "number_sign",
             "label": "Number Sign",
-            "default": "100+"
+            "default": "+"
           }, {
             "type": "text",
             "id": "number_value",

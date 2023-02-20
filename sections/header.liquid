@@ -8,7 +8,7 @@
     </div>
   </div>
   <a
-    href="#"
+    href="{{ routes.root_url }}"
     id="w-node-_3038ef23-23d7-da69-89ae-5f8a1c720360-1c720358"
     class="navbar_logo_link w-nav-brand"><img
       src="{{ 'dreamfully-logo.svg' | asset_url }}"
@@ -18,26 +18,37 @@
   <nav role="navigation" class="navbar-link-container w-nav-menu">
     {%- if section.settings.enable_quick_shopping -%}
       <div class="mobile-quick-shop-block">
-        <div class="mobile-nav-heading quick">{{ 'tn28975e77' | t }}</div>
+        <div class="mobile-nav-heading quick">{{ section.settings.quick-shop-title }}</div>
+        {%- assign product = section.settings.quick-product -%}
         <div class="quick-shop-block">
-          <div class="text-block">{{ 'tn6596fa9a' | t }}</div>
-          <div class="quick-shop-btn">{{ 't274f16' | t }}</div>
+          <div class="text-block">
+            {% if section.settings.product-title != blank %}
+              {{ section.settings.product-title }}
+            {% else %}
+              {{ product.title }}{% endif %}
+          </div>
+          <div class="quick-shop-btn">
+            <a href="{{section.settings.product-button-link}}" style="color: white; text-decoration: none;">{{ section.settings.product-button-text }}</a>
+          </div>
           <div class="quick-shopimgwrap"><img
-              src="{{ 'meddy-bear_1.png' | asset_url }}"
+              src=" {% if section.settings.product-image != blank %} {{ section.settings.product-image | img_url: 'master' }} {% else %} {{ 'meddy-bear_1.png' | asset_url }} {% endif %}"
               loading="lazy"
               alt=""
               class="quick-shop-product-img"></div>
         </div>
       </div>
     {%- endif -%}
-    <a href="#" class="navbar_link w-nav-link">{{ 'tn2a73cdbc' | t }}</a>
-    <a href="#" class="navbar_link w-nav-link">{{ 't645f0031' | t }}</a>
+
+    {% for link in linklists[section.settings.main-menu_desktop].links %}
+      <a href="{{link.url}}" class="navbar_link w-nav-link">{{ link.title }}</a>
+    {% endfor %}
+
     <a href="#" class="navbar3_tablet-menu-button w-button">{{ 't77471352' | t }}</a>
     <div class="mobile-navigation">
       <div class="mobile-nav-heading">{{ 'tn1a2819cc' | t }}</div>
-      <a href="#" class="mobile-link w-inline-block">{{ 'tn1913cbf2' | t }}</a>
-      <a href="#" class="mobile-link w-inline-block">{{ 't645f0031' | t }}</a>
-      <a href="#" class="mobile-link w-inline-block">{{ 'tn64104400' | t }}</a>
+      {% for link in linklists[section.settings.main-menu_mobile].links %}
+        <a href="{{link.url}}" class="mobile-link w-inline-block">{{ link.title }}</a>
+      {% endfor %}
     </div>
     <div class="trustpilot-menu">
       <div class="_12-px-right">{{ 'tn72635b8c' | t }}</div><img
@@ -81,6 +92,41 @@
         "id": "enable_quick_shopping",
         "label": "Enable quick shopping?",
         "default": true
+      },
+      {
+        "type": "link_list",
+        "id": "main-menu_desktop",
+        "label": "Main Menu Links"
+      },
+      {
+        "type": "link_list",
+        "id": "main-menu_mobile",
+        "label": "Main Menu Mobile Links"
+      },
+      {
+        "type": "text",
+        "id": "quick-shop-title",
+        "label": "Quick Shop Title"
+      }, {
+        "type": "product",
+        "id": "quick-product",
+        "label": "Quick Product"
+      }, {
+        "type": "text",
+        "id": "product-title",
+        "label": "Product title"
+      }, {
+        "type": "image_picker",
+        "id": "product-image",
+        "label": "Product Image"
+      }, {
+        "type": "text",
+        "id": "product-button-text",
+        "label": "Product button text"
+      }, {
+        "type": "url",
+        "id": "product-button-link",
+        "label": "Product button link"
       }
     ]
   }
