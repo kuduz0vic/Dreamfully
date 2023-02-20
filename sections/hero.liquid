@@ -130,10 +130,7 @@
     alt=""
     class="bottom-vector">
   <div class="trustpilot-bar">
-    <div class="review-testblock">
-      <strong>{{ 't2f283a3' | t }}</strong>
-      {{ 't103a3f' | t }}<strong>{{ 't1774b9' | t }}</strong>
-      {{ 't2b9eb026' | t }}</div><img
+    <div class="review-testblock">{{ section.settings.reviews }}</div><img
       src="{{ 'trustpilot_1.svg' | asset_url }}"
       loading="lazy"
       height=""
@@ -187,6 +184,10 @@
         "id": "button_link_text",
         "label": "Button Link Text",
         "default": "{{ section.settings.button_label }}"
+      }, {
+        "type": "richtext",
+        "id": "reviews",
+        "label": "Amount of Reviews"
       }
     ],
     "blocks": [

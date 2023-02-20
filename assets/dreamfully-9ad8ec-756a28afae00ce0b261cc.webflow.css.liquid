@@ -8301,3 +8301,13 @@ p {
 .bottom-vector {
   pointer-events: none;
 }
+
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  // CSS Grid/Flexbox bug size workaround
+  // @see https://github.com/kenwheeler/slick/issues/982
+  min-height: 0;
+  min-width: 0;
+}

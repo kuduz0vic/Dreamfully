@@ -40,7 +40,9 @@
         </div>
         <div class="quick-atc-half">
           <div class="quick-atc-content">
-            <div class="atc-h1">{{ product.title }}</div>
+            <a href="{{product.url}}" style="text-decoration: none;">
+              <div class="atc-h1">{{ product.title }}</div>
+            </a>
             <div class="reviews-flex"><img
                 src="{{'stars.svg' | asset_url}}"
                 loading="lazy"

@@ -16,37 +16,8 @@
           </style>
         </div>
       </div>
-      <div class="desktop-social-grid">
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
-        <a href="#" class="social-img-wrapper-desktop w-inline-block"><img
-            src="{{ 'social-img.png' | asset_url }}"
-            loading="lazy"
-            alt=""
-            class="social-img"></a>
+      <div>
+        <div class="desktop-social-grid" id="instafeed"></div>
       </div>
       <div class="instagram-swiper">
         <div id="instagram-swiper" class="swiper-container">
@@ -72,9 +43,23 @@
                   alt=""
                   class="image-7"></div>
             </div>
+            <div class="swiper-slide">
+              <div class="instagram-social-img-wrapper"><img
+                  src="{{ 'social-img.png' | asset_url }}"
+                  loading="lazy"
+                  alt=""
+                  class="image-7"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="instagram-social-img-wrapper"><img
+                  src="{{ 'social-img.png' | asset_url }}"
+                  loading="lazy"
+                  alt=""
+                  class="image-7"></div>
+            </div>
           </div>
           <div class="swiper-drag-wrapper">
-            <div class="swiper-drag"></div>
+            <div class="swiper-drag" style="max-width: 120px;"></div>
           </div>
           <div class="swiper-arrow-overlay instagram">
             <div id="next-insta-post" class="swiper-arrow"><img
@@ -93,6 +78,20 @@
   var currentSection = document.currentScript.closest('.shopify-section');
   currentSection.setAttribute("class", "instagram-section");
 </script>
+
+<script type="text/javascript" src="{{'instafeed.min.js' | asset_url}}"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+  accessToken: 'IGQVJVNHlzWC1vSzg4NEs3Qk1ZAbEpTX01GUDdmV1lKdEEzNnJ4UUdzb3dOUVpGRDdVVjZAzUUdTRjVUZAWt4bDVaQldNOEJSaGJHTTRfNlVOYy05cEk0eVBnVTFSblRCLURBbzJnTnROZAy1tVXBJSTJlRgZDZD',
+      template: '<a href="{{link}}" class="social-img-wrapper-desktop w-inline-block"><img
+      src="{{image}}"
+      loading="lazy"
+      alt=""
+      class="social-img"></a>'
+  });
+    feed.run();</script>
+
+
 
 {% schema %}
   {
