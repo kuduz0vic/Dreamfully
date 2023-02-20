@@ -4,42 +4,37 @@
         <div class="w-layout-grid footer-top-content">
           <div class="w-layout-grid footer-left-wrapper">
             <div>
-              <div class="text-weight-semibold">Questions?</div>
-              <div class="footer-p">We’re here to help.</div>
-              <a bind="7a320698-45a4-7695-6ba4-34e0771c8bb5" href="#" class="secondairy-button w-button">Contact us!</a>
+              <div class="text-weight-semibold">{{section.settings.left-side_title}}</div>
+              <div class="footer-p">{{section.settings.left-side_description}}</div>
+              <a bind="7a320698-45a4-7695-6ba4-34e0771c8bb5" href="{{section.settings.left-side-button_url}}" class="secondairy-button w-button">{{section.settings.left-side-button_label}}</a>
             </div>
+
+            {%- for block in section.blocks -%}
+              {%- if block.type == "footer-menu" -%}
             <div class="footer2_link-list">
               <div class="margin-bottom margin-xsmall">
-                <div class="text-weight-semibold">Column One</div>
+                <div class="text-weight-semibold">{{block.settings.footer-block-title}}</div>
               </div>
-              <a href="#" class="footer2_link">Link One</a>
-              <a href="#" class="footer2_link">Link Two</a>
-              <a href="#" class="footer2_link">Link Three</a>
-              <a href="#" class="footer2_link">Link Four</a>
-              <a href="#" class="footer2_link">Link Five</a>
+              {% for link in linklists[block.settings.main-menu_desktop].links %}
+              <a href="{{link.url}}" class="footer2_link">{{link.title}}</a>
+              {% endfor %}
             </div>
-            <div class="footer2_link-list">
-              <div class="margin-bottom margin-xsmall">
-                <div class="text-weight-semibold">Column Two</div>
-              </div>
-              <a href="#" class="footer2_link">Link Six</a>
-              <a href="#" class="footer2_link">Link Seven</a>
-              <a href="#" class="footer2_link">Link Eight</a>
-              <a href="#" class="footer2_link">Link Nine</a>
-              <a href="#" class="footer2_link">Link Ten</a>
-            </div>
+            {% endif %}
+          {% endfor %}
           </div>
           <div id="w-node-_7a320698-45a4-7695-6ba4-34e0771c8bd3-771c8bab" class="footer-right-wrapper">
             <div class="margin-bottom margin-xsmall">
-              <div class="text-weight-semibold">Subscribe</div>
+              <div class="text-weight-semibold">{{section.settings.right-side_title}}</div>
             </div>
             <div class="margin-bottom margin-xsmall is-small-mobile">
-              <div class="footer-p">Join our newsletter to stay up to date on features and releases.</div>
+              <div class="footer-p">{{section.settings.right-side_description}}</div>
             </div>
+            {% form 'customer' %}
             <div bind="7a320698-45a4-7695-6ba4-34e0771c8bda" class="footer-form-block w-form">
-              <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" id="email-2" required="">
-                <a href="#" class="secondairy-button w-button">Subscribe</a>
-              </form>
+              <div id="email-form" class="footer-form" aria-label="Email Form">
+              <input type="email" class="form-input w-input" maxlength="256" name="contact[email]" placeholder="Enter your email" id="email-2" required="" />
+                <input type="submit" value="Subscribe" class="secondairy-button w-button" />
+                </div>
               <div class="success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
@@ -47,6 +42,7 @@
                 <div>Oops! Something went wrong while submitting the form.</div>
               </div>
             </div>
+            {% endform %}
           </div>
         </div>
         <div class="footer-bottom-content">
@@ -84,3 +80,66 @@
       </div>
     </div>
   </div>
+
+
+  {% schema %}
+    {
+      "name": "Footer",
+      "tag": "div",
+      "class": "footer-class",
+      "settings": [
+      {
+        "type": "text",
+        "id": "left-side_title",
+        "label": "Left Side Title",
+        "default": "Questions?"
+      },
+      {
+        "type": "text",
+        "id": "left-side_description",
+        "label": "Left Side Description",
+        "default": "We’re here to help."
+      },
+      {
+        "type": "text",
+        "id": "left-side-button_label",
+        "label": "Left Side Button Label",
+        "default": "Contact Us!"
+      },
+      {
+        "type": "url",
+        "id": "left-side-button_url",
+        "label": "Left Side Button Url"
+      },      {
+        "type": "text",
+        "id": "right-side_title",
+        "label": "Right Side Title",
+        "default": "Subscribe"
+      },
+      {
+        "type": "textarea",
+        "id": "right-side_description",
+        "label": "Right Side Description",
+        "default": "Join our newsletter to stay up to date on features and releases."
+      }
+    ],
+      "blocks": [
+        {
+          "name": "Footer Menu",
+          "type": "footer-menu",
+          "settings": [
+            {
+          "type": "link_list",
+          "id": "main-menu_desktop",
+          "label": "Main Menu Links"
+            },
+            {
+              "type": "text",
+              "id": "footer-block-title",
+              "label": "Footer Block Title"
+            }
+          ]
+        }
+      ]
+    }
+  {% endschema %}
