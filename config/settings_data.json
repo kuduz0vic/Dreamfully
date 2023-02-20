@@ -22,7 +22,68 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "c78b882e-b88d-448e-b891-81934fc63250": {
+            "type": "footer-menu",
+            "settings": {
+              "main-menu_desktop": "main-menu",
+              "footer-block-title": "Column 1"
+            }
+          },
+          "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
+            "type": "footer-menu",
+            "settings": {
+              "main-menu_desktop": "mobile-menu",
+              "footer-block-title": "Column 2"
+            }
+          },
+          "1d843d26-17c8-4d76-8804-b583354abf72": {
+            "type": "facebook-icon",
+            "settings": {
+              "facebook-link": ""
+            }
+          },
+          "0ca9f526-b2f8-4d14-82cd-ad8c09703d78": {
+            "type": "instagram-icon",
+            "settings": {
+              "instagram-link": ""
+            }
+          },
+          "f2059caa-d3b7-4749-88cc-2eeb0e0ca7fe": {
+            "type": "twitter-icon",
+            "settings": {
+              "twitter-link": ""
+            }
+          },
+          "a778d74c-0877-4fd2-8b11-b9564a9b00d2": {
+            "type": "linkedin-icon",
+            "settings": {
+              "linkedin-link": ""
+            }
+          },
+          "b0d88903-c678-4314-84a8-f6e439f6795f": {
+            "type": "youtube-icon",
+            "settings": {
+              "youtube-link": ""
+            }
+          }
+        },
+        "block_order": [
+          "c78b882e-b88d-448e-b891-81934fc63250",
+          "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c",
+          "1d843d26-17c8-4d76-8804-b583354abf72",
+          "0ca9f526-b2f8-4d14-82cd-ad8c09703d78",
+          "f2059caa-d3b7-4749-88cc-2eeb0e0ca7fe",
+          "a778d74c-0877-4fd2-8b11-b9564a9b00d2",
+          "b0d88903-c678-4314-84a8-f6e439f6795f"
+        ],
         "settings": {
+          "left-side_title": "Questions?",
+          "left-side_description": "We’re here to help.",
+          "left-side-button_label": "Contact Us!",
+          "left-side-button_url": "",
+          "right-side_title": "Subscribe",
+          "right-side_description": "Join our newsletter to stay up to date on features and releases."
         }
       }
     },
