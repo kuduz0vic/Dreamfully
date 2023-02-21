@@ -487,6 +487,27 @@
 {% endform %}
 
 <script>
+  const container = document.querySelector('.product-inner-container');
+  const rightDiv = document.querySelector('.product-section-right');
+
+  function handleScroll() {
+    const scrollPosition = window.pageYOffset;
+    const rightDivHeight = rightDiv.offsetHeight;
+    const containerHeight = container.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const rightDivOffsetTop = rightDiv.offsetTop;
+
+    if (scrollPosition + windowHeight >= rightDivOffsetTop + rightDivHeight && scrollPosition + windowHeight < containerHeight) {
+      rightDiv.classList.add('sticky');
+    } else {
+      rightDiv.classList.remove('sticky');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+<script>
   class VariantSelector extends HTMLElement {
     constructor() {
       super();
@@ -519,6 +540,7 @@
         
 
 
+
       });
       console.log(this.currentVariant);
     }
@@ -526,6 +548,7 @@
       if (!this.currentVariant) 
         return;
       
+
 
 
       window.history.replaceState({}, '', `${
@@ -555,6 +578,7 @@
         if (oldPrice && newPrice) 
           oldPrice.innerHTML = newPrice.innerHTML;
         
+
 
 
       });
