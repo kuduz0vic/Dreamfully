@@ -2,6 +2,131 @@
   "sections": {
     "template": {
       "type": "main-product",
+      "blocks": {
+        "d5ee5735-29f7-4d3e-8a55-b2e081b82236": {
+          "type": "media",
+          "settings": {
+          }
+        },
+        "ec1362b9-835e-4ba9-b1a2-ff9d2eb3711f": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "d528ab18-cb75-4622-88ad-2b5c7be81c14": {
+          "type": "review",
+          "settings": {
+            "amount-review": "160"
+          }
+        },
+        "0e83a47b-d1de-4d53-a7e5-0889b9088a42": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "899059c3-1b6d-4f43-9f48-2add2986b357": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "c8106573-a00b-4736-ada8-1ede24504b58": {
+          "type": "shipping",
+          "settings": {
+            "shipping-tagline": "Ordered before 22:00, Tomorrow in house."
+          }
+        },
+        "7c5a08cd-d8c8-4617-8796-23a6f9feaff3": {
+          "type": "checkout_buttons",
+          "settings": {
+            "atc-text": "Add To Cart"
+          }
+        },
+        "51f4e09c-497b-4966-95e1-cd5a16957619": {
+          "type": "payment_icons",
+          "settings": {
+          }
+        },
+        "806c578a-bfad-4d3a-b975-37de07f551fb": {
+          "type": "bullet_points",
+          "settings": {
+            "bullet-tagline": "Guided Meditation for Kids"
+          }
+        },
+        "7724ed4b-305e-4792-a083-dea0e82db407": {
+          "type": "bullet_points",
+          "settings": {
+            "bullet-tagline": "High-Quality, Cuddly Design"
+          }
+        },
+        "4b6d88b4-35fe-44a4-bc11-9b3957934eda": {
+          "type": "bullet_points",
+          "settings": {
+            "bullet-tagline": "Teach Your Kids Mindfulness"
+          }
+        },
+        "fc34805e-6f5b-4f3a-a052-b1bbf814f470": {
+          "type": "top_accordion",
+          "settings": {
+            "top-title": "Meddybear Benefits",
+            "top-info": "<p>Niemand wacht graag op zijn pakket, daarom verzenden wij al onze producten met GLS-Express verzending inclusief tracking.<\/p><p>‍<\/p><p>🇳🇱 Geleverd binnen 4-6 werkdagen<br\/>🇧🇪 Geleverd binnen 4-6 werkdagen<br\/><br\/><strong>Verwerkingstijd:<\/strong> 1-2 werkdagen<br\/><strong>Totale levertijd:<\/strong> verwerkingstijd + verzendtijd<\/p>"
+          }
+        },
+        "cff04a63-b3f8-4252-99cb-a193a84c5a42": {
+          "type": "upsell-block",
+          "settings": {
+            "upsell-product": "upsell-test",
+            "upsell-description": "The Meditation Pillow",
+            "upsell-button": "Add To Cart"
+          }
+        },
+        "c5525851-4574-4f51-9015-efbd8f1dbdaf": {
+          "type": "mini_description",
+          "settings": {
+            "mini-title": "A Fun and Effective Way to Help Your Child Relax",
+            "mini-description": "<p>Introducing the Meditation Bear - the perfect bedtime companion for kids. Help your child relax and unwind with guided meditation and breathing exercises. This cuddly bear is made with soft, cozy materials for peaceful sleep. Compact and durable for on-the-go relaxation.<\/p>"
+          }
+        },
+        "cb34492e-cee1-46f4-abc7-1ed72b7f4221": {
+          "type": "bottom_accordion",
+          "settings": {
+            "bottom-title": "Test 1",
+            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+          }
+        },
+        "6b20fe25-2d10-415b-ab2b-bdb9f897b07a": {
+          "type": "bottom_accordion",
+          "settings": {
+            "bottom-title": "Test 2",
+            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+          }
+        },
+        "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2": {
+          "type": "bottom_accordion",
+          "settings": {
+            "bottom-title": "Test 3",
+            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d5ee5735-29f7-4d3e-8a55-b2e081b82236",
+        "ec1362b9-835e-4ba9-b1a2-ff9d2eb3711f",
+        "d528ab18-cb75-4622-88ad-2b5c7be81c14",
+        "0e83a47b-d1de-4d53-a7e5-0889b9088a42",
+        "899059c3-1b6d-4f43-9f48-2add2986b357",
+        "c8106573-a00b-4736-ada8-1ede24504b58",
+        "7c5a08cd-d8c8-4617-8796-23a6f9feaff3",
+        "51f4e09c-497b-4966-95e1-cd5a16957619",
+        "806c578a-bfad-4d3a-b975-37de07f551fb",
+        "7724ed4b-305e-4792-a083-dea0e82db407",
+        "4b6d88b4-35fe-44a4-bc11-9b3957934eda",
+        "fc34805e-6f5b-4f3a-a052-b1bbf814f470",
+        "cff04a63-b3f8-4252-99cb-a193a84c5a42",
+        "c5525851-4574-4f51-9015-efbd8f1dbdaf",
+        "cb34492e-cee1-46f4-abc7-1ed72b7f4221",
+        "6b20fe25-2d10-415b-ab2b-bdb9f897b07a",
+        "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2"
+      ],
       "settings": {
       }
     },
