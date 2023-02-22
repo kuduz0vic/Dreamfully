@@ -1,148 +1,114 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<form action="{{ routes.cart_url }}" method="post" class="my-cart">
+<div class="cart-section" data-ajax-cart-section>
+  <div class="page-padding-2">
+    <div class="container-cart">
+      <div class="cart-content-wrapper">
+        <div class="cart-grid-wrapper">
+          <div class="cart-grid-header">
+            <div class="cart-header">
+              <div class="cart-header">Mijn winkelwagen</div>
+            </div>
+          </div>
+          <div class="cart-grid-spacer"></div>
+          <div class="cart-grid">
+            <div class="header-grid">
+              <div id="w-node-_587ef865-3d16-77d5-a7c4-e3bc2ea09d47-4007c9c3" class="cart-title_wrapper">
+                <a href="{{ routes.root_url }}" style="text-decoration: none; display: flex; gap: 8px;">
+                <div class="w-embed"><svg width="15" height="8" viewbox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM15 3.5L1 3.5V4.5L15 4.5V3.5Z" fill="black"></path>
+                  </svg></div>
+                <div id="w-node-_0a1ac506-7c3a-5b0d-a855-df1440450d10-4007c9c3" class="cart-product-header">DOORGAAN MET WINKELEN</div>
+                </a>
+              </div>
+              <div id="w-node-_0a1ac506-7c3a-5b0d-a855-df1440450d12-4007c9c3" class="cart-header-title">PRIJS</div>
+              <div id="w-node-_0a1ac506-7c3a-5b0d-a855-df1440450d14-4007c9c3" class="cart-header-title">AANTAL</div>
+              <div id="w-node-_430ff10b-7047-a4f8-f330-f1053b8819f3-4007c9c3" class="cart-header-title">PRIJS</div>
+            </div>
+            {% for item in cart.items %}
+              {% assign item_index = forloop.index %}
+            <div class="cart-item-line">
+              <h1 id="w-node-_3f5b9d80-c375-6518-e2d1-f0b812e1d977-4007c9c3" class="cart-price">{{ item.final_price | money }}</h1>
+              <h1 id="w-node-_6dacc0e7-7ccb-445b-05b4-68ea7f25cc67-4007c9c3" class="cart-rpice_total">{{ item.final_line_price | money }}</h1>
+              <div id="w-node-_90bddc3e-2e0d-36cd-3e3b-5c9e3316589a-4007c9c3" class="quantity-wrapper-cart">
+                <div class="quantity-wrapper-2">
+                  <a class="quantity-link" data-ajax-cart-request-button
+      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | minus: 1 }}">
+                  <p class="quantity-minus">-</p>
+                  </a>
+                  <input class="quantity-number" data-ajax-cart-quantity-input="{{ forloop.index }}" value="{{ item.quantity }}" name="updates[]" type="number"/>
+                  <a class="quantity-link" data-ajax-cart-request-button
+      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ item.quantity | plus: 1 }}">
+                  <p class="quantity-plus">+</p>
+                  </a>
+                </div>
+              </div>
+              <div id="w-node-_0a1ac506-7c3a-5b0d-a855-df1440450d17-4007c9c3" class="cart-item-info">
+                <div class="cart-item-image"><img src="{{item.image | img_url: 'master'}}" loading="lazy" alt="" class="cart-img"></div>
+                <div class="cart-item-information">
+                  <div class="cart-title">{{ item.title }}</div>
+                  <div class="remove-button">
+                    <a data-ajax-cart-request-button style="text-decoration: none; color: #000000;"
+                    href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity=0">VERWIJDER</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="cart-upsell_wrapper">
+            {% for product in section.settings.swiper-products %}
+            <div class="upsell-wrapper">
+              <h1 class="heading-2">Finish My Order</h1>
+              <div class="upsell-outer_wrapper">
+                <div class="cart-upsell"><img src="{{product.featured_image | img_url: 'master'}}" loading="lazy" sizes="95px" srcset="{{product.featured_image | img_url: 'master'}} 500w, {{product.featured_image | img_url: 'master'}} 800w, {{product.featured_image | img_url: 'master'}} 1080w, {{product.featured_image | img_url: 'master'}} 1222w" alt="" class="cart-upsell-image">
+                  <div class="cartu-upsell-text">
+                    <h1>{{product.title}}</h1>
+                    <h1>{{product.price | money}}</h1>
+                  </div>
+                </div>
+                <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}"
+                type="submit"
+                data-ajax-cart-request-button class="cart-upsell-button">Add To Cart - {{product.price | money}}</a>
+              </div>
+            </div>
+            {% endfor %}
+            <div class="total-outer-wrapper">
+              <div class="cart-total desktop">
+                <div class="top-total">
+                  <h1 class="left-total">Verzending</h1>
+                  {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
+      {% assign cartPriceCents = cart.total_price | plus: 0 %}
+                  <h1 class="upper-right-total">{% if freeShippingPrice <= cartPriceCents %} GRATIS {% else %} {{
+                  section.settings.shipping | money }} {% endif %}</h1>
+                </div>
+                <div class="bottom-total">
+                  <h1 class="left-total">Totaal</h1>
+                  <h1 class="right-total">{{cart.total_price | money}}</h1>
+                </div>
+              </div>
+              <button type="submit" name="checkout" class="cart-total-button">Continue To Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
-
-{% schema %}
-{
-"name": "Sidecart",
-"settings": [
-{
-"type": "text",
-"id": "title",
-"placeholder": "Je Winkelwagen",
-"default": "Je Winkelwagen",
-"label": "Winkelwagen titel"
-},
-{
-"type": "text",
-"id": "reward-gotten",
-"placeholder": "Rewards",
-"default": "Rewards",
-"label": "Reward Gotten"
-},{
-"type": "liquid",
-"id": "reward-not",
-"label": "Reward Not Achieved"
-},
-{
-"type": "textarea",
-"id": "shipping_text",
-"placeholder": "Verzending",
-"default": "Verzending",
-"label": "Verzending titel"
-},
-{
-"type": "number",
-"id": "freeshipping_threshold",
-"default": 4000,
-"label": "Free shipping threshold"
-},
-{
-"type": "number",
-"id": "freegift_threshold",
-"default": 6000,
-"label": "Free gift threshold"
-},
-{
-"type": "product",
-"id": "gift_product",
-"label": "Gift product"
-},
-{
-"type": "number",
-"id": "shipping",
-"default": 499,
-"label": "Shipping price"
-},
-{
-"type": "text",
-"id": "free_from1",
-"placeholder": "(Gratis vanaf",
-"default": "(Gratis vanaf",
-"label": "Free From 1"
-},
-{
-"type": "text",
-"id": "free_from2",
-"placeholder": ")",
-"default": ")",
-"label": "Free From 2"
-},
-{
-"type": "textarea",
-"id": "maak_af",
-"default": "Eenmalige Deal!",
-"label": "Upsell Titel"
-},
-{
-"type": "textarea",
-"id": "total",
-"placeholder": "Totaal",
-"default": "Totaal",
-"label": "Totaal Text"
-},
-{
-"type": "textarea",
-"id": "checkout_btn",
-"placeholder": "Veilig Afrekenen",
-"default": "Veilig Afrekenen",
-"label": "ATC Button text"
-},
-{
-"id": "payments",
-"label": "Payment Icons",
-"type": "textarea",
-"default": "klarna,visa,master,american_express,maestro,shopify_pay,apple_pay,google_pay"
-},
-{
-"id": "swiper-products",
-"type": "product_list",
-"label": "Swiper Products"
-}, {
-  "type": "liquid",
-  "id": "upsell-description",
-  "label": "Upsell Description"
-}
-]
-}
-{% endschema %}
-
-<style>
-  [jd-cloak] {
-    display: none !important;
-  }
-</style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
-<script>
-  setTimeout(() => {
-    [...document.querySelectorAll('[jd-cloak]')].forEach((el) => el.removeAttribute('jd-cloak'));
-  }, 500);
-</script>
-
-<form action="{{ routes.cart_url }}" method="post">
-  <div jd-cloak>
-    <div class="slidecart-blur" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
-    <div id="sidecart" class="sidebar-container" data-ajax-cart-section>
+<div id="sidecart" class="mobile-cart">
       {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
       {% assign cartPriceCents = cart.total_price | plus: 0 %}
       {% assign width = cartPriceCents | times: 100 | divided_by: freeShippingPrice %}
 
-      <div class="slidecart">
+      <div class="">
         <div class="slidecart-body">
-          <div class="slidecart-header">
+          <div class="slidecart-header" data-ajax-cart-section>
             <h1 class="cart-heading">{{section.settings.title}} <span class="text-span">(<span data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span> Items)</span></h1>
             <div data-ajax-cart-toggle-class-button="js-my-cart-open | remove" class="slidecart-close"><img
                 src="{{'ic24-close.svg' | asset_url}}"
                 loading="lazy" alt="" class="image-8"></div>
           </div>
-          <div class="slidecart-rewards">
+          <div class="slidecart-rewards" data-ajax-cart-section>
 <p class="rewards-message">{% if freeShippingPrice <= cartPriceCents %}{{section.settings.reward-gotten}}{% else %}{{section.settings.reward-not}}{% endif %}</p>
             <div class="slidecart-progress">
               <div class="slidecart-progress-active" style="width:{{width}}%; max-width: 100%;"></div>
@@ -151,7 +117,7 @@
           <div class="slidecart-items">
             {% for item in cart.items %}
           {% assign item_index = forloop.index %}
-            <div class="slidecart-item">
+            <div class="slidecart-item" data-ajax-cart-section>
               <div class="item-slidecart-wrapper">
                 <div class="slidecart-item-details">
                   <div class="cart-item-image-wrapper"><img
@@ -181,9 +147,9 @@
                 </div>
               </div>
               <div class="slidecart-dropdown-wrapper">
-                <div style="height: 0px;" class="slidecart-dropdown-content-wrapper collapse" id="collapseExample-{{ forloop.index }}">
+                <div style="height: 0px;" class="slidecart-dropdown-content-wrapper collapse" id="collapseExamplee-{{ forloop.index }}">
                   <div class="slidecart-dropdown-content">
-                    <div class="slidecart-dropdown-p">{{item.metafields.custom.upsell_description}}</div>
+            <div class="slidecart-dropdown-p">{% if item.handle == product.handle %}{{product.metafields.custom.upsell_description}}{%endif%}</div>
                     <div class="slidecart-item-benefits-list">
                       {% for benefit in product.metafields.custom.upsell_benefit_list.value %}
                       <div class="slidecart-benefit">
@@ -198,11 +164,11 @@
                     </div>
                   </div>
                 </div>
-                <div id="slidecart-{{ forloop.index }}" data-w-id="6bcb09fe-7ccd-b95d-9cea-d64b6a21cd4e"
+                <div id="slidecartt-{{ forloop.index }}" data-w-id="6bcb09fe-7ccd-b95d-9cea-d64b6a21cd4e"
                   class="slidecart-item-dropdown-trigger">
-                  <div id="collapse-button" class="cart-dropdown-text-preview hide-me collapse-button" type="button"
-                  data-toggle="collapse" data-target="#collapseExample-{{ forloop.index }}" aria-expanded="false"
-                  aria-controls="collapseExample">
+                  <div id="collapse-button" class="cart-dropdown-text-preview hide-mee collapse-button" type="button"
+                  data-toggle="collapse" data-target="#collapseExamplee-{{ forloop.index }}" aria-expanded="false"
+                  aria-controls="collapseExamplee">
                     <div class="dropdown-text-preview">Details</div>
                     <div class="chevron-dropdown">
                       <div class="w-embed"><svg width="15" height="8" viewBox="0 0 15 8" fill="none"
@@ -213,9 +179,9 @@
                         </svg></div>
                     </div>
                   </div>
-                  <div id="collapse-button-close" class="cart-dropdown-text-active show-me collapse-button" type="button"
-                  data-toggle="collapse" data-target="#collapseExample-{{ forloop.index }}" aria-expanded="false"
-                  aria-controls="collapseExample">
+                  <div id="collapse-button-close" class="cart-dropdown-text-active show-mee collapse-button" type="button"
+                  data-toggle="collapse" data-target="#collapseExamplee-{{ forloop.index }}" aria-expanded="false"
+                  aria-controls="collapseExamplee">
                     <div class="dropdown-text-preview">Verberg</div>
                     <div class="chevron-dropdown rotated-svg">
                       <div class="w-embed"><svg width="15" height="8" viewBox="0 0 15 8" fill="none"
@@ -250,7 +216,7 @@
           </div>
         {% endfor %}
         </div>
-          <div class="slidecart-footer">
+          <div class="cart-footer" data-ajax-cart-section>
             <div class="sc-text-rows-wrapper">
               <div class="sc-footer-text-row">
                 <div class="sc-text-subject">Verzendkosten</div>
@@ -262,7 +228,7 @@
                   <div class="sc-text-content">{{ cart.total_price | money_with_currency }}</div>
                 </div>
               </div>
-              <button type="submit" name="checkout" class="sc-checkout-button w-inline-block">
+              <button type="submit" name="checkout" class="sc-checkout-button w-inline-block cart-footer-button">
                 <div>Doorgaan naar afrekenen</div>
               </button>
               <div class="sc-payment-icons">
@@ -279,144 +245,25 @@
       </div>
     </div>
   </div>
+
 </form>
 
 
-<style>
-
-.collapse {
-  transition: height 0.5s ease !important;
+{% schema %}
+{
+"name": "My Cart",
+"class": "cart",
+"settings": [
+    {
+"id": "swiper-products",
+"type": "product_list",
+"label": "Swiper Products"
+}, {
+"type": "number",
+"id": "freeshipping_threshold",
+"default": 4000,
+"label": "Free shipping threshold"
 }
-
-.rotated-svg {
-  transform: rotateX(180deg);
-  margin-top: -5px;
+]
 }
-
-body.js-my-cart-open {
-  overflow: hidden !important;
-}
-
-  @keyframes slidein {
-    from {
-      transform: translateX(0%);
-    }
-
-    to {
-      transform: translateX(100%);
-    }
-  }
-
-
-  @keyframes slideout {
-    from {
-      transform: translateX(100%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
-  }
-
-  .slidecart-blur {
-    opacity: 0;
-    z-index: -999;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .hide-me[aria-expanded="true"] {
-    display: none;
-  }
-
-  .show-me[aria-expanded="false"] {
-    display: none;
-  }
-
-  .hide-mee[aria-expanded="true"] {
-    display: none;
-  }
-
-  .show-mee[aria-expanded="false"] {
-    display: none;
-  }
-
-  .pointer {
-    cursor: pointer;
-  }
-
-  .swiper-container {
-    overflow: visible !important;
-  }
-
-  .sidebar-container {
-    display: flex;
-  }
-
-  .cart-payment-info {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-  }
-
-
-
-  .sidebar-container {
-    position: fixed;
-    top: 0;
-    right: 0%;
-    bottom: 0%;
-    z-index: 1001;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    transform: translateX(100%);
-    max-width: 576px;
-    transition: all 0.35s ease-in-out;
-  }
-
-  .sidebar-bg {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-  }
-
-
-  /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
-  .js-my-cart-open .sidebar-container {
-    display: flex;
-    visibility: visible;
-    webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-    transition-timing-function: ease-in-out;
-    transform: translateX(0%);
-  }
-
-  .sidebar-container.slidecart-blur {
-    opacity: 1;
-    z-index: 9999;
-  }
-
-  .js-my-cart-open .slidecart-blur {
-    opacity: 1;
-    z-index: 1000;
-  }
-
-  .cart-product-block {
-    opacity: 1;
-    transition: opacity 0.2s;
-  }
-
-  /* Make the area with controls visually disabled */
-  body.js-ajax-cart-request-in-progress .cart-product-block {
-    opacity: 0.7;
-  }
-</style>
+{% endschema %}
