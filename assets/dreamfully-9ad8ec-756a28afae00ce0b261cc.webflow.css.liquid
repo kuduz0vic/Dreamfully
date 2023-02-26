@@ -13217,11 +13217,22 @@ p {
   .quick-atc-shipping {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 981px) {
   .product-inner-container {
     gap: 30px;
+  }
+  .upsell-heading_desktop {
+    display: block;
+  }
+  .upsell-heading_mobile {
+    display: none;
+  }
+  .bullet-svg {
+    max-width: 30px;
+    width: 100%;
   }
 }
 
@@ -13266,6 +13277,29 @@ p {
     margin-top: 17px;
     width: 100%;
     margin-bottom: 8px;
+  }
+  .upsell-heading_desktop {
+    display: none;
+  }
+  .upsell-heading_mobile {
+    display: block;
+  }
+  .upsell-heading_mobile {
+    font-family: Dreamfully, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000128;
+    margin-bottom: 24px;
+  }
+  .upsell-box {
+    margin-top: 0;
+  }
+  .top-accordions {
+    margin-top: 16px;
+  }
+  .bullet-svg {
+    max-width: 24px;
+    width: 100%;
   }
 }
 
@@ -13355,4 +13389,16 @@ p {
   font-weight: 400;
   padding: 19px 0;
   color: #FFFFFF;
+}
+
+.upsell-heading_desktop {
+  font-family: Dreamfully, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000128;
+}
+
+.bullet-point_wrapper {
+  display: flex;
+  gap: 8px;
 }

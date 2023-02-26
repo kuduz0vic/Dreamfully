@@ -137,9 +137,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;">
+    z-index: 1000;">
 
-    <div class="slidecart-blur" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
+    <div class="slidecart-blur animation-end" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
     <div id="sidecart" class="sidebar-container" data-ajax-cart-section>
       {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
       {% assign cartPriceCents = cart.total_price | plus: 0 %}
@@ -149,7 +149,7 @@
         <div class="slidecart-body">
           <div class="slidecart-header">
             <h1 class="cart-heading">{{section.settings.title}} <span class="text-span">(<span data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span> Items)</span></h1>
-            <div data-ajax-cart-toggle-class-button="js-my-cart-open | remove" class="slidecart-close"><img
+            <div data-ajax-cart-toggle-class-button="js-my-cart-open | remove" class="slidecart-close animation-end"><img
                 src="{{'ic24-close.svg' | asset_url}}"
                 loading="lazy" alt="" class="image-8"></div>
           </div>
@@ -296,13 +296,12 @@
 <style>
 
 .sidecart-overlay {
-  display: none;
+  visibility: hidden;
 }
 
 .js-my-cart-open .sidecart-overlay {
-  display: block;
+  visibility: visible;
 }
-
 
 .collapse {
   transition: height 0.5s ease !important;
@@ -313,35 +312,17 @@
   margin-top: -5px;
 }
 
+
+
 body.js-my-cart-open {
   overflow: hidden !important;
 }
 
-  @keyframes slidein {
-    from {
-      transform: translateX(0%);
-    }
-
-    to {
-      transform: translateX(100%);
-    }
-  }
-
-
-  @keyframes slideout {
-    from {
-      transform: translateX(100%);
-    }
-
-    to {
-      transform: translateX(0%);
-    }
-  }
-
   .slidecart-blur {
-    opacity: 0;
+    visibility: hidden;
     z-index: -999;
     background: rgba(0, 0, 0, 0.5);
+    transition: visibility 0.2s ease;
   }
 
   .hide-me[aria-expanded="true"] {
@@ -372,6 +353,8 @@ body.js-my-cart-open {
     display: flex;
   }
 
+
+
   .cart-payment-info {
     position: sticky;
     bottom: 0;
@@ -396,7 +379,12 @@ body.js-my-cart-open {
     justify-content: flex-end;
     transform: translateX(100%);
     max-width: 576px;
-    transition: all 0.35s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .sidecart-overlay {
+    transition: visibility 0.2s ease-in-out;
   }
 
   .sidebar-bg {
@@ -408,25 +396,22 @@ body.js-my-cart-open {
   }
 
 
+  .js-my-cart-open .sidecart-overlay {
+    visibility: visible;
+    transition: all 0.3s;
+  }
+  
   /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
   .js-my-cart-open .sidebar-container {
     display: flex;
     visibility: visible;
-    webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-    transition-timing-function: ease-in-out;
+    opacity: 1;
     transform: translateX(0%);
+    transition: all 0.5s;
   }
-
-  .sidebar-container.slidecart-blur {
-    opacity: 1;
-    z-index: 9999;
-  }
-
+  
   .js-my-cart-open .slidecart-blur {
-    opacity: 1;
+    visibility: visible;
     z-index: 1000;
   }
 
@@ -441,3 +426,21 @@ body.js-my-cart-open {
   }
 </style>
 
+<script>
+  const body = document.querySelector('body');
+const sidebarContainer = document.querySelector('.sidebar-container');
+
+function addAnimationClass() {
+  if (!body.classList.contains('js-my-cart-open')) {
+    body.classList.add('js-my-cart-open');
+    sidebarContainer.addEventListener('animationend', removeAnimationClass);
+  }
+}
+
+function removeAnimationClass() {
+  body.classList.remove('js-my-cart-open');
+  sidebarContainer.removeEventListener('animationend', removeAnimationClass);
+}
+
+sidebarContainer.addEventListener('animationstart', addAnimationClass);
+</script>

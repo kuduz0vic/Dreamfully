@@ -62,6 +62,10 @@
             "type": "text",
             "id": "bullet-tagline",
             "label": "Bullet Tagline"
+          }, {
+            "type": "url",
+            "id": "bullet-svg",
+            "label": "Bullet SVG"
           }
         ]
       }, {
@@ -269,6 +273,21 @@
                 {% endcase %}
               {% endfor %}
             </div>
+            <div>
+              <ul class="pdp-bullets" style="text-decoration: none; list-style: none; padding-left: 0px;">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'bullet_points' %}
+                    <li style="text-decoration: none;">
+                      <div class="bullet-point_wrapper">
+                        <div class="bullet-svg"><img src="{{block.settings.bullet-svg}}" alt=""></div>
+                        <div class="bullet-tagline">{{ block.settings.bullet-tagline }}</div>
+                      </div>
+                    </li>
+                  {% endcase %}
+                {% endfor %}
+              </ul>
+            </div>
             <div class="atc-area">
               {% for block in section.blocks %}
                 {% case block.type %}
@@ -300,7 +319,7 @@
                     <button
                       type="submit"
                       value="Add to cart"
-                      class="product-atc_button">Add To Cart - {{ product.price | money }}</button>
+                      class="product-atc_button animation-start">Add To Cart - {{ product.price | money }}</button>
                     <div class="qty-input">
                       <button
                         data-action="minus"
@@ -360,17 +379,7 @@
                 {% endcase %}
               {% endfor %}
             </div>
-            <div>
-              <ul role="list" class="pdp-bullets">
-                {% for block in section.blocks %}
-                  {% case block.type %}
-                    {% when 'bullet_points' %}
-                    <li>{{ block.settings.bullet-tagline }}</li>
-                  {% endcase %}
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="product-accordion-list">
+            <div class="product-accordion-list top-accordions">
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'top_accordion' %}
@@ -396,8 +405,9 @@
                 {% when 'upsell-block' %}
                 {% assign upsellproduct = block.settings.upsell-product %}
                 <div class="pdp-upsell-box">
-                  <div class="upsell-heading">{{ upsellproduct.title }}</div>
+                  <div class="upsell-heading_desktop">{{ upsellproduct.title }}</div>
                   <div class="upsell-box">
+                    <div class="upsell-heading_mobile">{{ upsellproduct.title }}</div>
                     <div class="upsell-product">
                       <div class="upsell-pd-img"><img
                           src="{% if block.settings.upsell-image != blank %}{{block.settings.upsell-image | img_url: 'master' }} {% else %} {{ upsellproduct.featured_image | img_url: 'master'}} {% endif %}"
