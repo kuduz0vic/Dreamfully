@@ -50,12 +50,6 @@
                 class="quick-atc-review-stars">
               <div class="text-block-4">{{ section.settings.review-number }} Reviews</div>
             </div>
-            <div class="description">
-              {% if section.settings.product-description != blank %}
-                {{ section.settings.product-description }}
-              {% else %}
-                {{ product.description }}{% endif %}
-            </div>
             <div class="quick-atc-area">
               <div class="quick-atc-price-wrapper">
                 <div class="price-wrapper">
@@ -65,73 +59,49 @@
                 <div class="save-tag">Save {{ discount }}</div>
               </div>
               <div class="quick-atc-shipping">
-                <div class="div-block-4"></div>
+                <lottie-player
+                  style="max-width: 21px;"
+                  class="lottie-animation-2"
+                  src="{{ 'lf20_lccjnf8m.json' | asset_url }}"
+                  speed="1"
+                  loop
+                  autoplay></lottie-player>
                 <div>
                   {{ section.settings.shipping-text }}</div>
               </div>
-              <div class="atc-zone-quick">
-                <div bind="ce2938a5-0e23-d31f-75f6-3d9c7dc2311f" class="form-block w-form">
-                  <form
-                    id="email-form"
-                    name="email-form"
-                    data-name="Email Form"
-                    method="post"
-                    class="form"><input
-                      type="submit"
-                      value="Add To Cart - €49,95"
-                      data-wait="Adding to cart..."
-                      class="primary-button quick-atc w-button">
-                    <div class="input-counter-component">
-                      <div bind="ce2938a5-0e23-d31f-75f6-3d9c7dc23123" class="fs_inputcounter-1_embed w-embed w-script">
-                        <!--  [Finsweet Attributes] Input Counter  -->
-                        <script>
-                          (() => {
-                            var t = "https://cdn.jsdelivr.net/npm/@finsweet/attributes-inputcounter@1/inputcounter.js",
-                              e = document.querySelector(`script[src="${t}"]`);
-                            e || (e = document.createElement("script"), e.async =! 0, e.src = t, document.head.append(e));
-                          })();
-                        </script>
-                      </div>
-                      <div class="fs_inputcounter-1_wrapper">
-                        <div
-                          aria-controls="fs-inputcounter-1-input"
-                          fs-inputcounter-element="decrement"
-                          role="button"
-                          aria-label="Decrement input value"
-                          tabindex="0"
-                          class="fs_inputcounter-1_button">
-                          <div>-</div>
-                        </div><input
-                          type="text"
-                          fs-inputcounter-element="input"
-                          class="fs_inputcounter-1_input w-input"
-                          fs-inputcounter-initial="0"
-                          maxlength="256"
-                          name="Counter"
-                          data-name="Counter"
-                          placeholder=""
-                          id="fs-inputcounter-1-input"
-                          required="">
-                        <div
-                          aria-controls="fs-inputcounter-1-input"
-                          fs-inputcounter-element="increment"
-                          role="button"
-                          aria-label="Increment input value"
-                          tabindex="0"
-                          class="fs_inputcounter-1_button">
-                          <div>+</div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div class="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
+              <form method="post" action="/cart/add">
+                <div class="atc-zone-quick">
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.variants.first.id }}" />
+                  <button
+                    type="submit"
+                    value="Add to cart"
+                    class="quick-atc_button">Add To Cart - {{ product.price | money }}</button>
+                  <div class="qty-input">
+                    <button
+                      data-action="minus"
+                      type="button"
+                      class="qty-count qty-count--minus">
+                      <div>-</div>
+                    </button><input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="0"
+                      max="10"
+                      value="1"
+                      class="product-qty">
+                    <button
+                      class="qty-count qty-count--add"
+                      data-action="add"
+                      type="button">
+                      <div>+</div>
+                    </button>
                   </div>
                 </div>
-              </div>
+              </form>
               {% assign upsellproduct = section.settings.product-upsell %}
               <div class="upsell-bar quick">
                 <div class="atc-bar-first"><img
@@ -144,11 +114,26 @@
                     <div>{{ upsellproduct.price | money }}</div>
                   </div>
                 </div>
-                <div class="upsell-atc-btn"><img
-                    src="{{'cart.svg' | asset_url}}"
-                    loading="lazy"
-                    alt=""
-                    class="cart-icon"></div>
+                <form method="post" action="/cart/add">
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ upsellproduct.variants.first.id }}" />
+                  <input
+                    min="1"
+                    type="hidden"
+                    id="quantity"
+                    name="quantity"
+                    value="1" />
+                  <button
+                    type="submit"
+                    value="Add to cart"
+                    class="upsell-atc-btn"><img
+                      src="{{'cart.svg' | asset_url}}"
+                      loading="lazy"
+                      alt=""
+                      class="cart-icon"></button>
+                </form>
               </div>
               <div class="payment-methods quick"><img
                   src="{{'group-300.svg' | asset_url}}"
@@ -164,10 +149,6 @@
                   alt=""
                   class="payment-icon"><img
                   src="{{'mastercard.svg' | asset_url}}"
-                  loading="lazy"
-                  alt=""
-                  class="payment-icon"><img
-                  src="{{'group-315svg' | asset_url}}"
                   loading="lazy"
                   alt=""
                   class="payment-icon"><img
@@ -191,14 +172,13 @@
   </div>
   <div class="waves reverse"><img
       src="{{'reversed-wave.svg' | asset_url}}"
-      loading="lazy"
       alt=""
       class="desktop-img"><img
       src="{{'tweede-mob-wave.svg' | asset_url}}"
-      loading="lazy"
       alt=""
       class="mobile-img"></div>
 </div>
+
 
 
 {% schema %}

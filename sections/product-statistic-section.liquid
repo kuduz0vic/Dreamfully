@@ -13,9 +13,7 @@
             {% case block.type %}
               {% when 'statistics_block' %}
               <div class="statistics-block">
-                <div class="heading-style-h2">
-                  <span class="counterup">{{ block.settings.number_value }}</span>
-                  {{ block.settings.number_sign }}</div>
+                <div class="heading-style-h2"><img src="{{block.settings.statistics-svg}}" alt=""></div>
                 <div>{{ block.settings.block_description }}</div>
               </div>
             {%- endcase -%}
@@ -81,15 +79,9 @@
         "type": "statistics_block",
         "settings": [
           {
-            "type": "text",
-            "id": "number_sign",
-            "label": "Number Sign",
-            "default": "+"
-          }, {
-            "type": "text",
-            "id": "number_value",
-            "label": "Number Value",
-            "default": "100"
+            "type": "url",
+            "id": "statistics-svg",
+            "label": "Statistics SVG"
           }, {
             "type": "text",
             "id": "block_description",

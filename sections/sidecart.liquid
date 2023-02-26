@@ -104,6 +104,10 @@
   "type": "liquid",
   "id": "upsell-description",
   "label": "Upsell Description"
+}, {
+"type": "liquid",
+"id": "product-description",
+"label": "Product Description"
 }
 ]
 }
@@ -128,6 +132,13 @@
 
 <form action="{{ routes.cart_url }}" method="post">
   <div jd-cloak>
+    <div class="sidecart-overlay" style="position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;">
+
     <div class="slidecart-blur" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
     <div id="sidecart" class="sidebar-container" data-ajax-cart-section>
       {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
@@ -150,7 +161,6 @@
           </div>
           <div class="slidecart-items">
             {% for item in cart.items %}
-          {% assign item_index = forloop.index %}
             <div class="slidecart-item">
               <div class="item-slidecart-wrapper">
                 <div class="slidecart-item-details">
@@ -183,9 +193,9 @@
               <div class="slidecart-dropdown-wrapper">
                 <div style="height: 0px;" class="slidecart-dropdown-content-wrapper collapse" id="collapseExample-{{ forloop.index }}">
                   <div class="slidecart-dropdown-content">
-                    <div class="slidecart-dropdown-p">{{item.metafields.custom.upsell_description}}</div>
+                    <div class="slidecart-dropdown-p">{{item.product.metafields.custom.upsell_description}}</div>
                     <div class="slidecart-item-benefits-list">
-                      {% for benefit in product.metafields.custom.upsell_benefit_list.value %}
+                      {% for benefit in item.product.metafields.custom.upsell_benefit_list.value %}
                       <div class="slidecart-benefit">
                         <div class="benefit-icon-slidecart w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="20" height="20" rx="10" fill="#FDF5F4"/>
@@ -279,10 +289,20 @@
       </div>
     </div>
   </div>
+  </div>
 </form>
 
 
 <style>
+
+.sidecart-overlay {
+  display: none;
+}
+
+.js-my-cart-open .sidecart-overlay {
+  display: block;
+}
+
 
 .collapse {
   transition: height 0.5s ease !important;
@@ -420,3 +440,4 @@ body.js-my-cart-open {
     opacity: 0.7;
   }
 </style>
+

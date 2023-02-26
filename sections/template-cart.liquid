@@ -117,8 +117,8 @@
           <div class="slidecart-items">
             {% for item in cart.items %}
           {% assign item_index = forloop.index %}
-            <div class="slidecart-item" data-ajax-cart-section>
-              <div class="item-slidecart-wrapper">
+            <div class="slidecart-item">
+              <div class="item-slidecart-wrapper" data-ajax-cart-section>
                 <div class="slidecart-item-details">
                   <div class="cart-item-image-wrapper"><img
                       src="{{item.image | img_url: 'master'}}"
@@ -149,7 +149,7 @@
               <div class="slidecart-dropdown-wrapper">
                 <div style="height: 0px;" class="slidecart-dropdown-content-wrapper collapse" id="collapseExamplee-{{ forloop.index }}">
                   <div class="slidecart-dropdown-content">
-            <div class="slidecart-dropdown-p">{% if item.handle == product.handle %}{{product.metafields.custom.upsell_description}}{%endif%}</div>
+            <div class="slidecart-dropdown-p">{{product.metafields.custom.upsell_description.value}}</div>
                     <div class="slidecart-item-benefits-list">
                       {% for benefit in product.metafields.custom.upsell_benefit_list.value %}
                       <div class="slidecart-benefit">
@@ -263,6 +263,11 @@
 "id": "freeshipping_threshold",
 "default": 4000,
 "label": "Free shipping threshold"
+},
+{
+  "type": "richtext",
+  "id": "upsell-description",
+  "label": "Upsell Description"
 }
 ]
 }

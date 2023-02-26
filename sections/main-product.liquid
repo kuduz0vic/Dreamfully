@@ -137,6 +137,8 @@
   }
 {% endschema %}
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
 {% form 'product', product, id: 'product-form', novalidate: 'novalidate' %}
@@ -144,6 +146,11 @@
     type="hidden"
     name="id"
     value="{{ selected_variant.id }}">
+  {% capture discount %}
+    Save {{ product.compare_at_price | minus: product.price | round | money }}
+  {% endcapture %}
+
+
   <div data-w-id="00aef4e6-a58f-4aa4-48eb-8ea9c660102c" class="product-section">
     <div class="page-padding">
       <div class="container_v2">
@@ -275,63 +282,45 @@
                   </div>
                   {% when 'shipping' %}
                   <div class="atc-shipping">
-                    <div class="div-block-4"></div>
+                    <lottie-player
+                      style="max-width: 21px;"
+                      class="lottie-animation-2"
+                      src="{{ 'lf20_lccjnf8m.json' | asset_url }}"
+                      speed="1"
+                      loop
+                      autoplay></lottie-player>
                     <div>{{ block.settings.shipping-tagline }}</div>
                   </div>
                   {% when 'checkout_buttons' %}
-                  <div class="atc-zone">
-                    <div class="form-block w-form">
-                      {%- form "contact", class: "form" -%}<input
-                          type="submit"
-                          value="{{block.settings.atc-text}} - {{selected_variant.price | money}}"
-                          data-wait="Adding to cart..."
-                          class="primary-button atc w-button">
-                        <div class="input-counter-component">
-                          <div class="fs_inputcounter-1_embed w-embed w-script">
-                            <!--  [Finsweet Attributes] Input Counter  -->
-                            <script>
-                              (() => {
-                                var t = "https://cdn.jsdelivr.net/npm/@finsweet/attributes-inputcounter@1/inputcounter.js",
-                                  e = document.querySelector(`script[src="${t}"]`);
-                                e || (e = document.createElement("script"), e.async =! 0, e.src = t, document.head.append(e));
-                              })();
-                            </script>
-                          </div>
-                          <div class="fs_inputcounter-1_wrapper">
-                            <div
-                              aria-controls="fs-inputcounter-1-input"
-                              fs-inputcounter-element="decrement"
-                              role="button"
-                              aria-label="Decrement input value"
-                              tabindex="0"
-                              class="fs_inputcounter-1_button">
-                              <div>{{ 't2d' | t }}</div>
-                            </div><input
-                              type="number"
-                              name="quantity"
-                              id="quantity-{{ section.id }}"
-                              value="1"
-                              min="1">
-                            <div
-                              aria-controls="fs-inputcounter-1-input"
-                              fs-inputcounter-element="increment"
-                              role="button"
-                              aria-label="Increment input value"
-                              tabindex="0"
-                              class="fs_inputcounter-1_button">
-                              <div>{{ 't2b' | t }}</div>
-                            </div>
-                          </div>
-                        </div>
-                        {%- assign form_success = form.posted_successfully? -%}{%- assign form_errors = form.errors -%}{%- render "form-general-script", form_success: form_success, form_errors: form_errors -%}{%- endform -%}
-                      <div class="w-form-done  {% if form_success %}form-posted-successfully{% endif %}">
-                        <div>{{ 't5a0ea5a1' | t }}</div>
-                      </div>
-                      {%- unless form_success -%}
-                        <div class="w-form-fail  {% if form.errors %}form-has-errors{% endif %}">
-                          <div>{%- render "form-errors", form_errors: form_errors -%}</div>
-                        </div>
-                      {%- endunless -%}
+                  <div class="atc-zone-quick">
+                    <input
+                      type="hidden"
+                      name="id"
+                      value="{{ product.variants.first.id }}" />
+                    <button
+                      type="submit"
+                      value="Add to cart"
+                      class="product-atc_button">Add To Cart - {{ product.price | money }}</button>
+                    <div class="qty-input">
+                      <button
+                        data-action="minus"
+                        type="button"
+                        class="qty-count qty-count--minus">
+                        <div>-</div>
+                      </button><input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="0"
+                        max="10"
+                        value="1"
+                        class="product-qty">
+                      <button
+                        class="qty-count qty-count--add"
+                        data-action="add"
+                        type="button">
+                        <div>+</div>
+                      </button>
                     </div>
                   </div>
                   {% when 'payment_icons' %}
@@ -404,7 +393,7 @@
             </div>
             {% for block in section.blocks %}
               {% case block.type %}
-                {% when 'upsell' %}
+                {% when 'upsell-block' %}
                 {% assign upsellproduct = block.settings.upsell-product %}
                 <div class="pdp-upsell-box">
                   <div class="upsell-heading">{{ upsellproduct.title }}</div>

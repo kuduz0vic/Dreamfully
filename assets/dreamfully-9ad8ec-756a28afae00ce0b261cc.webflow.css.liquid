@@ -3343,7 +3343,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   color: var(--color-73984d91);
   font-size: 18px;
   line-height: 150%;
@@ -13214,6 +13214,15 @@ p {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
+  .quick-atc-shipping {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 981px) {
+  .product-inner-container {
+    gap: 30px;
+  }
 }
 
 .top-total {
@@ -13262,4 +13271,88 @@ p {
 
 .cart-upsell_wrapper {
   gap: 32px;
+}
+
+.product-qty {
+  border: none;
+  max-width: 28px;
+  text-align: center;
+  font-family: Dreamfully, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: -3px;
+  background: #FCFBF9;
+}
+
+.product-qty:focus {
+  outline: none;
+}
+
+.product-qty::-webkit-outer-spin-button,
+.product-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-qty[type=number] {
+  -moz-appearance: textfield;
+}
+
+.qty-input {
+  display: flex;
+  max-width: 102px;
+  height: 62px;
+  background: #FCFBF9;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.qty-count {
+  padding: 0 15px;
+  max-height: 62px;
+  height: 58px;
+  margin-top: -4px;
+  border-radius: 8px;
+  background: #FCFBF9;
+  font-family: Dreamfully, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+
+.quick-atc_button {
+  max-width: 460px;
+  width: 100%;
+  background: #E1908A;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  font-family: Dreamfully, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 19px 0;
+  color: #FFFFFF;
+}
+
+.atc-zone-quick {
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-atc_button {
+  max-width: 460px;
+  width: 100%;
+  background: #40C89B;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  font-family: Dreamfully, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 19px 0;
+  color: #FFFFFF;
 }
