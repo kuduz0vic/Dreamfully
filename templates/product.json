@@ -178,32 +178,28 @@
         "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
-            "number_value": "100",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
             "block_description": "5-star reviews"
           }
         },
         "c8c3cf9e-662f-4877-9c8d-f59cadce5479": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
-            "number_value": "100",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
             "block_description": "5-star reviews"
           }
         },
         "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
-            "number_value": "100",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
             "block_description": "5-star reviews"
           }
         },
         "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
           "type": "statistics_block",
           "settings": {
-            "number_sign": "100+",
-            "number_value": "100",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
             "block_description": "5-star reviews"
           }
         }
