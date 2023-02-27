@@ -164,73 +164,208 @@
               {% when 'media' %}
               <div class="product-section-left">
                 <div class="product-desktop-imgs">
+
+
+                  {% assign product = product %}
+                  {% assign images = product.images %}
+                  {% assign first_image = images[0] %}
+                  {% assign second_image = images[1] %}
+                  {% assign third_image = images[2] %}
+                  {% assign fourth_image = images[3] %}
+                  {% assign fifth_image = images[4] %}
+                  {% assign sixth_image = images[5] %}
+                  {% assign seventh_image = images[6] %}
+                  {% assign eight_image = images[7] %}
+                  {% assign nineth_image = images[8] %}
+                  {% assign tenth_image = images[9] %}
+                  {% assign eleveenth_image = images[10] %}
+                  {% assign tvelweth_image = images[11] %}
+                  {% assign thirtheen_image = images[11] %}
+
                   <div class="product-image"><img
-                      src="{{ 'image_4.png' | asset_url }}"
+                      src="{{ first_image.src | img_url: 'master' }}"
                       loading="lazy"
                       sizes="(max-width: 991px) 100vw, 47vw"
-                      srcset="{{ 'image_4-p-500.png' | asset_url }} 500w, {{ 'image_4-p-800.png' | asset_url }} 800w, {{ 'image_4.png' | asset_url }} 917w"
+                      srcset="{{ first_image.src | img_url: 'master' }} 500w, {{ first_image.src | img_url: 'master' }} 800w, {{ first_image.src | img_url: 'master' }} 917w"
                       alt=""
                       class="product-img"></div>
-                  <div class="product-informative-box">
-                    <div class="informative-contents">
-                      <div class="informative-product-title">{{ 't4d33cbea' | t }}</div>
-                      <p>{{ 'tn8e41384' | t }}</p>
+                  {% if product.metafields.custom.product_information_box_1_visible != blank %}
+                    <div class="product-informative-box">
+                      <div class="informative-contents">
+                        <div class="informative-product-title">{{ product.metafields.custom.product_information_box_1_title }}</div>
+                        <p>{{ product.metafields.custom.product_information_box_1_title }}</p>
+                      </div>
                     </div>
-                  </div>
+                  {% endif %}
                   <div class="product-images-row">
                     <div class="product-row-img"><img
-                        src="{{ 'image_4.png' | asset_url }}"
+                        src="{{ second_image.src | img_url: 'master' }}"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 23vw"
-                        srcset="{{ 'image_4-p-500.png' | asset_url }} 500w, {{ 'image_4-p-800.png' | asset_url }} 800w, {{ 'image_4.png' | asset_url }} 917w"
+                        srcset="{{ second_image.src | img_url: 'master' }} 500w, {{ second_image.src | img_url: 'master' }} 800w, {{ second_image.src | img_url: 'master' }} 917w"
                         alt=""
                         class="product-img"></div>
                     <div class="product-row-img"><img
-                        src="{{ 'image_4.png' | asset_url }}"
+                        src="{{ third_image.src | img_url: 'master' }}"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 23vw"
-                        srcset="{{ 'image_4-p-500.png' | asset_url }} 500w, {{ 'image_4-p-800.png' | asset_url }} 800w, {{ 'image_4.png' | asset_url }} 917w"
+                        srcset="{{ third_image.src | img_url: 'master' }} 500w, {{ third_image.src | img_url: 'master' }} 800w, {{ third_image.src | img_url: 'master' }} 917w"
                         alt=""
                         class="product-img"></div>
                   </div>
-                  <div class="product-informative-box">
-                    <div class="informative-contents">
-                      <div class="informative-product-title">{{ 't5816e0ae' | t }}</div>
-                      <p>{{ 'tn669bcd5f' | t }}</p>
+                  {% if product.metafields.custom.product_information_box_2_visible != blank %}
+                    <div class="product-informative-box">
+                      <div class="informative-contents">
+                        <div class="informative-product-title">{{ product.metafields.custom.product_information_box_2_title }}</div>
+                        <p>{{ product.metafields.custom.product_information_box_2_title }}</p>
+                      </div>
                     </div>
-                  </div>
+                  {% endif %}
                   <div class="product-image"><img
-                      src="{{ 'image_4.png' | asset_url }}"
+                      src="{{ fourth_image.src | img_url: 'master' }}"
                       loading="lazy"
                       sizes="(max-width: 991px) 100vw, 47vw"
-                      srcset="{{ 'image_4-p-500.png' | asset_url }} 500w, {{ 'image_4-p-800.png' | asset_url }} 800w, {{ 'image_4.png' | asset_url }} 917w"
+                      srcset="{{ fourth_image.src | img_url: 'master' }} 500w, {{ fourth_image.src | img_url: 'master' }} 800w, {{ fourth_image.src | img_url: 'master' }} 917w"
                       alt=""
                       class="product-img"></div>
+                  {% if product.images.size > 4 %}
+                    {% if product.metafields.custom.product_information_box_3_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_3_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_3_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      <div class="product-row-img"><img
+                          src="{{ fifth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ fifth_image.src | img_url: 'master' }} 500w, {{ fifth_image.src | img_url: 'master' }} 800w, {{ fifth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                      <div class="product-row-img"><img
+                          src="{{ sixth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ sixth_image.src | img_url: 'master' }} 500w, {{ sixth_image.src | img_url: 'master' }} 800w, {{ sixth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    </div>
+                    {% if product.metafields.custom.product_information_box_4_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_4_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_4_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-image"><img
+                        src="{{ seventh_image.src | img_url: 'master' }}"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 47vw"
+                        srcset="{{ seventh_image.src | img_url: 'master' }} 500w, {{ seventh_image.src | img_url: 'master' }} 800w, {{ seventh_image.src | img_url: 'master' }} 917w"
+                        alt=""
+                        class="product-img"></div>
+                  {% endif %}
+                  {% if product.images.size > 7 %}
+                    {% if product.metafields.custom.product_information_box_5_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_5_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_5_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      <div class="product-row-img"><img
+                          src="{{ eigth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ eigth_image.src | img_url: 'master' }} 500w, {{ eigth_image.src | img_url: 'master' }} 800w, {{ eigth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                      <div class="product-row-img"><img
+                          src="{{ nine_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ nine_image.src | img_url: 'master' }} 500w, {{ nine_image.src | img_url: 'master' }} 800w, {{ nine_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    </div>
+                    {% if product.metafields.custom.product_information_box_6_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_6_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_6_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-image"><img
+                        src="{{ tenth_image.src | img_url: 'master' }}"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 47vw"
+                        srcset="{{ tenth_image.src | img_url: 'master' }} 500w, {{ tenth_image.src | img_url: 'master' }} 800w, {{ tenth_image.src | img_url: 'master' }} 917w"
+                        alt=""
+                        class="product-img"></div>
+                  {% endif %}
+
+                  {% if product.images.size > 10 %}
+                    {% if product.metafields.custom.product_information_box_7_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_7_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_7_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      <div class="product-row-img"><img
+                          src="{{ eleveenth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ eleveenth_image.src | img_url: 'master' }} 500w, {{ eleveenth_image.src | img_url: 'master' }} 800w, {{ eleveenth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                      <div class="product-row-img"><img
+                          src="{{ tvelweth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ tvelweth_image.src | img_url: 'master' }} 500w, {{ tvelweth_image.src | img_url: 'master' }} 800w, {{ tvelweth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    </div>
+                    {% if product.metafields.custom.product_information_box_8_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_8_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_8_title }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-image"><img
+                        src="{{ thirtheen_image.src | img_url: 'master' }}"
+                        loading="lazy"
+                        sizes="(max-width: 991px) 100vw, 47vw"
+                        srcset="{{ thirtheen_image.src | img_url: 'master' }} 500w, {{ thirtheen_image.src | img_url: 'master' }} 800w, {{ thirtheen_image.src | img_url: 'master' }} 917w"
+                        alt=""
+                        class="product-img"></div>
+                  {% endif %}
+
                 </div>
                 <div class="product-slider pdp-slider">
                   <div id="Product-Images-Slider" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
                     <div id="swiper-wrapper" class="swiper-wrapper">
-                      <div class="swiper-slide"><img
-                          src="{{ 'image_1.png' | asset_url }}"
-                          loading="lazy"
-                          sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 100vw"
-                          srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w"
-                          alt=""
-                          class="product-img-slide"></div>
-                      <div class="swiper-slide"><img
-                          src="{{ 'image_1.png' | asset_url }}"
-                          loading="lazy"
-                          sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 100vw"
-                          srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w"
-                          alt=""
-                          class="product-img-slide"></div>
-                      <div class="swiper-slide"><img
-                          src="{{ 'image_1.png' | asset_url }}"
-                          loading="lazy"
-                          sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 100vw"
-                          srcset="{{ 'image_1-p-500.png' | asset_url }} 500w, {{ 'image_1-p-800.png' | asset_url }} 800w, {{ 'image_1-p-1080.png' | asset_url }} 1080w, {{ 'image_1.png' | asset_url }} 1222w"
-                          alt=""
-                          class="product-img-slide"></div>
+                      {% for media in product.media %}
+                        <div class="swiper-slide"><img
+                            src="{{ media | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 100vw"
+                            srcset="{{ media | img_url: 'master' }} 500w, {{ media | img_url: 'master' }} 800w, {{ media | img_url: 'master' }} 1080w, {{ media | img_url: 'master' }} 1222w"
+                            alt=""
+                            class="product-img-slide"></div>
+                      {% endfor %}
                     </div>
                     <div class="product-swiper-nav">
                       <div id="product-left-arrow" class="product-swiper-arrow"><img
