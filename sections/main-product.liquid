@@ -522,26 +522,6 @@
   </div>
 {% endform %}
 
-<script>
-  const container = document.querySelector('.product-inner-container');
-  const rightDiv = document.querySelector('.product-section-right');
-
-  function handleScroll() {
-    const scrollPosition = window.pageYOffset;
-    const rightDivHeight = rightDiv.offsetHeight;
-    const containerHeight = container.offsetHeight;
-    const windowHeight = window.innerHeight;
-    const rightDivOffsetTop = rightDiv.offsetTop;
-
-    if (scrollPosition + windowHeight >= rightDivOffsetTop + rightDivHeight && scrollPosition + windowHeight < containerHeight) {
-      rightDiv.classList.add('sticky');
-    } else {
-      rightDiv.classList.remove('sticky');
-    }
-  }
-
-  window.addEventListener('scroll', handleScroll);
-</script>
 
 <script>
   class VariantSelector extends HTMLElement {
@@ -645,4 +625,23 @@
 
 // Start observing the atcZoneQuick element
   observer.observe(atcZoneQuick);
+</script>
+
+<script>
+  const description = document.querySelector('.product-section-right');
+
+  window.addEventListener('scroll', () => {
+    const bottomOffset = description.offsetTop + description.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY + viewportHeight;
+    const descriptionHeight = description.offsetHeight;
+
+    if (scrollPosition > bottomOffset) {
+      description.classList.add('sticky-description');
+      description.style.top = `calc(100vh - ${descriptionHeight}px)`;
+    } else {
+      description.classList.remove('sticky-description');
+      description.style.top = null;
+    }
+  });
 </script>
