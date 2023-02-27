@@ -49,7 +49,7 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: Gotham, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -129,7 +129,7 @@ html[data-w-dynpage] [data-w-cloak] {
   border-radius: 0;
   background: none;
   background-image: none;
-  background-position: 0% 0%;
+  background-position: 0 0;
   background-size: auto auto;
   background-repeat: repeat;
   background-origin: padding-box;
@@ -186,7 +186,7 @@ html[data-w-dynpage] [data-w-cloak] {
   height: auto !important;
   overflow: visible !important;
   white-space: nowrap;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .w-webflow-badge > img {
@@ -239,15 +239,14 @@ p {
   margin-bottom: 10px;
 }
 blockquote {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   padding: 10px 20px;
   border-left: 5px solid #E2E2E2;
   font-size: 18px;
   line-height: 22px;
 }
 figure {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 figcaption {
   margin-top: 5px;
@@ -255,7 +254,7 @@ figcaption {
 }
 ul,
 ol {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
   padding-left: 40px;
 }
@@ -388,7 +387,7 @@ textarea.w-select {
   display: inline-block;
   cursor: pointer;
   font-weight: normal;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .w-radio {
   display: block;
@@ -408,11 +407,9 @@ textarea.w-select {
   clear: both;
 }
 .w-radio-input {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
+  margin: 1px \9 0 0 -20px;
   line-height: normal;
   float: left;
-  margin-left: -20px;
 }
 .w-radio-input {
   margin-top: 3px;
@@ -1015,7 +1012,7 @@ textarea.w-select {
 }
 .w-slider-dot:focus {
   outline: none;
-  box-shadow: 0px 0px 0px 2px #fff;
+  box-shadow: 0 0 0 2px #fff;
 }
 .w-slider-dot:focus.w-active {
   box-shadow: none;
@@ -1119,8 +1116,7 @@ textarea.w-select {
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  margin-right: 20px;
+  margin: auto 20px auto auto;
   width: 1em;
   height: 1em;
 }
@@ -1433,7 +1429,7 @@ textarea.w-select {
 .w-lightbox-noscroll {
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media(min-width: 768px) {
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
@@ -1515,7 +1511,7 @@ textarea.w-select {
   max-width: 60%;
 }
 .w-richtext figure > div:before {
-  cursor: default!important;
+  cursor: default !important;
 }
 .w-richtext figure img {
   width: 100%;
@@ -1525,7 +1521,7 @@ textarea.w-select {
 }
 .w-richtext figure div {
   /* fix incorrectly sized selection border in the data manager */
-  font-size: 0px;
+  font-size: 0;
   color: transparent;
 }
 .w-richtext figure.w-richtext-figure-type-image,

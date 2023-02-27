@@ -483,6 +483,43 @@
         class="bottom-vector"></div>
   </div>
 
+
+  <div class="sticky-atc_wrapper">
+    <div class="sticky-inner_wrapper">
+      <div class="desktop-info">
+        <div class="sticky-title">{{ product.title }}
+          <div class="sticky-price_wrapper-tablet">
+            <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+            <div class="sticky-price">{{ product.price | money }}</div>
+          </div>
+        </div>
+        <div class="sticky-price_wrapper">
+          <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+          <div class="sticky-price">{{ product.price | money }}</div>
+        </div>
+      </div>
+      <div class="mobile-info">
+        <div class="sticky-shipping">
+          <lottie-player
+            style="max-width: 21px;"
+            class="lottie-animation-2"
+            src="{{ 'lf20_lccjnf8m.json' | asset_url }}"
+            speed="1"
+            loop
+            autoplay></lottie-player>
+          <div class="sticky-shipping_text">Ordered before 22:00, Tomorrow in house.</div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        value="Add to cart"
+        class="sticky-atc">Add To Cart - {{ product.price | money }}</button>
+    </div>
+    <button
+      type="submit"
+      value="Add to cart"
+      class="sticky-atc_mobile">Add To Cart - {{ product.price | money }}</button>
+  </div>
 {% endform %}
 
 <script>
@@ -584,4 +621,28 @@
     }
   }
   customElements.define("variant-selector", VariantSelector);
+</script>
+
+<script>
+  // Get the element to track
+  const atcZoneQuick = document.querySelector('.atc-zone-quick');
+  const stickyAtcWrapper = document.querySelector('.sticky-atc_wrapper');
+
+// Create a new IntersectionObserver object
+  const observer = new IntersectionObserver((entries) => {
+
+// Loop through the entries
+    entries.forEach(entry => {
+
+// Check if the entry is intersecting or not
+      if (!entry.isIntersecting) { // Add the class to the sticky-atc_wrapper div
+        stickyAtcWrapper.classList.add('sticky-visible');
+      } else { // Remove the class from the sticky-atc_wrapper div
+        stickyAtcWrapper.classList.remove('sticky-visible');
+      }
+    });
+  });
+
+// Start observing the atcZoneQuick element
+  observer.observe(atcZoneQuick);
 </script>
