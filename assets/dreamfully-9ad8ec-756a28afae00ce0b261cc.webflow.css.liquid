@@ -4523,16 +4523,10 @@ p {
 }
 
 .product-section-right {
-  position: -webkit-sticky;
   width: 100%;
   max-width: 623px;
 }
 
-.product-section-right {
-  flex: 1;
-  position: sticky;
-  top: calc(-130% + 100vh);
-}
 
 .product-sec-info {
   margin-bottom: 16px;
@@ -13563,4 +13557,10 @@ p {
 .sticky-atc_wrapper.sticky-visible {
   opacity: 1;
   transition: 0.5s opacity;
+}
+
+@media only screen and (min-width: 1930px) {
+  .hero-section {
+    padding-bottom: 0;
+  }
 }
