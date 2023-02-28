@@ -32,13 +32,13 @@
         "c8106573-a00b-4736-ada8-1ede24504b58": {
           "type": "shipping",
           "settings": {
-            "shipping-tagline": "Ordered before 22:00, Tomorrow in house."
+            "shipping-tagline": "Vandaag besteld? Morgen in huis."
           }
         },
         "7c5a08cd-d8c8-4617-8796-23a6f9feaff3": {
           "type": "checkout_buttons",
           "settings": {
-            "atc-text": "Add To Cart"
+            "atc-text": "In mijn winkelwagen"
           }
         },
         "51f4e09c-497b-4966-95e1-cd5a16957619": {
@@ -49,65 +49,79 @@
         "806c578a-bfad-4d3a-b975-37de07f551fb": {
           "type": "bullet_points",
           "settings": {
-            "bullet-tagline": "Guided Meditation for Kids",
+            "bullet-tagline": "Een verbeterde nachtrust",
             "bullet-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/bullet-point.svg?v=1677441300"
           }
         },
         "7724ed4b-305e-4792-a083-dea0e82db407": {
           "type": "bullet_points",
           "settings": {
-            "bullet-tagline": "High-Quality, Cuddly Design",
-            "bullet-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/bullet-point.svg?v=1677441300"
+            "bullet-tagline": "Minder stress en angst",
+            "bullet-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Anxiety.svg?v=1677599158"
           }
         },
         "4b6d88b4-35fe-44a4-bc11-9b3957934eda": {
           "type": "bullet_points",
           "settings": {
-            "bullet-tagline": "Teach Your Kids Mindfulness",
-            "bullet-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/bullet-point.svg?v=1677441300"
+            "bullet-tagline": "Meer zelfvertrouwen en zelfcontrole",
+            "bullet-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Zen.svg?v=1677598442"
           }
         },
         "fc34805e-6f5b-4f3a-a052-b1bbf814f470": {
           "type": "top_accordion",
           "settings": {
-            "top-title": "Meddybear Benefits",
-            "top-info": "<p>Niemand wacht graag op zijn pakket, daarom verzenden wij al onze producten met GLS-Express verzending inclusief tracking.<\/p><p>‍<\/p><p>🇳🇱 Geleverd binnen 4-6 werkdagen<br\/>🇧🇪 Geleverd binnen 4-6 werkdagen<br\/><br\/><strong>Verwerkingstijd:<\/strong> 1-2 werkdagen<br\/><strong>Totale levertijd:<\/strong> verwerkingstijd + verzendtijd<\/p>"
+            "top-title": "De voordelen van Dreamfully",
+            "top-info": "<p>Meddy Bear ontmoet graag nieuwe vriendjes. Daarom verzenden we alle bestellingen snel, zodat Meddy Bear niet te lang hoeft te wachten.<br\/><br\/>🇳🇱: Op werkdagen <strong>vóór 23:59u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op maandag geleverd.<br\/><br\/>🇧🇪: Op werkdagen <strong>vóór 22:30u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op dinsdag geleverd.<br\/><br\/>Alle bestellingen worden gratis verzonden.<br\/><br\/>Meddy Bear moet soms even wennen. Daarom kun je Meddy Bear 14 dagen gratis uitproberen. <\/p>"
           }
         },
         "cff04a63-b3f8-4252-99cb-a193a84c5a42": {
           "type": "upsell-block",
           "settings": {
             "upsell-product": "upsell-test",
-            "upsell-description": "The Meditation Pillow",
-            "upsell-button": "Add To Cart"
+            "upsell-description": "Het Meditatiekussen",
+            "upsell-button": "Maak je bestelling af met.."
           }
         },
         "c5525851-4574-4f51-9015-efbd8f1dbdaf": {
           "type": "mini_description",
           "settings": {
-            "mini-title": "A Fun and Effective Way to Help Your Child Relax",
-            "mini-description": "<p>Introducing the Meditation Bear - the perfect bedtime companion for kids. Help your child relax and unwind with guided meditation and breathing exercises. This cuddly bear is made with soft, cozy materials for peaceful sleep. Compact and durable for on-the-go relaxation.<\/p>"
+            "mini-title": "Breng rust in de wereld van jouw kind",
+            "mini-description": "<p>Meditatie helpt enorm veel mensen met het verbeteren van hun nachtrust, een vermindering van mentale klachten, stress en nog veel meer. Ook kinderen ervaren steeds meer mentale klachten, onder andere door hoge verwachtingspatronen, veel prikkels en sociale druk. Daarom willen wij kinderen op jonge leeftijd kennis laten maken met de belangrijkste aspecten én voordelen van meditatie. Zo hebben zij hier niet alleen nu profijt van, maar kunnen zij meditatie ook op latere leeftijd gebruiken voor het verbeteren van hun mentale gezondheid.<\/p>"
           }
         },
         "cb34492e-cee1-46f4-abc7-1ed72b7f4221": {
           "type": "bottom_accordion",
           "settings": {
-            "bottom-title": "Test 1",
-            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+            "bottom-title": "Voor welke leeftijdsgroep is Meddy Bear bedoeld?",
+            "bottom-info": "<p>Meddy bear is het meest geschikt voor kinderen van 3 t\/m 12 jaar oud. De meditatie beer is niet geschikt voor kinderen jonger dan 3 jaar oud, omdat zij nog niet goed begrijpen en verstaan wat de knuffel zegt.<br\/><br\/>De meditatie beer is ook te gebruiken voor kinderen ouder dan 12 jaar en volwassenen. Iedereen kan wel een rustmoment gebruiken.<\/p>"
           }
         },
         "6b20fe25-2d10-415b-ab2b-bdb9f897b07a": {
           "type": "bottom_accordion",
           "settings": {
-            "bottom-title": "Test 2",
-            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+            "bottom-title": "Is Meddy Bear veilig?",
+            "bottom-info": "<p>Ja. De meditatie beer is van veilige en zachte materialen gemaakt, heeft korte haren en het batterij gedeelte is afgeschermd met een rits. De meditatie beer is CE getest en gecertificeerd.<br\/><br\/>Advies is wel om altijd goed in de gaten te houden hoe jouw kind omgaat met de meditatie beer. Lees daarom de instructies goed door voordat je met Meddy Bear aan de slag gaat.<\/p>"
           }
         },
         "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2": {
           "type": "bottom_accordion",
           "settings": {
-            "bottom-title": "Test 3",
-            "bottom-info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br\/>laoreet tincidunt aliquet. Aenean venenatis ligula lacus, vitae <br\/>ultricies nibh suscipit quis. Maecenas aliquam dolor quis orci sagittis,<br\/> sed tincidunt urna interdum. Morbi accumsan eros velit, a rhoncus <br\/>libero consequat eu. Duis maximus consequat turpis id lacinia.<\/p>"
+            "bottom-title": "Werkt Meddy Bear voor kinderen met speciale behoeftes?",
+            "bottom-info": "<p>Hoewel de meditatie beer niet specifiek is getest bij kinderen met ADHD of andere speciale behoeften wijst onderzoek uit dat meditatie een positief effect kan hebben.<br\/><br\/>Daarom kan Meddy Bear een hulpmiddel zijn door meer rust te creëren in het leven van jouw kind.<\/p>"
+          }
+        },
+        "7839e683-4d9b-4335-b259-8648287d9581": {
+          "type": "bottom_accordion",
+          "settings": {
+            "bottom-title": "Hoe lang duurt de meditatie?",
+            "bottom-info": "<p>De Meddy Bear heeft een 10 minuut durende guided meditatie met daaropvolgend 9 minuten rustige muziek. De meditatie knuffel kan gedurende de meditatie uitgezet worden.<\/p>"
+          }
+        },
+        "af0e7c2f-b504-487c-84b0-428da50f92f0": {
+          "type": "bottom_accordion",
+          "settings": {
+            "bottom-title": "Wat vinden anderen van Meddy Bear?",
+            "bottom-info": "<p>Hoe zie jij dit voor je? Worden hier reviews vanuit Trustpilot ingeladen?<\/p>"
           }
         }
       },
@@ -128,7 +142,9 @@
         "c5525851-4574-4f51-9015-efbd8f1dbdaf",
         "cb34492e-cee1-46f4-abc7-1ed72b7f4221",
         "6b20fe25-2d10-415b-ab2b-bdb9f897b07a",
-        "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2"
+        "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2",
+        "7839e683-4d9b-4335-b259-8648287d9581",
+        "af0e7c2f-b504-487c-84b0-428da50f92f0"
       ],
       "settings": {
       }
@@ -136,8 +152,8 @@
     "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a": {
       "type": "image-w-text",
       "settings": {
-        "heading": "Struggling to get your child to relax and fall asleep?",
-        "description": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques.With the meditation bear, your child can learn to manage stress and emotions through guided breathing and relaxation exercises. The bear's soft and cozy design makes it a comforting presence for your child to snuggle up with during bedtime or anytime they need to take a break and relax."
+        "heading": "Een betere mentale gezondheid voor jouw kind",
+        "description": "Een betere mentale gezondheid voor jouw kind   Mediteren wordt nog vaak gezien als iets zweverigs. Daardoor profiteert niet iedereen van de voordelen die meditatie met zich meebrengt.\n\n  Door kinderen in een vroeg stadium te introduceren met meditatie, hebben ze hier de rest van hun leven plezier en profijt van.  \n\nOmdat wij begrijpen dat dit waarschijnlijk de eerste keer is dat je kind geintroduceerd wordt met meditatie mag je Meddy Bear 14 dagen gratis uitproberen. Toch niet helemaal tevreden? Dan kun je Meddy Bear retourneren."
       }
     },
     "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
@@ -171,8 +187,8 @@
         "b17cc16f-ca39-4307-a8da-678f7321feda"
       ],
       "settings": {
-        "heading": "Questions? We have got answers.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+        "heading": "Hoe gebruik ik Meddy Bear?",
+        "description": "De Meddy Bear kan op meerdere manieren gebruikt worden. Mediteren kan gedurende de hele dag. Het is daarom belangrijk dat je een rustig moment uitkiest.\n\nVaak is het fijn voor je kind om er een vast ritueel van te maken zoals bijvoorbeeld voor het slapen gaan. Je kan de beer op een kastje zetten of op een 'veilige' afstand van je kind."
       }
     },
     "ede47aa0-a9a6-4214-8feb-fee6009286af": {
@@ -263,21 +279,24 @@
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
           }
         },
         "a5a93068-c780-4a13-a423-934285880cea": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
           }
         },
         "e5a44772-8c63-4740-963a-ca699f5824ae": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
           }
         }
       },
