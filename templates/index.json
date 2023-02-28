@@ -197,28 +197,28 @@
           "type": "statistics_block",
           "settings": {
             "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "block_description": "Makkelijker in slaap vallen"
           }
         },
         "04a349ab-80ce-49c2-bab7-c550c5434cdc": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/school_bag.svg?v=1677598442",
+            "block_description": "Minder verzuim op school"
           }
         },
         "b5d8f1c9-5f51-4f85-bda9-5c7638169c82": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/no_phone.svg?v=1677598442",
+            "block_description": "Minder schermtijd"
           }
         },
         "38aeea61-bb7c-4687-a642-4a9a6d7c4e45": {
           "type": "statistics_block",
           "settings": {
             "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "block_description": "Meer rustmomenten"
           }
         }
       },
@@ -229,8 +229,8 @@
         "38aeea61-bb7c-4687-a642-4a9a6d7c4e45"
       ],
       "settings": {
-        "heading": "Meditation by the Numbers",
-        "description": "The meditation bear is made with high-quality materials and has a soft design."
+        "heading": "De positieve effecten van meditatie voor kinderen  ",
+        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan"
       }
     },
     "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055": {
@@ -238,9 +238,9 @@
       "settings": {
         "main-product": "the-meddybear-the-meditation-bear-for-kids",
         "product-upsell": "upsell-test",
-        "review-number": "160",
-        "shipping-text": "<p><strong>Free Shipping<\/strong> - Ordered before 22:00, Tomorrow in house.<\/p>",
-        "upsell-description": "Add my meditation pillow to this order",
+        "review-number": "10",
+        "shipping-text": "<p><strong>Gratis verzending<\/strong> - Vandaag besteld, morgen in huis.<\/p>",
+        "upsell-description": "Voeg het meditatiekussen ook toe",
         "product-description": "Introducing the Meditation Bear - the perfect bedtime companion for kids. Help your child relax and unwind with guided meditation and breathing exercises."
       }
     },
@@ -250,25 +250,25 @@
         "31a05c2d-05eb-433d-82c6-2faa5065dc7b": {
           "type": "review_block",
           "settings": {
-            "person_name": "Marieke van der Meer",
+            "person_name": "B. Bronkhorst",
             "person_location": "Uden, Noord Brabant",
-            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+            "review": "De beer besteld en 2 dagen later al in huis. Onze dochter had echt al lang problemen met in slaap komen, we hadden al van alles geprobeerd. Maar dit werkt serieus bij haar. Het is een soort steun die ze nodig heeft, en door de focus op de beer te leggen hebben andere gedachten geen kans. Waardoor ze lekker gaat slapen. Wij zijn er heel blij mee."
           }
         },
         "d30051a4-5c6c-4722-871d-b0f844e014f1": {
           "type": "review_block",
           "settings": {
-            "person_name": "Marieke van der Meer",
-            "person_location": "Uden, Noord Brabant",
-            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+            "person_name": "Dirk",
+            "person_location": "Groningen, Noord Brabant",
+            "review": "Onze zoon van 5 is gelijk grootste vriendjes met z'n Meddy Bear. Hij zit 5 tot 10 min (!) rustig voor de knuffel met z'n ogen dicht te luisteren. Wij kunnen het bijna niet geloven. Na zo'n medidatie is hij merkbaar rustiger. Ik ben heel benieuwd wat we allemaal nog gaan meemaken, maar nu al super blij met de ervaring so far. De Meddy Bear is een dikke aanrader voor ouders met een (over)actief kind"
           }
         },
         "9c821713-6ae8-4d5a-9a53-262133212409": {
           "type": "review_block",
           "settings": {
-            "person_name": "Marieke van der Meer",
-            "person_location": "Uden, Noord Brabant",
-            "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
+            "person_name": "Lisa",
+            "person_location": "Houten, Utrecht",
+            "review": "De beer is nu een week bij ons. En mijn zoontje is dol op hem. Hij is 3 jaar oud dus het hele concept van mediteren begrijpt hij nog niet volledig. Hij is enthousiast omdat mama mediteert en hij nu een eigen meditatie beer heeft. Hij stopt zijn speelgoed in de ballonnen inplaats van zijn gedachtes. Maar waar het omgaat is dat hij meedoet met de meditatie en dat we nu al merken dat hij rustiger is. En minder vaak wakker wordt.\n\nIk vind het een goede tool om kindjes vanaf een jonge leeftijd kennis te laten maken met mediteren waar ze naarmate ze ouder worden steeds meer baat bij gaan hebben. De beer heeft een prettige stem en een meeslepende meditatie en ademhalingsoefening. Dit zouden ze ook moeten inzetten op peuterspeelzalen en scholen."
           }
         }
       },
@@ -278,8 +278,8 @@
         "9c821713-6ae8-4d5a-9a53-262133212409"
       ],
       "settings": {
-        "heading": "Customers Love the Meddybear",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "heading": "Fans van Meddy Bear",
+        "description": "Hét vriendje van kinderen (en stiekem ook de ouders)"
       }
     },
     "82c82a98-3463-4f17-93a0-d72efa33f62d": {
