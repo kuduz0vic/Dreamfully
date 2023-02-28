@@ -78,8 +78,8 @@
           "type": "upsell-block",
           "settings": {
             "upsell-product": "upsell-test",
-            "upsell-description": "The Meditation Pillow",
-            "upsell-button": "Add To Cart"
+            "upsell-description": "Het Meditatiekussen",
+            "upsell-button": "Maak je bestelling af met.."
           }
         },
         "c5525851-4574-4f51-9015-efbd8f1dbdaf": {
