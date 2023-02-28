@@ -109,10 +109,10 @@
       ],
       "settings": {
         "button_label": "Shop the Meddybear",
-        "heading": "A Fun and Effective Way to Help Your Child Relax and De-stress",
-        "description": "The meditation bear helps children learn how to relax and manage stress in a fun and interactive way.",
+        "heading": "Breng rust in de wereld van jouw kind",
+        "description": "Meddy Bear introduceert kinderen met de belangrijkste aspecten én voordelen van meditatie en draagt bij aan de ontwikkeling van jouw kind",
         "button_link": "",
-        "button_link_text": "Button",
+        "button_link_text": "Bestel nu",
         "reviews": "<p><strong>4.7\/5<\/strong> op <strong>200+<\/strong> reviews op<\/p>"
       }
     },
@@ -122,25 +122,25 @@
         "afaffaca-0da7-4db8-96af-23b26b6cea08": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": "#e1908a"
+            "block_heading": "Verbeterde nachtrust",
+            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
+            "block-color": "#ffffff"
           }
         },
         "41eac3f7-dc5e-42fe-9197-1c41f809a967": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": "#5dc85d"
+            "block_heading": "Vermindert stress en angst",
+            "block_description": "Meditatie zorgt voor een betere concentratie en meer balans in emoties",
+            "block-color": "#f0c7c5"
           }
         },
         "c41007ee-dc92-4868-a73c-adbb039f8076": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": "#1167c2"
+            "block_heading": "Meer zelfvertrouwen",
+            "block_description": "Meditatie helpt bij een open en milde houding tegenover jezelf wat bijdraagt aan een positiever zelfbeeld",
+            "block-color": "#c8ccec"
           }
         }
       },
@@ -159,22 +159,22 @@
         "ac8890be-78dc-40f5-a067-6fb7596a181a": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Focus op ademhaling",
+            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten"
           }
         },
         "eda028bb-4285-4d4c-823e-b5c15f60cc11": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Guided Meditatie",
+            "block_description": "De guided meditatie neemt kinderen mee in een verhaal om hun hoofd leeg te maken"
           }
         },
         "aa0c5d2e-d6b4-4016-9fed-5edbee152f78": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Rustgevende muziek",
+            "block_description": "De rustgevende muziek brengt kinderen tot rust en zorgt er misschien wel voor dat ze zachtjes in slaap vallen"
           }
         }
       },
@@ -184,10 +184,10 @@
         "aa0c5d2e-d6b4-4016-9fed-5edbee152f78"
       ],
       "settings": {
-        "heading": "But how does it work?",
+        "heading": "",
         "block_label": "Shop the Meddybear",
         "block_url": "",
-        "block_url_text": "Button"
+        "block_url_text": "Beluister nu"
       }
     },
     "4c470b6e-0fba-4e00-8934-08022b75f47b": {
