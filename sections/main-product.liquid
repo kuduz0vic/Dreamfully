@@ -454,7 +454,7 @@
                     <button
                       type="submit"
                       value="Add to cart"
-                      class="product-atc_button animation-start">Add To Cart - {{ product.price | money }}</button>
+                      class="product-atc_button animation-start">{{ block.settings.atc-text }} - {{ product.price | money }}</button>
                     <div class="qty-input">
                       <button
                         data-action="minus"

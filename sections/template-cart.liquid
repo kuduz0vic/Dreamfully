@@ -104,9 +104,6 @@
         <div class="slidecart-body">
           <div class="slidecart-header" data-ajax-cart-section>
             <h1 class="cart-heading">{{section.settings.title}} <span class="text-span">(<span data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span> Items)</span></h1>
-            <div data-ajax-cart-toggle-class-button="js-my-cart-open | remove" class="slidecart-close"><img
-                src="{{'ic24-close.svg' | asset_url}}"
-                loading="lazy" alt="" class="image-8"></div>
           </div>
           <div class="slidecart-rewards" data-ajax-cart-section>
 <p class="rewards-message">{% if freeShippingPrice <= cartPriceCents %}{{section.settings.reward-gotten}}{% else %}{{section.settings.reward-not}}{% endif %}</p>

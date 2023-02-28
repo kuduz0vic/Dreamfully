@@ -4935,7 +4935,7 @@ p {
 }
 
 .faq-section-content {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .faq-paragraph {
@@ -10380,7 +10380,7 @@ p {
   }
 
   .sc-text-subject {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .slidecart-item-details {
@@ -13378,6 +13378,9 @@ p {
   .quick-price {
     color: #000128;
   }
+  .sc-text-subject {
+    font-size: 18px !important;
+  }
 }
 
 
@@ -13392,6 +13395,13 @@ p {
   }
 }
 
+.heading {
+  font-weight: 400;
+}
+
+.upsell-title {
+  font-weight: 400;
+}
 
 
 .cart-upsell_wrapper {
@@ -13670,4 +13680,11 @@ p {
   line-height: 150%;
   color: #000128;
   padding-bottom: 14px;
+}
+
+@supports(-webkit-text-size-adjust:none) and (not(-ms-accelerator:true)) and(not(-moz-appearance:none)) {
+  svg {
+    filter:none !important;
+  }
+
 }
