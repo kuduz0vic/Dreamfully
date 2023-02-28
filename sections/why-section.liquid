@@ -9,7 +9,7 @@
               id="w-node-_39f740e5-ebfc-7bc1-2eb6-706d7e122fc7-7e122fc0"
               class="why-card"
               block.shopify_attributes>
-              <div class="why-card-container blue">
+              <div class="why-card-container" style="background-color: {{block.settings.block-color}}">
                 <div class="why-block-contents">
                   <div class="why-heading">{{ block.settings.block_heading }}</div>
                   <p class="why-block-p">{{ block.settings.block_description | newline_to_br }}</p>
@@ -76,6 +76,10 @@
             "type": "image_picker",
             "id": "block_image",
             "label": "Block Image"
+          }, {
+            "type": "color",
+            "id": "block-color",
+            "label": "Block Color"
           }
         ]
       }

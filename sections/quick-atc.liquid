@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 {% assign product = section.settings.main-product %}
 {% capture discount %}
   {{ product.compare_at_price | minus: product.price | money }}
@@ -58,7 +60,7 @@
                 </div>
                 <div class="save-tag">Save {{ discount }}</div>
               </div>
-              <div class="quick-atc-shipping">
+              <div class="quick-atc-shipping" style="gap: 8px;">
                 <lottie-player
                   style="max-width: 21px;"
                   class="lottie-animation-2"
@@ -79,7 +81,7 @@
                     type="submit"
                     value="Add to cart"
                     class="quick-atc_button animation-start">Add To Cart - {{ product.price | money }}</button>
-                  <div class="qty-input">
+                  <div class="qty-input quick-atc_quantity">
                     <button
                       data-action="minus"
                       type="button"
