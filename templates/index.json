@@ -123,21 +123,24 @@
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": "#e1908a"
           }
         },
         "41eac3f7-dc5e-42fe-9197-1c41f809a967": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": "#5dc85d"
           }
         },
         "c41007ee-dc92-4868-a73c-adbb039f8076": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids."
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": "#1167c2"
           }
         }
       },

@@ -1,8 +1,17 @@
 {
-    "sections": {
-      "template": {
-        "type": "template-cart"
+  "sections": {
+    "template": {
+      "type": "template-cart",
+      "settings": {
+        "swiper-products": [
+          "upsell-test"
+        ],
+        "freeshipping_threshold": 4000,
+        "upsell-description": ""
       }
-    },
-    "order": ["template"]
-  }
+    }
+  },
+  "order": [
+    "template"
+  ]
+}
