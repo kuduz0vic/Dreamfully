@@ -297,12 +297,10 @@
 
 .sidecart-overlay {
   visibility: hidden;
-  transform: translateX(100%)
 }
 
 .js-my-cart-open .sidecart-overlay {
   visibility: visible;
-  transform: translateX(0%);
 }
 
 .collapse {
@@ -323,8 +321,6 @@ body.js-my-cart-open {
   .slidecart-blur {
     visibility: hidden;
     z-index: -999;
-    transition: visibility 0.2s ease;
-    transition-delay: 0.1s;
   }
 
   .hide-me[aria-expanded="true"] {
@@ -382,11 +378,11 @@ body.js-my-cart-open {
     transform: translateX(100%);
     max-width: 576px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: all 0.5;
   }
 
   .sidecart-overlay {
-    transition: visibility 0.1s ease-in-out;
+    transition: all 0.3s;
   }
 
   .sidebar-bg {
@@ -400,7 +396,7 @@ body.js-my-cart-open {
 
   .js-my-cart-open .sidecart-overlay {
     visibility: visible;
-    transition: all 0.1s;
+    transition: all 0.3s;
   }
   
   /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
