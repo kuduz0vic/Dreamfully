@@ -113,38 +113,22 @@
 }
 {% endschema %}
 
-<style>
-  [jd-cloak] {
-    display: none !important;
-  }
-</style>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 
-<script>
-  setTimeout(() => {
-    [...document.querySelectorAll('[jd-cloak]')].forEach((el) => el.removeAttribute('jd-cloak'));
-  }, 500);
-</script>
 
-<form action="{{ routes.cart_url }}" method="post">
-  <div jd-cloak>
-    <div class="sidecart-overlay" style="position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;">
+
+
+    <div class="sidecart-overlay">
 
     <div class="slidecart-blur animation-end" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
     <div id="sidecart" class="sidebar-container" data-ajax-cart-section>
       {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
       {% assign cartPriceCents = cart.total_price | plus: 0 %}
       {% assign width = cartPriceCents | times: 100 | divided_by: freeShippingPrice %}
-
+      <form action="{{ routes.cart_url }}" method="post" class="shopping-bar-sidewrapper">
       <div class="slidecart">
         <div class="slidecart-body">
           <div class="slidecart-header">
@@ -288,23 +272,14 @@
             </div>
       </div>
     </div>
+    </form>
   </div>
   </div>
-</form>
 
 
 <style>
-
-.sidecart-overlay {
-  visibility: hidden;
-}
-
-.js-my-cart-open .sidecart-overlay {
-  visibility: visible;
-}
-
-.collapse {
-  transition: height 0.5s ease !important;
+#shopify-section-sidecart {
+  position: relative;
 }
 
 .rotated-svg {
@@ -312,16 +287,9 @@
   margin-top: -5px;
 }
 
-
-
 body.js-my-cart-open {
   overflow: hidden !important;
 }
-
-  .slidecart-blur {
-    visibility: hidden;
-    z-index: -999;
-  }
 
   .hide-me[aria-expanded="true"] {
     display: none;
@@ -350,9 +318,6 @@ body.js-my-cart-open {
   .sidebar-container {
     display: flex;
   }
-
-
-
   .cart-payment-info {
     position: sticky;
     bottom: 0;
@@ -363,56 +328,73 @@ body.js-my-cart-open {
 
 
 
+.sidecart-overlay {
+  visibility: hidden;
+opacity: 0;
+transition: all .3s;
+position: fixed;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: 0%;
+z-index: 10000;
+display: flex;
+-webkit-box-pack: end;
+-webkit-justify-content: flex-end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+}
+
+.slidecart-blur {
+  position: fixed;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: 0%;
+z-index: 100;
+background-color: #0f0f0fcc;
+}
+
+
   .sidebar-container {
-    position: fixed;
-    top: 0;
-    right: 0%;
-    bottom: 0%;
-    z-index: 1001;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    transform: translateX(100%);
-    max-width: 576px;
-    opacity: 0;
-    transition: all 0.5;
+    transform: translate(100%);
+    z-index: 9999;
   }
 
-  .sidecart-overlay {
-    transition: all 0.3s;
-  }
-
-  .sidebar-bg {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
+  .shopping-bar-sidewrapper {
+    position: relative;
+display: flex;
+overflow: auto;
+width: 100%;
+height: 100%;
+min-width: 600px;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: start;
+-webkit-align-items: flex-start;
+-ms-flex-align: start;
+align-items: flex-start;
+background-color: #fff;
+box-shadow: 0 0 12px #00000029;
+z-index: 10000;
   }
 
 
-  .js-my-cart-open .sidecart-overlay {
-    visibility: visible;
-    transition: all 0.3s;
-  }
-  
-  /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
-  .js-my-cart-open .sidebar-container {
-    display: flex;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 0.5s;
-  }
-  
-  .js-my-cart-open .slidecart-blur {
-    visibility: visible;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
-  }
+.js-my-cart-open .sidecart-overlay {
+  visibility: visible;
+opacity: 1;
+transition: all .3s;
+}
+
+.js-my-cart-open .sidebar-container {
+  transform: translate(0);
+opacity: 1;
+transition: all .5s;
+}
+
 
   .cart-product-block {
     opacity: 1;
@@ -424,22 +406,3 @@ body.js-my-cart-open {
     opacity: 0.7;
   }
 </style>
-
-<script>
-  const body = document.querySelector('body');
-const sidebarContainer = document.querySelector('.sidebar-container');
-
-function addAnimationClass() {
-  if (!body.classList.contains('js-my-cart-open')) {
-    body.classList.add('js-my-cart-open');
-    sidebarContainer.addEventListener('animationend', removeAnimationClass);
-  }
-}
-
-function removeAnimationClass() {
-  body.classList.remove('js-my-cart-open');
-  sidebarContainer.removeEventListener('animationend', removeAnimationClass);
-}
-
-sidebarContainer.addEventListener('animationstart', addAnimationClass);
-</script>
