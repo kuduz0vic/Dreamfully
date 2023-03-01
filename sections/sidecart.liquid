@@ -124,11 +124,11 @@
     <div class="sidecart-overlay">
 
     <div class="slidecart-blur animation-end" data-ajax-cart-toggle-class-button="js-my-cart-open | remove"></div>
-    <div id="sidecart" class="sidebar-container" data-ajax-cart-section>
+    <div id="sidecart" class="sidebar-container" >
       {% assign freeShippingPrice = section.settings.freeshipping_threshold | plus: 0 %}
       {% assign cartPriceCents = cart.total_price | plus: 0 %}
       {% assign width = cartPriceCents | times: 100 | divided_by: freeShippingPrice %}
-      <form action="{{ routes.cart_url }}" method="post" class="shopping-bar-sidewrapper">
+      <form action="{{ routes.cart_url }}" method="post" class="shopping-bar-sidewrapper" data-ajax-cart-section>
       <div class="slidecart">
         <div class="slidecart-body">
           <div class="slidecart-header">
@@ -405,4 +405,22 @@ transition: all .5s;
   body.js-ajax-cart-request-in-progress .cart-product-block {
     opacity: 0.7;
   }
+
+
+
+  @media screen and (max-width: 479px) {
+.shopping-bar-sidewrapper {
+  max-width: 95vw;
+  min-width: 95vw;
+}
+}
+
+
+  @media screen and (max-width: 767px) {
+.shopping-bar-sidewrapper {
+  max-width: 90vw;
+  min-width: 90vw;
+}
+}
+
 </style>
