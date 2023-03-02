@@ -1,11 +1,88 @@
 {
-    "sections": {
-      "template": {
-        "type": "legal-page"
+  "sections": {
+    "contact-form": {
+      "type": "contact",
+      "blocks": {
+        "57c3216b-f286-49ed-b8a4-2030f731174b": {
+          "type": "options",
+          "settings": {
+            "option": "Option 1"
+          }
+        },
+        "263bba9f-51b0-4024-9d99-1bdb9803f741": {
+          "type": "options",
+          "settings": {
+            "option": "Option 2"
+          }
+        },
+        "add6c305-43be-44e6-a277-0a6e9649bb61": {
+          "type": "options",
+          "settings": {
+            "option": "Option 3"
+          }
+        }
       },
-      "contact-form": {
-        "type": "contact"
+      "block_order": [
+        "57c3216b-f286-49ed-b8a4-2030f731174b",
+        "263bba9f-51b0-4024-9d99-1bdb9803f741",
+        "add6c305-43be-44e6-a277-0a6e9649bb61"
+      ],
+      "settings": {
+        "title": "Contact us",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       }
     },
-    "order": ["template", "contact-form"]
-  }
+    "16923e02-df8b-4e51-9e8d-b988795d8298": {
+      "type": "why-section",
+      "blocks": {
+        "42b761ae-2599-40d1-8563-0d2202e2d00c": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        },
+        "10dbe335-cce2-44cd-8015-92db4d7accec": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        },
+        "88918f0c-688c-4362-9d5b-732b0ae7857c": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "42b761ae-2599-40d1-8563-0d2202e2d00c",
+        "10dbe335-cce2-44cd-8015-92db4d7accec",
+        "88918f0c-688c-4362-9d5b-732b0ae7857c"
+      ],
+      "settings": {
+        "heading": "Why you need the Meddybear"
+      }
+    },
+    "1ce23b6d-d5d4-47b1-bfb7-8acabdbf98f6": {
+      "type": "instagram-gallery",
+      "settings": {
+        "heading": "Mindful Moments with the Meditation Bear",
+        "description": "Follow Us On Our Socials",
+        "button_label": "Follow us",
+        "button_url": "",
+        "button_url_text": ""
+      }
+    }
+  },
+  "order": [
+    "contact-form",
+    "16923e02-df8b-4e51-9e8d-b988795d8298",
+    "1ce23b6d-d5d4-47b1-bfb7-8acabdbf98f6"
+  ]
+}
