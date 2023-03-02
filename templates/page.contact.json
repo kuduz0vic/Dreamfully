@@ -1,0 +1,11 @@
+{
+    "sections": {
+      "template": {
+        "type": "legal-page"
+      },
+      "contact-form": {
+        "type": "contact"
+      }
+    },
+    "order": ["template", "contact-form"]
+  }
