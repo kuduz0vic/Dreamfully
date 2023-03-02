@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "template": {
+      "type": "legal-page",
+      "settings": {
+        "button-label": "Shop Now",
+        "button-url": "shopify:\/\/collections\/all"
+      }
+    },
+    "cb50bb9f-d223-4459-bbff-332c75ced002": {
+      "type": "why-section",
+      "blocks": {
+        "ab9676e8-1d0d-4d35-bf43-8f4b0da09741": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        },
+        "895a53a7-58d3-4dad-9e01-188b7d89a029": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        },
+        "d05b5527-31cc-4e77-a0ac-3dd71c986554": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Teach Your Kids Mindfulness",
+            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ab9676e8-1d0d-4d35-bf43-8f4b0da09741",
+        "895a53a7-58d3-4dad-9e01-188b7d89a029",
+        "d05b5527-31cc-4e77-a0ac-3dd71c986554"
+      ],
+      "settings": {
+        "heading": "Why you need the Meddybear"
+      }
+    },
+    "564352d8-d4c1-4c19-9f72-cb34374aaa16": {
+      "type": "instagram-gallery",
+      "settings": {
+        "heading": "Mindful Moments with the Meditation Bear",
+        "description": "Follow Us On Our Socials",
+        "button_label": "Follow us",
+        "button_url": "",
+        "button_url_text": ""
+      }
+    }
+  },
+  "order": [
+    "template",
+    "cb50bb9f-d223-4459-bbff-332c75ced002",
+    "564352d8-d4c1-4c19-9f72-cb34374aaa16"
+  ]
+}

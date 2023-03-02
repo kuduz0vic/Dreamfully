@@ -1,0 +1,32 @@
+<div class="legal-page_wrapper">
+  <h1 class="legal-heading">{{ page.title }}</h1>
+  <p class="legal-content">{{ page.content }}</p>
+  <a href="{{section.settings-button-url}}" class="legal-button">{{ section.settings.button-label }}</a>
+</div>
+
+<div class="waves reverse position-inherit"><img
+    src="{{ 'reversed-wave.svg' | asset_url }}"
+    loading="lazy"
+    alt=""
+    class="desktop-img"><img
+    src="{{ 'tweede-mob-wave.svg' | asset_url }}"
+    loading="lazy"
+    alt=""
+    class="mobile-img"></div>
+
+{% schema %}
+  {
+    "name": "Blog",
+    "settings": [
+      {
+        "type": "text",
+        "id": "button-label",
+        "label": "Button Label"
+      }, {
+        "type": "url",
+        "label": "Button URL",
+        "id": "button-url"
+      }
+    ]
+  }
+{% endschema %}
