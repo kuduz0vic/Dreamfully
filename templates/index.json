@@ -186,6 +186,7 @@
       "settings": {
         "heading": "",
         "block_label": "Shop the Meddybear",
+        "main_image": "shopify:\/\/shop_images\/DSC07565.jpg",
         "block_url": "",
         "block_url_text": "Beluister nu"
       }
@@ -230,7 +231,8 @@
       ],
       "settings": {
         "heading": "De positieve effecten van meditatie voor kinderen  ",
-        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan"
+        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan",
+        "main_image": "shopify:\/\/shop_images\/DSC07509.jpg"
       }
     },
     "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055": {
