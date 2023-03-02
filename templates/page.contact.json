@@ -38,25 +38,25 @@
         "42b761ae-2599-40d1-8563-0d2202e2d00c": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block_heading": "Verbeterde nachtrust",
+            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
+            "block-color": "#fff"
           }
         },
         "10dbe335-cce2-44cd-8015-92db4d7accec": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block_description": "Meditatie zorgt voor een betere concentratie en meer balans in emoties",
+            "block-color": "#f0c7c5"
           }
         },
         "88918f0c-688c-4362-9d5b-732b0ae7857c": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block_heading": "Meer zelfvertrouwen",
+            "block_description": "Meditatie helpt bij een open en milde houding tegenover jezelf wat bijdraagt aan een positiever zelfbeeld",
+            "block-color": "#c8ccec"
           }
         }
       },
@@ -66,7 +66,7 @@
         "88918f0c-688c-4362-9d5b-732b0ae7857c"
       ],
       "settings": {
-        "heading": "Why you need the Meddybear"
+        "heading": "Maak kennis met de Meddy Bear"
       }
     },
     "1ce23b6d-d5d4-47b1-bfb7-8acabdbf98f6": {
