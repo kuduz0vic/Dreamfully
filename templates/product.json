@@ -153,7 +153,8 @@
       "type": "image-w-text",
       "settings": {
         "heading": "Een betere mentale gezondheid voor jouw kind",
-        "description": "Een betere mentale gezondheid voor jouw kind   Mediteren wordt nog vaak gezien als iets zweverigs. Daardoor profiteert niet iedereen van de voordelen die meditatie met zich meebrengt.\n\n  Door kinderen in een vroeg stadium te introduceren met meditatie, hebben ze hier de rest van hun leven plezier en profijt van.  \n\nOmdat wij begrijpen dat dit waarschijnlijk de eerste keer is dat je kind geintroduceerd wordt met meditatie mag je Meddy Bear 14 dagen gratis uitproberen. Toch niet helemaal tevreden? Dan kun je Meddy Bear retourneren."
+        "description": "Een betere mentale gezondheid voor jouw kind   Mediteren wordt nog vaak gezien als iets zweverigs. Daardoor profiteert niet iedereen van de voordelen die meditatie met zich meebrengt.\n\n  Door kinderen in een vroeg stadium te introduceren met meditatie, hebben ze hier de rest van hun leven plezier en profijt van.  \n\nOmdat wij begrijpen dat dit waarschijnlijk de eerste keer is dat je kind geintroduceerd wordt met meditatie mag je Meddy Bear 14 dagen gratis uitproberen. Toch niet helemaal tevreden? Dan kun je Meddy Bear retourneren.",
+        "main_image": "shopify:\/\/shop_images\/DSC07565_5102.jpg"
       }
     },
     "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
@@ -231,7 +232,8 @@
       ],
       "settings": {
         "heading": "Meditation by the Numbers",
-        "description": "The meditation bear is made with high-quality materials and has a soft design."
+        "description": "The meditation bear is made with high-quality materials and has a soft design.",
+        "main_image": "shopify:\/\/shop_images\/DSC07717_5456.jpg"
       }
     },
     "a9354b90-797c-4989-b7dc-a52bf02ba495": {
@@ -278,25 +280,25 @@
         "6040b76a-8749-4786-bd15-18d2db097104": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
+            "block_heading": "Introductie met meditatie",
+            "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
             "block-color": ""
           }
         },
         "a5a93068-c780-4a13-a423-934285880cea": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block_heading": "Een vriendje voor jouw kind",
+            "block_description": "Samen mediteren met Meddy Bear schept een band.",
+            "block-color": "#f0c7c5"
           }
         },
         "e5a44772-8c63-4740-963a-ca699f5824ae": {
           "type": "reason",
           "settings": {
-            "block_heading": "Teach Your Kids Mindfulness",
-            "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block_heading": "Kom tot rust",
+            "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
+            "block-color": "#c8ccec"
           }
         }
       },
