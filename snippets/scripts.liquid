@@ -122,9 +122,30 @@
       }
     }
   });
-  var productPicSlider = new Swiper('#Product-Images-Slider', { // Optional parameters
+  var productPicSlider = new Swiper('#Product-Images-Slider', {
+
+    // Optional parameters
     spaceBetween: 16,
-    slidesPerView: 1
+    slidesPerView: 1,
+    freeMode: false,
+    loop: true,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+
+// Enable lazy loading
+    lazy: true,
+
+// If we need pagination
+    pagination: {
+      el: '.swiper-pagination-pdp'
+    },
+    navigation: {
+      nextEl: '#product-right-arrow',
+      prevEl: '#product-left-arrow'
+    },
+    keyboard: {
+      enabled: true
+    }
   });
 </script>
 
