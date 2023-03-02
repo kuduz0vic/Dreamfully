@@ -44,6 +44,13 @@
         "heading": "Why you need the Meddybear"
       }
     },
+    "6a2c6db3-6ab4-4cc7-8e39-b6fb274101e1": {
+      "type": "image-w-text",
+      "settings": {
+        "heading": "Struggling to get your child to relax and fall asleep?",
+        "description": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques.With the meditation bear, your child can learn to manage stress and emotions through guided breathing and relaxation exercises. The bear's soft and cozy design makes it a comforting presence for your child to snuggle up with during bedtime or anytime they need to take a break and relax."
+      }
+    },
     "564352d8-d4c1-4c19-9f72-cb34374aaa16": {
       "type": "instagram-gallery",
       "settings": {
@@ -58,6 +65,7 @@
   "order": [
     "template",
     "cb50bb9f-d223-4459-bbff-332c75ced002",
+    "6a2c6db3-6ab4-4cc7-8e39-b6fb274101e1",
     "564352d8-d4c1-4c19-9f72-cb34374aaa16"
   ]
 }
