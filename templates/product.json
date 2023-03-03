@@ -202,28 +202,28 @@
           "type": "statistics_block",
           "settings": {
             "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "block_description": "Makkelijker in slaap vallen"
           }
         },
         "c8c3cf9e-662f-4877-9c8d-f59cadce5479": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/school_bag.svg?v=1677598442",
+            "block_description": "Minder verzuim op school"
           }
         },
         "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
           "type": "statistics_block",
           "settings": {
             "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "block_description": "Minder schermtijd"
           }
         },
         "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
           "type": "statistics_block",
           "settings": {
             "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "5-star reviews"
+            "block_description": "Meer rustmomenten"
           }
         }
       },
