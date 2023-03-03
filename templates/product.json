@@ -147,6 +147,9 @@
         "af0e7c2f-b504-487c-84b0-428da50f92f0"
       ],
       "settings": {
+        "sticky-atc_title": "",
+        "sticky-atc_shipping": "",
+        "sticky-atc_label": ""
       }
     },
     "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a": {
@@ -243,7 +246,7 @@
           "type": "review_block",
           "settings": {
             "person_name": "Marieke van der Meer",
-            "person_location": "Uden, Noord Brabant",
+            "person_location": "",
             "review": "My son absolutely loves his meditation bear! We use it every night before bed and it has really helped him relax and fall asleep faster. He even asks to use it during the day when he's feeling overwhelmed. The guided relaxation exercises are easy for him to follow and the bear is so soft and cuddly. We are so happy we found this product!"
           }
         },
