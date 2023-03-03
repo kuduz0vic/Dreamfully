@@ -290,11 +290,11 @@
     "82c82a98-3463-4f17-93a0-d72efa33f62d": {
       "type": "instagram-gallery",
       "settings": {
-        "heading": "Mindful Moments with the Meditation Bear",
-        "description": "Follow Us On Our Socials",
-        "button_label": "Follow us",
+        "heading": "Mindful Moments met Meddy Bear",
+        "description": "",
+        "button_label": "",
         "button_url": "",
-        "button_url_text": "Button"
+        "button_url_text": "Volg ons op instagram"
       }
     }
   },
