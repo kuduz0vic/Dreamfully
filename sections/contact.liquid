@@ -60,7 +60,7 @@
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'options' %}
-                  <option value="Third">{{ block.settings.option }}</option>
+                  <option class="contact-option" value="Third">{{ block.settings.option }}</option>
                 {% endcase %}
               {% endfor %}
             </select>

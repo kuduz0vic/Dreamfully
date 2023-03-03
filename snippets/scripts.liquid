@@ -217,4 +217,19 @@
   })();
 </script>
 
+<script>
+  var swiper = new Swiper("#hero-mobile_swiper", {
+    spaceBetween: 21,
+    loop: true,
+    slidesPerView: 2,
+    speed: 3000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false
+    }
+  });
+</script>
+
+
+
 {{ 'udesly-shopify.min.js' | asset_url | script_tag }}

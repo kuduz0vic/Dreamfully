@@ -1,6 +1,21 @@
 {% schema %}
   {
     "name": "Product",
+    "settings": [
+      {
+        "type": "text",
+        "id": "sticky-atc_title",
+        "label": "Sticky ATC Title"
+      }, {
+        "type": "text",
+        "id": "sticky-atc_shipping",
+        "label": "Sticky ATC Shipping"
+      }, {
+        "type": "text",
+        "id": "sticky-atc_label",
+        "label": "Sticky ATC Button Label"
+      }
+    ],
     "blocks": [
       {
         "type": "title",
@@ -430,10 +445,14 @@
                   {% when 'price' %}
                   <div class="quick-atc-price-wrapper">
                     <div class="price-wrapper" id="price-{{ section.id }}">
-                      <div class="before-price">{{ selected_variant.compare_at_price | money }}</div>
+                      {% if product.compare_at_price %}
+                        <div class="before-price">{{ selected_variant.compare_at_price | money }}</div>
+                      {% endif %}
                       <div class="price-h1 dekstop">{{ selected_variant.price | money }}</div>
                     </div>
-                    <div class="save-tag">{{ discount }}</div>
+                    {% if product.compare_at_price %}
+                      <div class="save-tag">{{ discount }}</div>
+                    {% endif %}
                   </div>
                   {% when 'shipping' %}
                   <div class="atc-shipping">
@@ -623,14 +642,22 @@
   <div class="sticky-atc_wrapper">
     <div class="sticky-inner_wrapper">
       <div class="desktop-info">
-        <div class="sticky-title">{{ product.title }}
+        <div class="sticky-title">
+          {% if section.settings.sticky-atc_title != blank %}
+            {{ section.settings.sticky-atc_title }}
+          {% else %}
+            {{ product.title }}{% endif %}
           <div class="sticky-price_wrapper-tablet">
-            <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+            {% if product.compare_at_price %}
+              <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+            {% endif %}
             <div class="sticky-price">{{ product.price | money }}</div>
           </div>
         </div>
         <div class="sticky-price_wrapper">
-          <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+          {% if product.compare_at_price %}
+            <div class="sticky-compare_price">{{ product.compare_at_price | money }}</div>
+          {% endif %}
           <div class="sticky-price">{{ product.price | money }}</div>
         </div>
       </div>
@@ -643,18 +670,18 @@
             speed="1"
             loop
             autoplay></lottie-player>
-          <div class="sticky-shipping_text">Ordered before 22:00, Tomorrow in house.</div>
+          <div class="sticky-shipping_text">{{ section.settings.sticky-atc_shipping }}</div>
         </div>
       </div>
       <button
         type="submit"
         value="Add to cart"
-        class="sticky-atc">Add To Cart - {{ product.price | money }}</button>
+        class="sticky-atc">{{ section.settings.sticky-atc_label }} - {{ product.price | money }}</button>
     </div>
     <button
       type="submit"
       value="Add to cart"
-      class="sticky-atc_mobile">Add To Cart - {{ product.price | money }}</button>
+      class="sticky-atc_mobile">{{ section.settings.sticky-atc_label }} - {{ product.price | money }}</button>
   </div>
 {% endform %}
 

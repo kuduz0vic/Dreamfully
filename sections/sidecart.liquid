@@ -108,6 +108,11 @@
 "type": "liquid",
 "id": "product-description",
 "label": "Product Description"
+}, {
+  "type": "checkbox",
+  "id": "reward-checkbox",
+  "label": "Show Rewards",
+  "default": true
 }
 ]
 }
@@ -137,12 +142,14 @@
                 src="{{'ic24-close.svg' | asset_url}}"
                 loading="lazy" alt="" class="image-8"></div>
           </div>
+          {% if section.settings.reward-checkbox %}
           <div class="slidecart-rewards">
 <p class="rewards-message">{% if freeShippingPrice <= cartPriceCents %}{{section.settings.reward-gotten}}{% else %}{{section.settings.reward-not}}{% endif %}</p>
             <div class="slidecart-progress">
               <div class="slidecart-progress-active" style="width:{{width}}%; max-width: 100%;"></div>
             </div>
           </div>
+{% endif %}
           <div class="slidecart-items">
             {% for item in cart.items %}
             <div class="slidecart-item">

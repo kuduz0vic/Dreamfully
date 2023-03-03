@@ -1,60 +1,27 @@
-<div class="ugc-hero-slider-mobile">
-
-
-  <div class="animatedugcsrowmobile">
-    {%- for block in section.blocks -%}
-      {%- if block.type == "mobile-slide" -%}
-        <div class="ugc-slide"><img
-            src="{{ block.settings.mobile-slide-image | img_url: 'master' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-            srcset="{{ block.settings.mobile-slide-image | img_url: 'master' }} 500w, {{ block.settings.mobile-slide-image | img_url: 'master' }} 612w"
-            alt=""
-            class="ugcimg">
-          <div class="ugc-emoji-mobile">{{ block.settings.mobile-slide-emoji }}</div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-
-  <div class="animatedugcsrowmobile-2">
-    {%- for block in section.blocks -%}
-      {%- if block.type == "mobile-slide" -%}
-        <div class="ugc-slide"><img
-            src="{{ block.settings.mobile-slide-image | img_url: 'master' }}"
-            loading="lazy"
-            sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
-            srcset="{{ block.settings.mobile-slide-image | img_url: 'master' }} 500w, {{ block.settings.mobile-slide-image | img_url: 'master' }} 612w"
-            alt=""
-            class="ugcimg">
-          <div class="ugc-emoji-mobile">{{ block.settings.mobile-slide-emoji }}</div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-
-  <div class="w-embed">
-    <style>
-      .ugc-hero-slider-mobile {
-        position: relative;
-        white-space: nowrap;
-        will-change: transform;
-        animation: marquee-horizontal 7s linear infinite;
-        /* manipulate the speed of the marquee by changing "40s" line above*/
-      }
-      @keyframes marquee-horizontal {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
+<div class="mobile-hero_wrapper">
+  <div id="hero-mobile_swiper" class="swiper">
+    <div class="left-side_blur"></div>
+    <div class="right-side_blur"></div>
+    <div class="swiper-wrapper hero-swiper_wrapper">
+      {%- for block in section.blocks -%}
+        {%- if block.type == "mobile-slide" -%}
+          <div class="swiper-slide mobile-hero_slide"><img
+              src="{{ block.settings.mobile-slide-image | img_url: 'master' }}"
+              loading="lazy"
+              sizes="(max-width: 479px) 44vw, (max-width: 991px) 20vw, 100vw"
+              srcset="{{ block.settings.mobile-slide-image | img_url: 'master' }} 500w, {{ block.settings.mobile-slide-image | img_url: 'master' }} 612w"
+              alt=""
+              class="mobile-hero-slide_img">
+            <div class="ugc-emoji-mobile">{{ block.settings.mobile-slide-emoji }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
+
+
+
 <div class="page-padding">
   <div class="container_v1">
     <div class="hero-inner-container">
@@ -131,7 +98,7 @@
     class="bottom-vector">
   <div class="trustpilot-bar">
     <div class="review-testblock">{{ section.settings.reviews }}</div><img
-      src="{{ 'trustpilot_1.svg' | asset_url }}"
+      src="{{ section.settings.trustpilot-svg }}"
       loading="lazy"
       height=""
       alt=""
@@ -188,6 +155,10 @@
         "type": "richtext",
         "id": "reviews",
         "label": "Amount of Reviews"
+      }, {
+        "type": "url",
+        "id": "trustpilot-svg",
+        "label": "Trust Pilot SVG"
       }
     ],
     "blocks": [
