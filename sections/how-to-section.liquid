@@ -69,13 +69,16 @@
 </script>
 
 <script>
-  var shopifyAudio = '{{section.settings.button-audio}}';
-  const audio = new Audio(shopifyAudio);
-  const buttons = document.querySelectorAll(".audio-button");
+  function playAudio() {
+    var shopifyAudio = '{{section.settings.button-audio}}';
+    const audio = new Audio(shopifyAudio);
+    audio.play();
+  }
 
+  const buttons = document.querySelectorAll(".audio-button");
   buttons.forEach(button => {
     button.addEventListener("click", () => {
-      audio.play();
+      playAudio();
     });
   });
 </script>
