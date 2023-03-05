@@ -79,14 +79,38 @@
     <script type="application/json" data-ajax-cart-configuration>
       {
       "addToCartCssClass": "js-my-cart-open"
-                                                                                                                }</script>
+                   }</script>
+
 
 
     <script type="module">
       import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
       subscribeToCartSectionsUpdate( sections => {
-                                                                                                               console.log('Sections are updated: ', sections);
-                                                                                                            });</script>
+                          console.log('Sections are updated: ', sections);
+                          $(document).ready(function() {
+      
+                          // Get the upsell title
+                                var upsellTitle = $('.upsell-title').text().trim();
+                          
+                          // Check if there is any item with matching title
+                                var hasMatchingItem = false;
+                                $('.item-title-slidecart').each(function() {
+                                  if ($(this).text().trim() === upsellTitle) {
+                                    hasMatchingItem = true;
+                                    return false; // Stop iterating
+                                  }
+                                });
+                          
+                          // Show/hide elements based on the matching item
+                                if (hasMatchingItem) {
+                                  $('.heading.upsell-heading, .sidecart-upsell_wrapper').hide();
+                                } else {
+                                  $('.heading.upsell-heading, .sidecart-upsell_wrapper').show();
+                                }
+                              });
+             
+                        });
+    </script>
 
 
 

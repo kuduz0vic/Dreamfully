@@ -270,7 +270,7 @@
                 {% assign enabled_payment_types = section.settings.payments | remove: ' ' | split: ',' %}
 
                 {%- for type in enabled_payment_types -%}
-                  {{ type | payment_type_svg_tag: class: 'payment-cart icon--full-color' }}
+                  {{ type | payment_type_svg_tag: class: 'payment-icon' }}
                 {%- endfor -%}
               </div>
             </div>
@@ -279,6 +279,12 @@
     </form>
   </div>
   </div>
+
+
+  <script>
+
+  </script>
+
 
 
 <style>
