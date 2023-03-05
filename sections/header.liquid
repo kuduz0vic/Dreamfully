@@ -45,19 +45,20 @@
 
     <a href="#" class="navbar3_tablet-menu-button w-button">{{ 't77471352' | t }}</a>
     <div class="mobile-navigation">
-      <div class="mobile-nav-heading">{{ 'tn1a2819cc' | t }}</div>
+      <div class="mobile-nav-heading">{{ section.settings.navigation-heading }}</div>
       {% for link in linklists[section.settings.main-menu_mobile].links %}
         <a href="{{link.url}}" class="mobile-link w-inline-block">{{ link.title }}</a>
       {% endfor %}
     </div>
     <div class="trustpilot-menu">
-      <div class="_12-px-right">{{ 'tn72635b8c' | t }}</div><img
-        src="{{ 'trustpilot.svg' | asset_url }}"
+      <div class="_12-px-right">{{ section.settings.header-tp_text }}</div><img
+        src="{{ section.settings.header-tp_svg }}"
         loading="lazy"
         alt=""
         class="trustpilot">
     </div>
   </nav>
+
   <div
     data-ajax-cart-toggle-class-button="js-my-cart-open"
     id="w-node-_3038ef23-23d7-da69-89ae-5f8a1c720380-1c720358"
@@ -131,6 +132,18 @@
         "type": "url",
         "id": "product-button-link",
         "label": "Product button link"
+      }, {
+        "type": "text",
+        "id": "navigation-heading",
+        "label": "Navigation Heading"
+      }, {
+        "type": "text",
+        "id": "header-tp_text",
+        "label": "TrustPilot Text"
+      }, {
+        "type": "url",
+        "id": "header-tp_svg",
+        "label": "Truspilot SVG"
       }
     ]
   }

@@ -44,7 +44,7 @@
               {%- endfor -%}
             </div>
             <div class="how-to-cta">
-              <a href="{{ section.settings.block_url }}" class="primary-button w-button">{{ section.settings.block_url_text }}</a>
+              <a href="{{ section.settings.block_url }}" class="primary-button w-button audio-button">{{ section.settings.block_url_text }}</a>
             </div>
           </div>
         </div>
@@ -67,6 +67,20 @@
   var currentSection = document.currentScript.closest('.shopify-section');
   currentSection.setAttribute("class", "how-section");
 </script>
+
+<script>
+  var shopifyAudio = '{{section.settings.button-audio}}';
+  const audio = new Audio(shopifyAudio);
+  const buttons = document.querySelectorAll(".audio-button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      audio.play();
+    });
+  });
+</script>
+
+
 
 {% schema %}
   {
@@ -105,6 +119,10 @@
         "id": "block_url_text",
         "label": "Block Url Text",
         "default": "{{ section.settings.block_label }}"
+      }, {
+        "type": "url",
+        "id": "button-audio",
+        "label": "Button Audio"
       }
     ],
     "blocks": [

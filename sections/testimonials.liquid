@@ -21,6 +21,7 @@
                     <div class="reviewer-info-wrapper">
                       <div class="reviewer-profile">
                         {%- if block.settings.person_image == nil -%}<img
+                            style="display: none;"
                             src="{{ 'avatar-image.png' | asset_url }}"
                             loading="lazy"
                             alt="">{%- else -%}<img

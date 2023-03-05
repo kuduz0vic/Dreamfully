@@ -417,7 +417,7 @@
                       height=""
                       alt=""
                       class="product-review-stars">
-                    <div class="text-block-5">{{ block.settings.amount-review }} reviews</div>
+                    <div class="text-block-5">{{ block.settings.amount-review }}</div>
                   </div>
                   {% when 'description' %}
                   <div>{{ product.description }}</div>
@@ -560,9 +560,9 @@
                 {% when 'upsell-block' %}
                 {% assign upsellproduct = block.settings.upsell-product %}
                 <div class="pdp-upsell-box">
-                  <div class="upsell-heading_desktop">{{ upsellproduct.title }}</div>
+                  <div class="upsell-heading_desktop">{{ block.settings.upsell-description }}</div>
                   <div class="upsell-box">
-                    <div class="upsell-heading_mobile">{{ upsellproduct.title }}</div>
+                    <div class="upsell-heading_mobile">{{ block.settings.upsell-description }}</div>
                     <div class="upsell-product">
                       <div class="upsell-pd-img"><img
                           src="{% if block.settings.upsell-image != blank %}{{block.settings.upsell-image | img_url: 'master' }} {% else %} {{ upsellproduct.featured_image | img_url: 'master'}} {% endif %}"
@@ -571,11 +571,7 @@
                           class="upsell-pdp-img"></div>
                       <div>
                         <div class="upsell-pdp-title">
-                          {% if block.settings.upsell-description != blank %}
-                            {{ block.settings.upsell-description }}
-                          {% else %}
-                            {{ upsellproduct.title }}
-                          {% endif %}
+                          {{ upsellproduct.title }}
                         </div>
                         <div class="upsell-pdp-price">{{ product.price | money }}</div>
                       </div>

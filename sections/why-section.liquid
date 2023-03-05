@@ -10,11 +10,19 @@
               class="why-card"
               block.shopify_attributes>
               <div class="why-card-container" style="background-color: {{block.settings.block-color}}">
-                <div class="why-block-contents">
+                <div
+                  class="why-block-contents"
+                  {%- if block.settings.block_image == nil -%}
+                  style="max-width: 100%; text-align: center; display: flex;
+                                      flex-direction: column;
+                                      justify-content: center;
+                                      align-items: center;"
+                  {% endif %}>
                   <div class="why-heading">{{ block.settings.block_heading }}</div>
                   <p class="why-block-p">{{ block.settings.block_description | newline_to_br }}</p>
                 </div>
                 {%- if block.settings.block_image == nil -%}<img
+                    style="display: none;"
                     src="{{ 'why-3-img.png' | asset_url }}"
                     loading="lazy"
                     alt=""

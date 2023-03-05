@@ -50,7 +50,7 @@
                 loading="lazy"
                 alt=""
                 class="quick-atc-review-stars">
-              <div class="text-block-4">{{ section.settings.review-number }} Reviews</div>
+              <div class="text-block-4">{{ section.settings.review-number }}</div>
             </div>
             <div class="quick-atc-area">
               <div class="quick-description">
@@ -58,10 +58,14 @@
               </div>
               <div class="quick-atc-price-wrapper">
                 <div class="price-wrapper">
-                  <div class="before-price">{{ product.compare_at_price | money }}</div>
+                  {% if product.compare_at_price %}
+                    <div class="before-price">{{ product.compare_at_price | money }}</div>
+                  {% endif %}
                   <div class="price-h1 quick-price">{{ product.price | money }}</div>
                 </div>
-                <div class="save-tag">Save {{ discount }}</div>
+                {% if product.compare_at_price %}
+                  <div class="save-tag">Save {{ discount }}</div>
+                {% endif %}
               </div>
               <div class="quick-atc-shipping" style="gap: 8px;">
                 <lottie-player
