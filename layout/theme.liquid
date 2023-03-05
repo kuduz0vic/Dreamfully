@@ -79,40 +79,69 @@
     <script type="application/json" data-ajax-cart-configuration>
       {
       "addToCartCssClass": "js-my-cart-open"
-                   }</script>
-
+                                           }</script>
 
 
     <script type="module">
       import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
-      subscribeToCartSectionsUpdate( sections => {
-                          console.log('Sections are updated: ', sections);
-                          $(document).ready(function() {
-      
-                          // Get the upsell title
-                                var upsellTitle = $('.upsell-title').text().trim();
-                          
-                          // Check if there is any item with matching title
-                                var hasMatchingItem = false;
-                                $('.item-title-slidecart').each(function() {
-                                  if ($(this).text().trim() === upsellTitle) {
-                                    hasMatchingItem = true;
-                                    return false; // Stop iterating
-                                  }
-                                });
-                          
-                          // Show/hide elements based on the matching item
-                                if (hasMatchingItem) {
-                                  $('.heading.upsell-heading, .sidecart-upsell_wrapper').hide();
-                                } else {
-                                  $('.heading.upsell-heading, .sidecart-upsell_wrapper').show();
-                                }
-                              });
-             
-                        });
+      const checkUpsellItem = () => {
+                                              // Get the upsell title
+                                              var upsellTitle = $('.sidecart-upsell_title').text().trim();
+                                                
+                                              // Check if there is any item with matching title
+                                              var hasMatchingItem = false;
+                                              $('.item-title-slidecart').each(function() {
+                                                if ($(this).text().trim() === upsellTitle) {
+                                                  hasMatchingItem = true;
+                                                  return false; // Stop iterating
+                                                }
+                                              });
+                                                
+                                              // Show/hide elements based on the matching item
+                                              if (hasMatchingItem) {
+                                                $('.upsell-heading, .sidecart-upsell_wrappepr').hide();
+                                              } else {
+                                                $('.upsell-heading, .sidecart-upsell_wrappepr').show();
+                                              }
+                                            };
+                                            
+                                            // Call the function on page load
+                                            checkUpsellItem();
+                                            
+                                            // Subscribe to cart updates
+                                            subscribeToCartSectionsUpdate(checkUpsellItem);
     </script>
 
 
+    <script type="module">
+      import { subscribeToCartSectionsUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}'
+      const checkCartUpsellItem = () => {
+                                              // Get the upsell title
+                                              var cartUpsellTitle = $('.main-cart-upsell_title').text().trim();
+                                                
+                                              // Check if there is any item with matching title
+                                              var CartHasMatchingItem = false;
+                                              $('.cart-title').each(function() {
+                                                if ($(this).text().trim() === cartUpsellTitle) {
+                                                  CartHasMatchingItem = true;
+                                                  return false; // Stop iterating
+                                                }
+                                              });
+                                                
+                                              // Show/hide elements based on the matching item
+                                              if (CartHasMatchingItem) {
+                                                $('.cart-upsell_wrapper').hide();
+                                              } else {
+                                                $('.cart-upsell_wrapper').show();
+                                              }
+                                            };
+                                            
+                                            // Call the function on page load
+                                            checkCartUpsellItem();
+                                            
+                                            // Subscribe to cart updates
+                                            subscribeToCartSectionsUpdate(checkCartUpsellItem);
+    </script>
 
   </body>
 </html>

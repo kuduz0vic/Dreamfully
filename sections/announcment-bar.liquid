@@ -1,15 +1,37 @@
-<div class="announcement-bar">{{ section.settings.announcment-text }}</div>
+<div
+  id="announcment-swiper"
+  style="padding: 10px 0px;"
+  class="announcement-bar swiper">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'announcment-text' %}
+        <div class="swiper-slide">{{ block.settings.announcment-text_slide }}</div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="announcment-button-next"><img src="{{'right-arrow.svg' | asset_url}}"></div>
+  <div class="announcment-button-prev"><img src="{{'left-arrow.svg' | asset_url}}"></div>
+</div>
+
 
 {% schema %}
   {
     "name": "Announcment Bar",
     "tag": "div",
     "class": "announcment-bar",
-    "settings": [
+    "blocks": [
       {
-        "type": "richtext",
-        "id": "announcment-text",
-        "label": "Announcment Text"
+        "name": "Announcment Text",
+        "type": "announcment-text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "announcment-text_slide",
+            "label": "Announcment Slide Text",
+            "default": "Slide 1"
+          }
+        ]
       }
     ]
   }

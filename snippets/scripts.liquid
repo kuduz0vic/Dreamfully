@@ -230,6 +230,21 @@
   });
 </script>
 
+<script>
+  var swiper = new Swiper("#announcment-swiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    navigation: {
+      nextEl: ".announcment-button-next",
+      prevEl: ".announcment-button-prev"
+    }
+  });
+</script>
 
 
 {{ 'udesly-shopify.min.js' | asset_url | script_tag }}
