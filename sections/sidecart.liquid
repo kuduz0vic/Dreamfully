@@ -267,14 +267,11 @@
                 <div>Doorgaan naar afrekenen</div>
               </button>
               <div class="sc-payment-icons">
-                <img src="{{'group-300.svg' | asset_url}}" loading="lazy" alt=""
-                  class="payment-icon"><img src="{{'apple.svg' | asset_url}}" loading="lazy" alt=""
-                  class="payment-icon"><img src="{{'google.svg' | asset_url}}" loading="lazy" alt=""
-                  class="payment-icon"><img src="{{'group-319.svg' | asset_url}}" loading="lazy" alt=""
-                  class="payment-icon"><img
-                  src="{{'group-315.svg' | asset_url}}" loading="lazy" alt="" class="payment-icon"><img src="{{'group-314.svg' | asset_url}}" loading="lazy" alt="" class="payment-icon"><img src="{{'mastercard.svg' | asset_url}}"
-                  loading="lazy" alt="" class="payment-icon"><img src="{{'group-318.svg' | asset_url}}" loading="lazy" alt=""
-                  class="payment-icon">
+                {% assign enabled_payment_types = section.settings.payments | remove: ' ' | split: ',' %}
+
+                {%- for type in enabled_payment_types -%}
+                  {{ type | payment_type_svg_tag: class: 'payment-cart icon--full-color' }}
+                {%- endfor -%}
               </div>
             </div>
       </div>
