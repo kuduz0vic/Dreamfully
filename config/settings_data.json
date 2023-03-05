@@ -3,8 +3,32 @@
     "sections": {
       "announcment-bar": {
         "type": "announcment-bar",
+        "blocks": {
+          "33e3696c-2641-4b22-acef-0637f8e63987": {
+            "type": "announcment-text",
+            "settings": {
+              "announcment-text_slide": "Slide 1"
+            }
+          },
+          "029e6011-9197-4429-8a02-609564913bef": {
+            "type": "announcment-text",
+            "settings": {
+              "announcment-text_slide": "Slide 2"
+            }
+          },
+          "dc3bf751-8c61-4b5a-96b5-cd200901a099": {
+            "type": "announcment-text",
+            "settings": {
+              "announcment-text_slide": "Slide 3"
+            }
+          }
+        },
+        "block_order": [
+          "33e3696c-2641-4b22-acef-0637f8e63987",
+          "029e6011-9197-4429-8a02-609564913bef",
+          "dc3bf751-8c61-4b5a-96b5-cd200901a099"
+        ],
         "settings": {
-          "announcment-text": "<p>Vandaag besteld? Morgen in huis.<\/p>"
         }
       },
       "header": {
