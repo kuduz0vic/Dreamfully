@@ -113,7 +113,8 @@
         "description": "Meddy Bear introduceert kinderen met de belangrijkste aspecten én voordelen van meditatie en draagt bij aan de ontwikkeling van jouw kind",
         "button_link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids",
         "button_link_text": "Bestel nu",
-        "reviews": "<p><strong>4.7\/5<\/strong> op <strong>200+<\/strong> reviews op<\/p>"
+        "reviews": "<p><strong>4.7\/5<\/strong> op <strong>200+<\/strong> reviews op<\/p>",
+        "trustpilot-svg": ""
       }
     },
     "91a3ad01-e37f-4f92-8880-08845d5d80c2": {
@@ -124,6 +125,7 @@
           "settings": {
             "block_heading": "Verbeterde nachtrust",
             "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
+            "block_image": "shopify:\/\/shop_images\/fun3.png",
             "block-color": "#ffffff"
           }
         },
@@ -139,7 +141,8 @@
           "type": "reason",
           "settings": {
             "block_heading": "Meer zelfvertrouwen",
-            "block_description": "Meditatie helpt bij een open en milde houding tegenover jezelf wat bijdraagt aan een positiever zelfbeeld",
+            "block_description": "Meditatie helpt bij een positiever zelfbeeld",
+            "block_image": "shopify:\/\/shop_images\/fun.png",
             "block-color": "#c8ccec"
           }
         }
@@ -218,7 +221,7 @@
         "38aeea61-bb7c-4687-a642-4a9a6d7c4e45": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Zen.svg?v=1677598442",
             "block_description": "Meer rustmomenten"
           }
         }
@@ -231,7 +234,7 @@
       ],
       "settings": {
         "heading": "De positieve effecten van meditatie voor kinderen  ",
-        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan",
+        "description": "<b>Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan<\/b>:",
         "main_image": "shopify:\/\/shop_images\/DSC07509.jpg"
       }
     },
@@ -243,7 +246,7 @@
         "review-number": "10",
         "shipping-text": "<p><strong>Gratis verzending<\/strong> - Vandaag besteld, morgen in huis.<\/p>",
         "upsell-description": "Voeg het meditatiekussen ook toe",
-        "product-description": "Introducing the Meditation Bear - the perfect bedtime companion for kids. Help your child relax and unwind with guided meditation and breathing exercises."
+        "product-description": "Meddy Bear introduceert kinderen met de belangrijkste voordelen van meditatie en draagt bij aan de ontwikkeling van jouw kind. Je kind leert om op de ademhaling te focussen en komt samen met Meddy Bear tot rust door een guided meditatie en afsluitend rustgevende muziek."
       }
     },
     "8a1cfeb4-c163-4ce5-9724-54830c60bedc": {
@@ -287,11 +290,11 @@
     "82c82a98-3463-4f17-93a0-d72efa33f62d": {
       "type": "instagram-gallery",
       "settings": {
-        "heading": "Mindful Moments with the Meditation Bear",
-        "description": "Follow Us On Our Socials",
-        "button_label": "Follow us",
+        "heading": "Mindful Moments met Meddy Bear",
+        "description": "",
+        "button_label": "",
         "button_url": "",
-        "button_url_text": "Button"
+        "button_url_text": "Volg ons op instagram"
       }
     }
   },

@@ -11,11 +11,11 @@
         "type": "header",
         "settings": {
           "enable_quick_shopping": true,
-          "main-menu_desktop": "main-menu",
+          "main-menu_desktop": "mobile-menu",
           "main-menu_mobile": "mobile-menu",
-          "quick-shop-title": "Quick Shop",
+          "quick-shop-title": "Shop",
           "quick-product": "the-meddybear-the-meditation-bear-for-kids",
-          "product-title": "The Meddybear",
+          "product-title": "Meddy Bear",
           "product-button-text": "Shop",
           "product-button-link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids"
         }
@@ -107,7 +107,8 @@
             "upsell-test"
           ],
           "upsell-description": "",
-          "product-description": ""
+          "product-description": "",
+          "reward-checkbox": true
         }
       }
     },
