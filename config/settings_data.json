@@ -7,19 +7,19 @@
           "33e3696c-2641-4b22-acef-0637f8e63987": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 1"
+              "announcment-text_slide": "Vandaag besteld = morgen in huis"
             }
           },
           "029e6011-9197-4429-8a02-609564913bef": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 2"
+              "announcment-text_slide": "Betaal later met Klarna"
             }
           },
           "dc3bf751-8c61-4b5a-96b5-cd200901a099": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 3"
+              "announcment-text_slide": "Altijd gratis verzending"
             }
           }
         },
