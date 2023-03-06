@@ -55,14 +55,14 @@
             "type": "footer-menu",
             "settings": {
               "main-menu_desktop": "main-menu",
-              "footer-block-title": "Column 1"
+              "footer-block-title": "Menu"
             }
           },
           "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
             "type": "footer-menu",
             "settings": {
               "main-menu_desktop": "mobile-menu",
-              "footer-block-title": "Column 2"
+              "footer-block-title": "Legal"
             }
           },
           "1d843d26-17c8-4d76-8804-b583354abf72": {
