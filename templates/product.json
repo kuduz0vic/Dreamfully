@@ -16,7 +16,7 @@
         "d528ab18-cb75-4622-88ad-2b5c7be81c14": {
           "type": "review",
           "settings": {
-            "amount-review": "160"
+            "amount-review": "14 reviews op Trustpilot"
           }
         },
         "0e83a47b-d1de-4d53-a7e5-0889b9088a42": {
@@ -44,6 +44,7 @@
         "51f4e09c-497b-4966-95e1-cd5a16957619": {
           "type": "payment_icons",
           "settings": {
+            "payments": "klarna,visa,master,american_express,maestro,shopify_pay,apple_pay,google_pay"
           }
         },
         "806c578a-bfad-4d3a-b975-37de07f551fb": {
@@ -78,8 +79,8 @@
           "type": "upsell-block",
           "settings": {
             "upsell-product": "upsell-test",
-            "upsell-description": "Het Meditatiekussen",
-            "upsell-button": "Maak je bestelling af met.."
+            "upsell-description": "Maak je bestelling af met..",
+            "upsell-button": "In winkelwagen"
           }
         },
         "c5525851-4574-4f51-9015-efbd8f1dbdaf": {
@@ -121,7 +122,7 @@
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Wat vinden anderen van Meddy Bear?",
-            "bottom-info": "<p>Hoe zie jij dit voor je? Worden hier reviews vanuit Trustpilot ingeladen?<\/p>"
+            "bottom-info": "<p>&lt;!-- TrustBox widget - Micro TrustScore --&gt;<br\/>&lt;div class=\"trustpilot-widget\" data-locale=\"nl-NL\" data-template-id=\"5419b637fa0340045cd0c936\" data-businessunit-id=\"63a5a0fca2beb30e2b69644a\" data-style-height=\"20px\" data-style-width=\"100%\" data-theme=\"light\"&gt;<br\/>  &lt;a href=\"https:\/\/nl.trustpilot.com\/review\/dreamfully.nl\" target=\"_blank\" rel=\"noopener\"&gt;Trustpilot&lt;\/a&gt;<br\/>&lt;\/div&gt;<br\/>&lt;!-- End TrustBox widget --&gt;<\/p>"
           }
         }
       },
@@ -215,14 +216,14 @@
         "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/no_phone.svg?v=1677598442",
             "block_description": "Minder schermtijd"
           }
         },
         "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
           "type": "statistics_block",
           "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Zen.svg?v=1677598442",
             "block_description": "Meer rustmomenten"
           }
         }

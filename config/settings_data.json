@@ -1,5 +1,6 @@
 {
   "current": {
+    "favicon": "shopify:\/\/shop_images\/fun4.png",
     "sections": {
       "announcment-bar": {
         "type": "announcment-bar",
@@ -7,19 +8,19 @@
           "33e3696c-2641-4b22-acef-0637f8e63987": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 1"
+              "announcment-text_slide": "Vandaag besteld = morgen in huis"
             }
           },
           "029e6011-9197-4429-8a02-609564913bef": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 2"
+              "announcment-text_slide": "Betaal later met Klarna"
             }
           },
           "dc3bf751-8c61-4b5a-96b5-cd200901a099": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Slide 3"
+              "announcment-text_slide": "Altijd gratis verzending"
             }
           }
         },
@@ -42,7 +43,7 @@
           "product-title": "Meddy Bear",
           "product-button-text": "Shop",
           "product-button-link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids",
-          "navigation-heading": "",
+          "navigation-heading": "Menu",
           "header-tp_text": "",
           "header-tp_svg": ""
         }
@@ -54,14 +55,14 @@
             "type": "footer-menu",
             "settings": {
               "main-menu_desktop": "main-menu",
-              "footer-block-title": "Column 1"
+              "footer-block-title": "Menu"
             }
           },
           "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
             "type": "footer-menu",
             "settings": {
               "main-menu_desktop": "mobile-menu",
-              "footer-block-title": "Column 2"
+              "footer-block-title": "Legal"
             }
           },
           "1d843d26-17c8-4d76-8804-b583354abf72": {

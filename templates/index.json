@@ -125,7 +125,6 @@
           "settings": {
             "block_heading": "Verbeterde nachtrust",
             "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
-            "block_image": "shopify:\/\/shop_images\/fun3.png",
             "block-color": "#ffffff"
           }
         },
@@ -142,7 +141,6 @@
           "settings": {
             "block_heading": "Meer zelfvertrouwen",
             "block_description": "Meditatie helpt bij een positiever zelfbeeld",
-            "block_image": "shopify:\/\/shop_images\/fun.png",
             "block-color": "#c8ccec"
           }
         }
@@ -190,7 +188,6 @@
         "heading": "Hoe werkt het?",
         "block_label": "Shop the Meddybear",
         "main_image": "shopify:\/\/shop_images\/DSC07565.jpg",
-        "block_url": "",
         "block_url_text": "Beluister nu",
         "button-audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Bruh_sound_effect.mp3?v=1677974979"
       }
@@ -244,7 +241,7 @@
       "settings": {
         "main-product": "the-meddybear-the-meditation-bear-for-kids",
         "product-upsell": "upsell-test",
-        "review-number": "10",
+        "review-number": "14 reviews op trustpilot.",
         "shipping-text": "<p><strong>Gratis verzending<\/strong> - Vandaag besteld, morgen in huis.<\/p>",
         "upsell-description": "Voeg het meditatiekussen ook toe",
         "product-description": "Meddy Bear introduceert kinderen met de belangrijkste voordelen van meditatie en draagt bij aan de ontwikkeling van jouw kind. Je kind leert om op de ademhaling te focussen en komt samen met Meddy Bear tot rust door een guided meditatie en afsluitend rustgevende muziek."
@@ -257,7 +254,7 @@
           "type": "review_block",
           "settings": {
             "person_name": "B. Bronkhorst",
-            "person_location": "Uden, Noord Brabant",
+            "person_location": "",
             "review": "De beer besteld en 2 dagen later al in huis. Onze dochter had echt al lang problemen met in slaap komen, we hadden al van alles geprobeerd. Maar dit werkt serieus bij haar. Het is een soort steun die ze nodig heeft, en door de focus op de beer te leggen hebben andere gedachten geen kans. Waardoor ze lekker gaat slapen. Wij zijn er heel blij mee."
           }
         },
@@ -265,7 +262,7 @@
           "type": "review_block",
           "settings": {
             "person_name": "Dirk",
-            "person_location": "Groningen, Noord Brabant",
+            "person_location": "",
             "review": "Onze zoon van 5 is gelijk grootste vriendjes met z'n Meddy Bear. Hij zit 5 tot 10 min (!) rustig voor de knuffel met z'n ogen dicht te luisteren. Wij kunnen het bijna niet geloven. Na zo'n medidatie is hij merkbaar rustiger. Ik ben heel benieuwd wat we allemaal nog gaan meemaken, maar nu al super blij met de ervaring so far. De Meddy Bear is een dikke aanrader voor ouders met een (over)actief kind"
           }
         },
@@ -273,7 +270,7 @@
           "type": "review_block",
           "settings": {
             "person_name": "Lisa",
-            "person_location": "Houten, Utrecht",
+            "person_location": "",
             "review": "De beer is nu een week bij ons. En mijn zoontje is dol op hem. Hij is 3 jaar oud dus het hele concept van mediteren begrijpt hij nog niet volledig. Hij is enthousiast omdat mama mediteert en hij nu een eigen meditatie beer heeft. Hij stopt zijn speelgoed in de ballonnen inplaats van zijn gedachtes. Maar waar het omgaat is dat hij meedoet met de meditatie en dat we nu al merken dat hij rustiger is. En minder vaak wakker wordt.\n\nIk vind het een goede tool om kindjes vanaf een jonge leeftijd kennis te laten maken met mediteren waar ze naarmate ze ouder worden steeds meer baat bij gaan hebben. De beer heeft een prettige stem en een meeslepende meditatie en ademhalingsoefening. Dit zouden ze ook moeten inzetten op peuterspeelzalen en scholen."
           }
         }
