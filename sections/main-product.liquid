@@ -153,6 +153,10 @@
             "type": "richtext",
             "id": "bottom-info",
             "label": "Info"
+          }, {
+            "type": "html",
+            "id": "bottom-info_html",
+            "label": "Info HTML"
           }
         ]
       }, {
@@ -589,7 +593,9 @@
                     <div class="product-accordion-info-container">
                       <div class="product-accordion-content">
                         <div class="accordion-richtext w-richtext">
-                          {{ block.settings.bottom-info }}
+                          {% if block.settings.bottom-info != blank %}
+                            {{ block.settings.bottom-info }}
+                         {% else %} {{ block.settings.bottom-info_html }} {% endif %}
                         </div>
                       </div>
                     </div>
