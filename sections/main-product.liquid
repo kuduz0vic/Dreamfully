@@ -595,7 +595,9 @@
                         <div class="accordion-richtext w-richtext">
                           {% if block.settings.bottom-info != blank %}
                             {{ block.settings.bottom-info }}
-                         {% else %} {{ block.settings.bottom-info_html }} {% endif %}
+                          {% else %}
+                            {{ block.settings.bottom-info_html }}
+                          {% endif %}
                         </div>
                       </div>
                     </div>
@@ -791,4 +793,9 @@
       description.style.top = null;
     }
   });
+</script>
+
+<script>
+  const trustbox = document.getElementById('trustbox');
+  window.Trustpilot.loadFromElement(trustbox);
 </script>
