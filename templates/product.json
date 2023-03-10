@@ -94,35 +94,40 @@
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Voor welke leeftijdsgroep is Meddy Bear bedoeld?",
-            "bottom-info": "<p>Meddy bear is het meest geschikt voor kinderen van 3 t\/m 12 jaar oud. De meditatie beer is niet geschikt voor kinderen jonger dan 3 jaar oud, omdat zij nog niet goed begrijpen en verstaan wat de knuffel zegt.<br\/><br\/>De meditatie beer is ook te gebruiken voor kinderen ouder dan 12 jaar en volwassenen. Iedereen kan wel een rustmoment gebruiken.<\/p>"
+            "bottom-info": "<p>Meddy bear is het meest geschikt voor kinderen van 3 t\/m 12 jaar oud. De meditatie beer is niet geschikt voor kinderen jonger dan 3 jaar oud, omdat zij nog niet goed begrijpen en verstaan wat de knuffel zegt.<br\/><br\/>De meditatie beer is ook te gebruiken voor kinderen ouder dan 12 jaar en volwassenen. Iedereen kan wel een rustmoment gebruiken.<\/p>",
+            "bottom-info_html": ""
           }
         },
         "6b20fe25-2d10-415b-ab2b-bdb9f897b07a": {
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Is Meddy Bear veilig?",
-            "bottom-info": "<p>Ja. De meditatie beer is van veilige en zachte materialen gemaakt, heeft korte haren en het batterij gedeelte is afgeschermd met een rits. De meditatie beer is CE getest en gecertificeerd.<br\/><br\/>Advies is wel om altijd goed in de gaten te houden hoe jouw kind omgaat met de meditatie beer. Lees daarom de instructies goed door voordat je met Meddy Bear aan de slag gaat.<\/p>"
+            "bottom-info": "<p>Ja. De meditatie beer is van veilige en zachte materialen gemaakt, heeft korte haren en het batterij gedeelte is afgeschermd met een rits. De meditatie beer is CE getest en gecertificeerd.<br\/><br\/>Advies is wel om altijd goed in de gaten te houden hoe jouw kind omgaat met de meditatie beer. Lees daarom de instructies goed door voordat je met Meddy Bear aan de slag gaat.<\/p>",
+            "bottom-info_html": ""
           }
         },
         "08cc3421-415a-4fe5-aa12-c5b6ba0ab7f2": {
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Werkt Meddy Bear voor kinderen met speciale behoeftes?",
-            "bottom-info": "<p>Hoewel de meditatie beer niet specifiek is getest bij kinderen met ADHD of andere speciale behoeften wijst onderzoek uit dat meditatie een positief effect kan hebben.<br\/><br\/>Daarom kan Meddy Bear een hulpmiddel zijn door meer rust te creëren in het leven van jouw kind.<\/p>"
+            "bottom-info": "<p>Hoewel de meditatie beer niet specifiek is getest bij kinderen met ADHD of andere speciale behoeften wijst onderzoek uit dat meditatie een positief effect kan hebben.<br\/><br\/>Daarom kan Meddy Bear een hulpmiddel zijn door meer rust te creëren in het leven van jouw kind.<\/p>",
+            "bottom-info_html": ""
           }
         },
         "7839e683-4d9b-4335-b259-8648287d9581": {
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Hoe lang duurt de meditatie?",
-            "bottom-info": "<p>De Meddy Bear heeft een 10 minuut durende guided meditatie met daaropvolgend 9 minuten rustige muziek. De meditatie knuffel kan gedurende de meditatie uitgezet worden.<\/p>"
+            "bottom-info": "<p>De Meddy Bear heeft een 10 minuut durende guided meditatie met daaropvolgend 9 minuten rustige muziek. De meditatie knuffel kan gedurende de meditatie uitgezet worden.<\/p>",
+            "bottom-info_html": ""
           }
         },
         "af0e7c2f-b504-487c-84b0-428da50f92f0": {
           "type": "bottom_accordion",
           "settings": {
             "bottom-title": "Wat vinden anderen van Meddy Bear?",
-            "bottom-info": "<p>&lt;!-- TrustBox widget - Micro TrustScore --&gt;<br\/>&lt;div class=\"trustpilot-widget\" data-locale=\"nl-NL\" data-template-id=\"5419b637fa0340045cd0c936\" data-businessunit-id=\"63a5a0fca2beb30e2b69644a\" data-style-height=\"20px\" data-style-width=\"100%\" data-theme=\"light\"&gt;<br\/>  &lt;a href=\"https:\/\/nl.trustpilot.com\/review\/dreamfully.nl\" target=\"_blank\" rel=\"noopener\"&gt;Trustpilot&lt;\/a&gt;<br\/>&lt;\/div&gt;<br\/>&lt;!-- End TrustBox widget --&gt;<\/p>"
+            "bottom-info": "<p>&lt;!-- TrustBox widget - Micro TrustScore --&gt;<br\/>&lt;div class=\"trustpilot-widget\" data-locale=\"nl-NL\" data-template-id=\"5419b637fa0340045cd0c936\" data-businessunit-id=\"63a5a0fca2beb30e2b69644a\" data-style-height=\"20px\" data-style-width=\"100%\" data-theme=\"light\"&gt;<br\/>  &lt;a href=\"https:\/\/nl.trustpilot.com\/review\/dreamfully.nl\" target=\"_blank\" rel=\"noopener\"&gt;Trustpilot&lt;\/a&gt;<br\/>&lt;\/div&gt;<br\/>&lt;!-- End TrustBox widget --&gt;<\/p>",
+            "bottom-info_html": ""
           }
         }
       },
@@ -148,7 +153,7 @@
         "af0e7c2f-b504-487c-84b0-428da50f92f0"
       ],
       "settings": {
-        "sticky-atc_title": "",
+        "sticky-atc_title": "Meddy Bear",
         "sticky-atc_shipping": "Vandaag besteld? Morgen in huis",
         "sticky-atc_label": "In winkelwagen"
       }
