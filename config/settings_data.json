@@ -119,7 +119,7 @@
         "type": "sidecart",
         "settings": {
           "title": "Je Winkelwagen",
-          "reward-gotten": "Rewards",
+          "reward-gotten": "",
           "reward-not": "",
           "shipping_text": "Verzending",
           "freeshipping_threshold": 4000,
@@ -137,7 +137,7 @@
           ],
           "upsell-description": "",
           "product-description": "",
-          "reward-checkbox": true
+          "reward-checkbox": false
         }
       }
     },
