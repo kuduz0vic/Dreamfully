@@ -189,36 +189,12 @@
             "question": "Wat moet ik doen als mijn vraag er niet tussen staat?",
             "answer": "Het kan natuurlijk zijn dat je nog andere vragen hebt. Stuur een mail met je vraag naar hello@dreamfully.nl en we beantwoorden deze zo snel mogelijk."
           }
-        },
-        "c8086adc-11b4-40f3-9180-ac4d7d0309c8": {
-          "type": "faq_block",
-          "settings": {
-            "question": "What types of sounds does the Meddybear have?",
-            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
-          }
-        },
-        "3062eebc-d566-49dc-a5cc-c274ddff62e3": {
-          "type": "faq_block",
-          "settings": {
-            "question": "What types of sounds does the Meddybear have?",
-            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
-          }
-        },
-        "5a30e58f-e98f-4f3b-b29a-8f744f372bff": {
-          "type": "faq_block",
-          "settings": {
-            "question": "What types of sounds does the Meddybear have?",
-            "answer": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques."
-          }
         }
       },
       "block_order": [
         "ffa83a1e-42f6-4848-9993-b6f040472ed4",
         "d139f39c-67b4-477d-9b77-3011d8884cf3",
-        "b17cc16f-ca39-4307-a8da-678f7321feda",
-        "c8086adc-11b4-40f3-9180-ac4d7d0309c8",
-        "3062eebc-d566-49dc-a5cc-c274ddff62e3",
-        "5a30e58f-e98f-4f3b-b29a-8f744f372bff"
+        "b17cc16f-ca39-4307-a8da-678f7321feda"
       ],
       "settings": {
         "heading": "Hoe gebruik ik Meddy Bear?",
