@@ -91,6 +91,13 @@
             "mobile-slide-emoji": "😴️",
             "mobile-slide-image": "shopify:\/\/shop_images\/DSC07250.jpg"
           }
+        },
+        "9e267c1c-7ae9-4b05-b77b-cfcf81091ae3": {
+          "type": "mobile-slide",
+          "settings": {
+            "mobile-slide-emoji": "😴️",
+            "mobile-slide-image": "shopify:\/\/shop_images\/DSC07521_7763_6eb4766a-9ed4-4071-846c-66af9a0c050a.jpg"
+          }
         }
       },
       "block_order": [
@@ -105,7 +112,8 @@
         "816964d3-e549-4c77-84aa-72afcbc70a15",
         "ab4666d4-21d5-45b2-a65f-86a14b46ebed",
         "a843c395-ea36-402b-930d-a59e618f9dca",
-        "443fa0d0-3627-46db-a4a2-8dee8ac91360"
+        "443fa0d0-3627-46db-a4a2-8dee8ac91360",
+        "9e267c1c-7ae9-4b05-b77b-cfcf81091ae3"
       ],
       "settings": {
         "button_label": "Shop the Meddybear",
