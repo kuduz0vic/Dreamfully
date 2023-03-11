@@ -559,7 +559,10 @@
                         <div class="upsell-pdp-title">
                           {{ upsellproduct.title }}
                         </div>
-                        <div class="upsell-pdp-price">{{ product.price | money }}</div>
+                        <div class="upsell-main-price_wrapper" style="display: flex;align-items: center;gap: 8px;">
+                          <div class="upsell-pdp-price" style="font-weight: 400;text-decoration: line-through;">{{ upsellproduct.compare_at_price | money }}</div>
+                          <div class="upsell-pdp-price" style="font-weight: 700;">{{ upsellproduct.price | money }}</div>
+                        </div>
                       </div>
                     </div>
                     <a href="#" class="upsell-atc-pdp-btn w-button">{{ block.settings.upsell-button }} - {{ upsellproduct.price | money }}</a>

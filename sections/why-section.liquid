@@ -13,10 +13,10 @@
                 <div
                   class="why-block-contents"
                   {%- if block.settings.block_image == nil -%}
-                  style="max-width: 100%; text-align: center; display: flex;
-                                      flex-direction: column;
-                                      justify-content: center;
-                                      align-items: center;"
+                  style="max-width: 100%; text-align: {{block.settings.text_aligment}}; display: flex;
+                                                                                                  flex-direction: column;
+                                                                                                  justify-content: {{block.settings.text_aligment}};
+                                                                                                  align-items: {{block.settings.text_aligment}};"
                   {% endif %}>
                   <div class="why-heading">{{ block.settings.block_heading }}</div>
                   <p class="why-block-p">{{ block.settings.block_description | newline_to_br }}</p>
@@ -75,19 +75,39 @@
             "id": "block_heading",
             "label": "Block Heading",
             "default": "Teach Your Kids Mindfulness"
-          }, {
+          },
+          {
             "type": "textarea",
             "id": "block_description",
             "label": "Block Description",
             "default": "The guided meditation sessions are designed specifically for kids."
-          }, {
+          },
+          {
             "type": "image_picker",
             "id": "block_image",
             "label": "Block Image"
-          }, {
+          },
+          {
             "type": "color",
             "id": "block-color",
             "label": "Block Color"
+          }, {
+            "type": "radio",
+            "id": "text_aligment",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              }, {
+                "value": "center",
+                "label": "Centered"
+              }, {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "left"
           }
         ]
       }

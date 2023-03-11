@@ -1,5 +1,9 @@
 <div class="page-padding">
   <div class="container_v2">
+    <audio id="myAudio" style="display: none;">
+      <source src="{{section.settings.button-audio}}" type="audio/ogg">
+      <source src="{{section.settings.button-audio}}" type="audio/mpeg">
+    </audio>
     <div class="how-inner-container">
       <div class="w-layout-grid product-details-grid">
         <div class="first-block">
@@ -44,7 +48,11 @@
               {%- endfor -%}
             </div>
             <div class="how-to-cta">
-              <a href="javascript: void(0)" class="primary-button w-button audio-button">{{ section.settings.block_url_text }}</a>
+              <a
+                href="javascript: void(0)"
+                class="primary-button w-button audio-button"
+                onclick="toggleAudio()"
+                id="audioButton">{{ section.settings.block_url_text }}</a>
             </div>
           </div>
         </div>
@@ -69,17 +77,23 @@
 </script>
 
 <script>
-  function playAudio() {
-    var shopifyAudio = '{{section.settings.button-audio}}';
-    const audio = new Audio(shopifyAudio);
-    audio.play();
+  var x = document.getElementById("myAudio");
+  var btn = document.getElementById("audioButton");
+
+  function toggleAudio() {
+    if (x.paused) {
+      x.play();
+      btn.innerHTML = "Stop afspelen";
+    } else {
+      x.pause();
+      x.currentTime = 0;
+      btn.innerHTML = "Beluister nu";
+    }
   }
 
-  const buttons = document.querySelectorAll(".audio-button");
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      playAudio();
-    });
+  x.addEventListener('ended', function() {
+    x.currentTime = 0;
+    btn.innerHTML = "Beluister nu";
   });
 </script>
 
