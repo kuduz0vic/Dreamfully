@@ -298,11 +298,63 @@
     },
     "82c82a98-3463-4f17-93a0-d72efa33f62d": {
       "type": "instagram-gallery",
+      "blocks": {
+        "7319b145-6f92-4941-8c4c-9bc912b128e0": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/Cp3CM6KoiJ1\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/1.jpg"
+          }
+        },
+        "9c302fc6-2606-452c-94d2-c234d4b04836": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/CpxnczDIJEI\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/2.jpg"
+          }
+        },
+        "4da77b80-fd04-4000-9c94-993edb6d9f3a": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/CpXTOrmKZid\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "1f11c0d5-dbd9-41a9-b400-c58971e35516": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/Co5ZbBrs36Q\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/4.jpg"
+          }
+        },
+        "dcae2f58-3bd1-4e1b-bff3-0b35d184348d": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/CopoDZVMiM7\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/5.jpg"
+          }
+        },
+        "972ba4ec-e594-44cd-8e35-35aad6cbe04e": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/www.instagram.com\/p\/Coj1Q0iMNNO\/?utm_source=ig_web_copy_link",
+            "instagram-photos": "shopify:\/\/shop_images\/6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7319b145-6f92-4941-8c4c-9bc912b128e0",
+        "9c302fc6-2606-452c-94d2-c234d4b04836",
+        "4da77b80-fd04-4000-9c94-993edb6d9f3a",
+        "1f11c0d5-dbd9-41a9-b400-c58971e35516",
+        "dcae2f58-3bd1-4e1b-bff3-0b35d184348d",
+        "972ba4ec-e594-44cd-8e35-35aad6cbe04e"
+      ],
       "settings": {
         "heading": "Mindful Moments met Meddy Bear",
         "description": "",
         "button_label": "",
-        "button_url": "",
+        "button_url": "https:\/\/www.instagram.com\/dreamfully.nl\/",
         "button_url_text": "Volg ons op instagram"
       }
     }
