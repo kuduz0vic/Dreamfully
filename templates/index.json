@@ -122,7 +122,7 @@
         "button_link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids",
         "button_link_text": "Bestel nu",
         "reviews": "<p><strong>4.7\/5<\/strong> op <strong>200+<\/strong> reviews op<\/p>",
-        "trustpilot-svg": ""
+        "trustpilot-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Trustpilot_Logo__2022.svg?v=1678788023"
       }
     },
     "91a3ad01-e37f-4f92-8880-08845d5d80c2": {
@@ -133,7 +133,8 @@
           "settings": {
             "block_heading": "Verbeterde nachtrust",
             "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
-            "block-color": "#ffffff"
+            "block-color": "#ffffff",
+            "text_aligment": "left"
           }
         },
         "41eac3f7-dc5e-42fe-9197-1c41f809a967": {
@@ -141,7 +142,8 @@
           "settings": {
             "block_heading": "Vermindert stress en angst",
             "block_description": "Meditatie zorgt voor een betere concentratie en meer balans in emoties",
-            "block-color": "#f0c7c5"
+            "block-color": "#f0c7c5",
+            "text_aligment": "left"
           }
         },
         "c41007ee-dc92-4868-a73c-adbb039f8076": {
@@ -149,7 +151,8 @@
           "settings": {
             "block_heading": "Meer zelfvertrouwen",
             "block_description": "Meditatie helpt bij een positiever zelfbeeld",
-            "block-color": "#c8ccec"
+            "block-color": "#c8ccec",
+            "text_aligment": "left"
           }
         }
       },
