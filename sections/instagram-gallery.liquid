@@ -16,50 +16,38 @@
           </style>
         </div>
       </div>
-      <div>
-        <div class="desktop-social-grid" id="instafeed"></div>
+      <div class="desktop-social-grid">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'instagram-blocks' %}
+            <a href="{{block.settings.instagram-link}}" class="social-img-wrapper-desktop w-inline-block"><img
+                src="{{ block.settings.instagram-photos | img_url: 'master' }}"
+                loading="lazy"
+                alt=""
+                class="social-img"></a>
+          {% endcase %}
+        {% endfor %}
       </div>
       <div class="instagram-swiper">
         <div id="instagram-swiper" class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="instagram-social-img-wrapper"><img
-                  src="{{ 'social-img.png' | asset_url }}"
-                  loading="lazy"
-                  alt=""
-                  class="image-7"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram-social-img-wrapper"><img
-                  src="{{ 'social-img.png' | asset_url }}"
-                  loading="lazy"
-                  alt=""
-                  class="image-7"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram-social-img-wrapper"><img
-                  src="{{ 'social-img.png' | asset_url }}"
-                  loading="lazy"
-                  alt=""
-                  class="image-7"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram-social-img-wrapper"><img
-                  src="{{ 'social-img.png' | asset_url }}"
-                  loading="lazy"
-                  alt=""
-                  class="image-7"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram-social-img-wrapper"><img
-                  src="{{ 'social-img.png' | asset_url }}"
-                  loading="lazy"
-                  alt=""
-                  class="image-7"></div>
-            </div>
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'instagram-blocks' %}
+                <div class="swiper-slide">
+                  <div class="instagram-social-img-wrapper">
+                    <a href="{{block.settings.instagram-link}}"><img
+                        src="{{ block.settings.instagram-photos | img_url: 'master' }}"
+                        loading="lazy"
+                        alt=""
+                        class="image-7"></a>
+                  </div>
+                </div>
+              {% endcase %}
+            {% endfor %}
           </div>
           <div class="swiper-drag-wrapper">
-            <div class="swiper-drag" style="max-width: 120px;"></div>
+            <div class="swiper-drag"></div>
           </div>
           <div class="swiper-arrow-overlay instagram">
             <div id="next-insta-post" class="swiper-arrow"><img
@@ -79,24 +67,8 @@
   currentSection.setAttribute("class", "instagram-section");
 </script>
 
-<script type="text/javascript" src="{{'instafeed.min.js' | asset_url}}"></script>
-<script type="text/javascript">
-  var feed = new Instafeed({
-    accessToken: 'IGQVJYaE9VblMxaXVFdHo0WHFJV0gtMHFleV80dFZA4VGZASSzN2aEp5dDV1ZA3BMTW5ORVNNU0NuajMzcDRBRjN0Vld4WUZAsSmtHWk9SeGJhZAGJfQ1FjM2I0RUFPZAndmTkdiWjRFZAm11QTBTQUhkRzVvbgZDZD',
-    template: '<a href="{{link}}" class="social-img-wrapper-desktop w-inline-block"><img src="{{image}}" loading="lazy" alt="" class="social-img"></a>'
-  });
-  feed.run();
-</script>
-
-
-
 {% schema %}
   {
-    "presets": [
-      {
-        "name": "Instagram Gallery"
-      }
-    ],
     "name": "Instagram Gallery",
     "tag": "div",
     "class": "instagram-section",
@@ -128,6 +100,23 @@
         "id": "button_url_text",
         "label": "Button Url Text",
         "default": "{{ section.settings.button_label }}"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "instagram-blocks",
+        "name": "Instagram Blocks",
+        "settings": [
+          {
+            "type": "url",
+            "id": "instagram-link",
+            "label": "Instagram Link"
+          }, {
+            "type": "image_picker",
+            "id": "instagram-photos",
+            "label": "Instagram Photos"
+          }
+        ]
       }
     ]
   }
