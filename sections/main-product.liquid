@@ -225,7 +225,7 @@
                       <div class="video-display">
                         {% for media in product.media %}
                           {% if media.media_type == 'video' %}
-                            {{ media | media_tag: autoplay: true, loop: loop, controls: true, preload: "none" | add_class: "product-img", class: "product-img" }}
+                            {{ media | media_tag: autoplay: true, loop: loop, controls: true, preload: "none" }}
                           {% endif %}
                         {% endfor %}
                       </div>
