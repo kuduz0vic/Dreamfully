@@ -13,14 +13,17 @@
             <div id="Product-Images-Slider" class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
               <div id="swiper-wrapper" class="swiper-wrapper">
                 {% for media in product.media %}
-                  {% if media.media_type != 'video' %}
+                   {% if media.media_type == 'image' %}
                   <div class="swiper-slide"><img
                       src="{{ media | img_url:'master' }}"
                       loading="lazy"
                       sizes="(max-width: 479px) 30vw, (max-width: 991px) 31vw, 15vw"
                       srcset="{{media | img_url:'master'}} 500w, {{media | img_url:'master'}} 800w, {{media | img_url:'master'}} 1080w, {{media | img_url:'master'}} 1222w"
                       alt=""
-                      class="product-img-slide"></div>
+                      class="product-img-slide"></div>{% elsif media.media_type == 'video' %}
+                       <div class="swiper-slide product-slide video-slide">
+                            {{ media | media_tag: autoplay: true, loop: loop, playsinline: true, controls: true, preload: "none" }}
+                          </div>
                     {% endif %}
                 {% endfor %}
               </div>
