@@ -22,7 +22,7 @@
                       alt=""
                       class="product-img-slide"></div>{% elsif media.media_type == 'video' %}
                        <div class="swiper-slide product-slide video-slide">
-                            {{ media | media_tag: autoplay: true, loop: true, playsinline: true, controls: true, preload: "none" }}
+                            {{ media | media_tag: autoplay: true, loop: true, playsinline: true, controls: false, preload: "none" }}
                           </div>
                     {% endif %}
                 {% endfor %}
