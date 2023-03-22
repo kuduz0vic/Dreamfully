@@ -209,53 +209,73 @@
                   {% assign tvelweth_image = images[11] %}
                   {% assign thirtheen_image = images[11] %}
 
-                  <div class="product-image"><img
-                      src="{{ first_image.src | img_url: 'master' }}"
-                      loading="lazy"
-                      sizes="(max-width: 991px) 100vw, 47vw"
-                      srcset="{{ first_image.src | img_url: 'master' }} 500w, {{ first_image.src | img_url: 'master' }} 800w, {{ first_image.src | img_url: 'master' }} 917w"
-                      alt=""
-                      class="product-img"></div>
-                  {% if product.metafields.custom.product_information_box_1_visible != blank %}
-                    <div class="product-informative-box">
-                      <div class="informative-contents">
-                        <div class="informative-product-title">{{ product.metafields.custom.product_information_box_1_title }}</div>
-                        <p>{{ product.metafields.custom.product_information_box_1_description }}</p>
+
+
+                  {% assign has_videos = false %}
+                  {% for media in product.media %}
+                    {% if media.media_type == 'video' %}
+                      {% assign has_videos = true %}
+                    {% endif %}
+                  {% endfor %}
+
+
+
+                  {% if has_videos %}
+                    <div class="product-image">
+                      <div class="video-display">
+                        {% for media in product.media %}
+                          {% if media.media_type == 'video' %}
+                            {{ media | media_tag: autoplay: true, loop: loop, controls: true, preload: "none" | add_class: "product-img", class: "product-img" }}
+                          {% endif %}
+                        {% endfor %}
                       </div>
                     </div>
-                  {% endif %}
-                  <div class="product-images-row">
-                    <div class="product-row-img"><img
-                        src="{{ second_image.src | img_url: 'master' }}"
-                        loading="lazy"
-                        sizes="(max-width: 991px) 100vw, 23vw"
-                        srcset="{{ second_image.src | img_url: 'master' }} 500w, {{ second_image.src | img_url: 'master' }} 800w, {{ second_image.src | img_url: 'master' }} 917w"
-                        alt=""
-                        class="product-img"></div>
-                    <div class="product-row-img"><img
+                    {% if product.metafields.custom.product_information_box_1_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_1_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_1_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      <div class="product-row-img">
+                        <img
+                          src="{{ first_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ first_image.src | img_url: 'master' }} 500w, {{ first_image.src | img_url: 'master' }} 800w, {{ first_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img">
+                      </div>
+                      <div class="product-row-img">
+                        <img
+                          src="{{ second_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ second_image.src | img_url: 'master' }} 500w, {{ second_image.src | img_url: 'master' }} 800w, {{ second_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img">
+                      </div>
+                    </div>
+                    {% if product.metafields.custom.product_information_box_2_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_2_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_2_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-image">
+                      <img
                         src="{{ third_image.src | img_url: 'master' }}"
                         loading="lazy"
                         sizes="(max-width: 991px) 100vw, 23vw"
                         srcset="{{ third_image.src | img_url: 'master' }} 500w, {{ third_image.src | img_url: 'master' }} 800w, {{ third_image.src | img_url: 'master' }} 917w"
                         alt=""
-                        class="product-img"></div>
-                  </div>
-                  {% if product.metafields.custom.product_information_box_2_visible != blank %}
-                    <div class="product-informative-box">
-                      <div class="informative-contents">
-                        <div class="informative-product-title">{{ product.metafields.custom.product_information_box_2_title }}</div>
-                        <p>{{ product.metafields.custom.product_information_box_2_description }}</p>
-                      </div>
+                        class="product-img">
                     </div>
-                  {% endif %}
-                  <div class="product-image"><img
-                      src="{{ fourth_image.src | img_url: 'master' }}"
-                      loading="lazy"
-                      sizes="(max-width: 991px) 100vw, 47vw"
-                      srcset="{{ fourth_image.src | img_url: 'master' }} 500w, {{ fourth_image.src | img_url: 'master' }} 800w, {{ fourth_image.src | img_url: 'master' }} 917w"
-                      alt=""
-                      class="product-img"></div>
-                  {% if product.images.size > 4 %}
+
                     {% if product.metafields.custom.product_information_box_3_visible != blank %}
                       <div class="product-informative-box">
                         <div class="informative-contents">
@@ -265,20 +285,26 @@
                       </div>
                     {% endif %}
                     <div class="product-images-row">
-                      <div class="product-row-img"><img
-                          src="{{ fifth_image.src | img_url: 'master' }}"
+                      <div class="product-row-img">
+                        <img
+                          src="{{ fourth_image.src | img_url: 'master' }}"
                           loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ fifth_image.src | img_url: 'master' }} 500w, {{ fifth_image.src | img_url: 'master' }} 800w, {{ fifth_image.src | img_url: 'master' }} 917w"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ fourth_image.src | img_url: 'master' }} 500w, {{ fourth_image.src | img_url: 'master' }} 800w, {{ fourth_image.src | img_url: 'master' }} 917w"
                           alt=""
-                          class="product-img"></div>
-                      <div class="product-row-img"><img
-                          src="{{ sixth_image.src | img_url: 'master' }}"
-                          loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ sixth_image.src | img_url: 'master' }} 500w, {{ sixth_image.src | img_url: 'master' }} 800w, {{ sixth_image.src | img_url: 'master' }} 917w"
-                          alt=""
-                          class="product-img"></div>
+                          class="product-img">
+                      </div>
+                      {% if fifth_image.src != blank %}
+                        <div class="product-row-img">
+                          <img
+                            src="{{ fifth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ fifth_image.src | img_url: 'master' }} 500w, {{ fifth_image.src | img_url: 'master' }} 800w, {{ fifth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img">
+                        </div>
+                      {% endif %}
                     </div>
                     {% if product.metafields.custom.product_information_box_4_visible != blank %}
                       <div class="product-informative-box">
@@ -288,15 +314,17 @@
                         </div>
                       </div>
                     {% endif %}
-                    <div class="product-image"><img
-                        src="{{ seventh_image.src | img_url: 'master' }}"
-                        loading="lazy"
-                        sizes="(max-width: 991px) 100vw, 47vw"
-                        srcset="{{ seventh_image.src | img_url: 'master' }} 500w, {{ seventh_image.src | img_url: 'master' }} 800w, {{ seventh_image.src | img_url: 'master' }} 917w"
-                        alt=""
-                        class="product-img"></div>
-                  {% endif %}
-                  {% if product.images.size > 7 %}
+                    {% if sixth_image.src != blank %}
+                      <div class="product-image">
+                        <img
+                          src="{{ sixth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ sixth_image.src | img_url: 'master' }} 500w, {{ sixth_image.src | img_url: 'master' }} 800w, {{ sixth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img">
+                      </div>
+                    {% endif %}
                     {% if product.metafields.custom.product_information_box_5_visible != blank %}
                       <div class="product-informative-box">
                         <div class="informative-contents">
@@ -306,20 +334,28 @@
                       </div>
                     {% endif %}
                     <div class="product-images-row">
-                      <div class="product-row-img"><img
-                          src="{{ eigth_image.src | img_url: 'master' }}"
-                          loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ eigth_image.src | img_url: 'master' }} 500w, {{ eigth_image.src | img_url: 'master' }} 800w, {{ eigth_image.src | img_url: 'master' }} 917w"
-                          alt=""
-                          class="product-img"></div>
-                      <div class="product-row-img"><img
-                          src="{{ nine_image.src | img_url: 'master' }}"
-                          loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ nine_image.src | img_url: 'master' }} 500w, {{ nine_image.src | img_url: 'master' }} 800w, {{ nine_image.src | img_url: 'master' }} 917w"
-                          alt=""
-                          class="product-img"></div>
+                      {% if seventh_image.src != blank %}
+                        <div class="product-row-img">
+                          <img
+                            src="{{ seventh_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 47vw"
+                            srcset="{{ seventh_image.src | img_url: 'master' }} 500w, {{ seventh_image.src | img_url: 'master' }} 800w, {{ seventh_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img">
+                        </div>
+                      {% endif %}
+                      {% if eight_image.src != blank %}
+                        <div class="product-row-img">
+                          <img
+                            src="{{ eigth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ eigth_image.src | img_url: 'master' }} 500w, {{ eigth_image.src | img_url: 'master' }} 800w, {{ eigth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img">
+                        </div>
+                      {% endif %}
                     </div>
                     {% if product.metafields.custom.product_information_box_6_visible != blank %}
                       <div class="product-informative-box">
@@ -329,16 +365,18 @@
                         </div>
                       </div>
                     {% endif %}
-                    <div class="product-image"><img
-                        src="{{ tenth_image.src | img_url: 'master' }}"
-                        loading="lazy"
-                        sizes="(max-width: 991px) 100vw, 47vw"
-                        srcset="{{ tenth_image.src | img_url: 'master' }} 500w, {{ tenth_image.src | img_url: 'master' }} 800w, {{ tenth_image.src | img_url: 'master' }} 917w"
-                        alt=""
-                        class="product-img"></div>
-                  {% endif %}
+                    {% if nineth_image.src != blank %}
+                      <div class="product-image">
+                        <img
+                          src="{{ nine_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ nine_image.src | img_url: 'master' }} 500w, {{ nine_image.src | img_url: 'master' }} 800w, {{ nine_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img">
+                      </div>
+                    {% endif %}
 
-                  {% if product.images.size > 10 %}
                     {% if product.metafields.custom.product_information_box_7_visible != blank %}
                       <div class="product-informative-box">
                         <div class="informative-contents">
@@ -348,20 +386,28 @@
                       </div>
                     {% endif %}
                     <div class="product-images-row">
-                      <div class="product-row-img"><img
-                          src="{{ eleveenth_image.src | img_url: 'master' }}"
-                          loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ eleveenth_image.src | img_url: 'master' }} 500w, {{ eleveenth_image.src | img_url: 'master' }} 800w, {{ eleveenth_image.src | img_url: 'master' }} 917w"
-                          alt=""
-                          class="product-img"></div>
-                      <div class="product-row-img"><img
-                          src="{{ tvelweth_image.src | img_url: 'master' }}"
-                          loading="lazy"
-                          sizes="(max-width: 991px) 100vw, 23vw"
-                          srcset="{{ tvelweth_image.src | img_url: 'master' }} 500w, {{ tvelweth_image.src | img_url: 'master' }} 800w, {{ tvelweth_image.src | img_url: 'master' }} 917w"
-                          alt=""
-                          class="product-img"></div>
+                      {% if tenth_image.src != blank %}
+                        <div class="product-row-img">
+                          <img
+                            src="{{ tenth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 47vw"
+                            srcset="{{ tenth_image.src | img_url: 'master' }} 500w, {{ tenth_image.src | img_url: 'master' }} 800w, {{ tenth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img">
+                        </div>
+                      {% endif %}
+                      {% if eleveenth_image.src != blank %}
+                        <div class="product-row-img">
+                          <img
+                            src="{{ eleveenth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ eleveenth_image.src | img_url: 'master' }} 500w, {{ eleveenth_image.src | img_url: 'master' }} 800w, {{ eleveenth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img">
+                        </div>
+                      {% endif %}
                     </div>
                     {% if product.metafields.custom.product_information_box_8_visible != blank %}
                       <div class="product-informative-box">
@@ -371,13 +417,213 @@
                         </div>
                       </div>
                     {% endif %}
-                    <div class="product-image"><img
-                        src="{{ thirtheen_image.src | img_url: 'master' }}"
-                        loading="lazy"
-                        sizes="(max-width: 991px) 100vw, 47vw"
-                        srcset="{{ thirtheen_image.src | img_url: 'master' }} 500w, {{ thirtheen_image.src | img_url: 'master' }} 800w, {{ thirtheen_image.src | img_url: 'master' }} 917w"
-                        alt=""
-                        class="product-img"></div>
+                    {% if tvelweth_image.src != blank %}
+                      <div class="product-image">
+                        <img
+                          src="{{ tvelweth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 23vw"
+                          srcset="{{ tvelweth_image.src | img_url: 'master' }} 500w, {{ tvelweth_image.src | img_url: 'master' }} 800w, {{ tvelweth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img">
+                      </div>
+                    {% endif %}
+
+
+
+                  {% else %}
+
+                    {% if first_image.src != blank %}
+                      <div class="product-image">
+                        <img
+                          src="{{ first_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ first_image.src | img_url: 'master' }} 500w, {{ first_image.src | img_url: 'master' }} 800w, {{ first_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    {% endif %}
+                    {% if product.metafields.custom.product_information_box_1_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_1_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_1_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      {% if second_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ second_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ second_image.src | img_url: 'master' }} 500w, {{ second_image.src | img_url: 'master' }} 800w, {{ second_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                      {% if third_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ third_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ third_image.src | img_url: 'master' }} 500w, {{ third_image.src | img_url: 'master' }} 800w, {{ third_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                    </div>
+                    {% if product.metafields.custom.product_information_box_2_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_2_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_2_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if fourth_image.src != blank %}
+                      <div class="product-image"><img
+                          src="{{ fourth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ fourth_image.src | img_url: 'master' }} 500w, {{ fourth_image.src | img_url: 'master' }} 800w, {{ fourth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    {% endif %}
+                    {% if product.metafields.custom.product_information_box_3_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_3_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_3_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      {% if fifth_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ fifth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ fifth_image.src | img_url: 'master' }} 500w, {{ fifth_image.src | img_url: 'master' }} 800w, {{ fifth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                      {% if sixth_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ sixth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ sixth_image.src | img_url: 'master' }} 500w, {{ sixth_image.src | img_url: 'master' }} 800w, {{ sixth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                    </div>
+                    {% if product.metafields.custom.product_information_box_4_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_4_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_4_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if seventh_image.src != blank %}
+                      <div class="product-image"><img
+                          src="{{ seventh_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ seventh_image.src | img_url: 'master' }} 500w, {{ seventh_image.src | img_url: 'master' }} 800w, {{ seventh_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    {% endif %}
+                    {% if product.metafields.custom.product_information_box_5_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_5_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_5_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      {% if eight_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ eigth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ eigth_image.src | img_url: 'master' }} 500w, {{ eigth_image.src | img_url: 'master' }} 800w, {{ eigth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                      {% if nineth_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ nineth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ nineth_image.src | img_url: 'master' }} 500w, {{ nineth_image.src | img_url: 'master' }} 800w, {{ nineth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                    </div>
+                    {% if product.metafields.custom.product_information_box_6_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_6_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_6_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if tenth_image.src != blank %}
+                      <div class="product-image"><img
+                          src="{{ tenth_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ tenth_image.src | img_url: 'master' }} 500w, {{ tenth_image.src | img_url: 'master' }} 800w, {{ tenth_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    {% endif %}
+                    {% if product.metafields.custom.product_information_box_7_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_7_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_7_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    <div class="product-images-row">
+                      {% if eleveenth_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ eleveenth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ eleveenth_image.src | img_url: 'master' }} 500w, {{ eleveenth_image.src | img_url: 'master' }} 800w, {{ eleveenth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                      {% if tvelweth_image.src != blank %}
+                        <div class="product-row-img"><img
+                            src="{{ tvelweth_image.src | img_url: 'master' }}"
+                            loading="lazy"
+                            sizes="(max-width: 991px) 100vw, 23vw"
+                            srcset="{{ tvelweth_image.src | img_url: 'master' }} 500w, {{ tvelweth_image.src | img_url: 'master' }} 800w, {{ tvelweth_image.src | img_url: 'master' }} 917w"
+                            alt=""
+                            class="product-img"></div>
+                      {% endif %}
+                    </div>
+                    {% if product.metafields.custom.product_information_box_8_visible != blank %}
+                      <div class="product-informative-box">
+                        <div class="informative-contents">
+                          <div class="informative-product-title">{{ product.metafields.custom.product_information_box_8_title }}</div>
+                          <p>{{ product.metafields.custom.product_information_box_8_description }}</p>
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if thirtheen_image.src != blank %}
+                      <div class="product-image"><img
+                          src="{{ thirtheen_image.src | img_url: 'master' }}"
+                          loading="lazy"
+                          sizes="(max-width: 991px) 100vw, 47vw"
+                          srcset="{{ thirtheen_image.src | img_url: 'master' }} 500w, {{ thirtheen_image.src | img_url: 'master' }} 800w, {{ thirtheen_image.src | img_url: 'master' }} 917w"
+                          alt=""
+                          class="product-img"></div>
+                    {% endif %}
+
                   {% endif %}
 
                 </div>

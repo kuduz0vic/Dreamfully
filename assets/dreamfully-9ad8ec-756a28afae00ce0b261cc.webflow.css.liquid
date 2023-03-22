@@ -14070,13 +14070,20 @@ p {
 }
 
 @media only screen and (min-width: 479px) {
-.trustpilot-bar {
-  max-width: 450px;
-  width: 100%;
-}
+  .trustpilot-bar {
+    max-width: 450px;
+    width: 100%;
+  }
   .trustpilot-img {
-  max-width: 120px;
+    max-width: 120px;
   }
 }
 
 
+.video-display video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
