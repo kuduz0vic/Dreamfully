@@ -325,6 +325,7 @@
     },
     "1aeace6b-03c5-4033-8716-b660131661d4": {
       "type": "instagram-gallery",
+      "disabled": true,
       "blocks": {
         "e9d33b51-28e8-4d30-90ed-fa1d92915dd4": {
           "type": "instagram-blocks",
