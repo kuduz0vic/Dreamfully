@@ -116,5 +116,44 @@
       "submit": "Submit",
       "close": "Close search"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "page_title": "Afrekenen",
+        "error_page_title": "Fout",
+        "skip_to_content": "Overslaan",
+        "breadcrumb": "Breadcrumbs",
+        "continue_button_label": "Verder gaan",
+        "complete_purchase_button_label": "Bestelling afmaken",
+        "pay_now_button_label": "Verder naar betalen",
+        "authenticate_purchase_button_label": "Authenticeer betaling",
+        "edit_link_label": "Wijzigen",
+        "all_rights_reserved": "Alle rechten voorbehouden - Dreamfully 2023",
+        "print_policies_link_label": "Print",
+        "cart": "Winkelwagen",
+        "close_modal_label": "Sluietn",
+        "close_notice_label": "Sluiten",
+        "expand_notice_label": "Meer weergeven",
+        "continue_to_shipping_method": "Verder naar verzenden",
+        "continue_to_payment_method": "Verder naar betalen",
+        "continue_to_review": "Bestelling bekijken",
+        "back_to_cart": "Terug naar winkelwagen",
+        "back_to_contact_information": "Terug naar contactinformatie",
+        "back_to_shipping_method": "Terug naar verzendmethode",
+        "back_to_payment_method": "Terug naar betalen",
+        "choose_shipping_method": "Kies een verzendmethode",
+        "choose_payment_method": "Kies een betaalmethode",
+        "choose_billing_address": "Kies een factuuradres",
+        "contact_us_html": "Neem contact met ons op voor meer informatie",
+        "autocomplete_title": "Suggesties",
+        "autocomplete_single_item": "1 beschikbaar",
+        "autocomplete_multi_item": "{{number}} beschikbaar",
+        "autocomplete_selection": "{{number}} van de {{total}}",
+        "autocomplete_close": "Sluit suggesties",
+        "tooltip_accessibility_label": "Meer informatie",
+        "full_price": "Volledige prijs:"
+      }
+    }
   }
 }
