@@ -1,8 +1,10 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/fun4.png",
-    "checkout_body_background_color": "#f5f5f5",
+    "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#f5f5f5",
+    "checkout_accent_color": "#000128",
+    "checkout_button_color": "#e1908a",
     "sections": {
       "announcment-bar": {
         "type": "announcment-bar",
