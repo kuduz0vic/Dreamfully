@@ -294,7 +294,9 @@
         "credit_card_start_month": "Begin maand",
         "credit_card_start_year": "Begin jaar",
         "delete_customer_mandate_modal_confirm": "Kaart verwijderen",
-        "delete_customer_mandate_modal_cancel": "Annuleren"
+        "delete_customer_mandate_modal_cancel": "Annuleren",
+        "same_billing_address_label": "Zelfde als verzendadres",
+        "different_billing_address_label": "Gebruik een ander factuuradres"
       }
     }
   }
