@@ -44,7 +44,7 @@
         "51f4e09c-497b-4966-95e1-cd5a16957619": {
           "type": "payment_icons",
           "settings": {
-            "payments": "ideal, bancontact, klarna,sofort, visa,master,american_express,maestro,"
+            "payments": "ideal, bancontact, klarna, visa,master,american_express,maestro,"
           }
         },
         "806c578a-bfad-4d3a-b975-37de07f551fb": {
