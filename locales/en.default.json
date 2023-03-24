@@ -285,7 +285,16 @@
       "payment": {
         "title": "Betaalgegevens",
         "card_security_notice": "Alle betalingen zijn SSL beveiligd.",
-        "card_information_notice": "Alle betalingen zijn SSL beveiligd. Je kaartgegevens worden nooit opgeslagen"
+        "card_information_notice": "Alle betalingen zijn SSL beveiligd. Je kaartgegevens worden nooit opgeslagen",
+        "name_on_card_label": "Naam op kaart",
+        "name_on_card_placeholder": "Naam op kaart",
+        "card_expired": "Verlopen",
+        "card_expiry_label": "Vervaldatum (MM \/ YY)",
+        "card_expiry_placeholder": "Vervaldatum (MM \/ YY)",
+        "credit_card_start_month": "Begin maand",
+        "credit_card_start_year": "Begin jaar",
+        "delete_customer_mandate_modal_confirm": "Kaart verwijderen",
+        "delete_customer_mandate_modal_cancel": "Annuleren"
       }
     }
   }
