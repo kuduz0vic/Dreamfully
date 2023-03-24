@@ -213,6 +213,22 @@
         "sign_in_link_label": "Inloggen",
         "sign_out_link_label": "Uitloggen",
         "save_my_information_label": "Bewaar mijn info"
+      },
+      "stock": {
+        "page_title": "Voorraadproblemen",
+        "title": "Uitverkocht",
+        "items_unavailable_notice": "Een paar items waren niet meer op voorraad.",
+        "product_column_header": "Producten",
+        "quantity_column_header": "Aantal",
+        "price_column_header": "Prijs",
+        "status_column_header": "Status",
+        "removed_from_cart_notice": "Verwijderd uit winkelwagen",
+        "sold_out_label": "Uitverkocht",
+        "reduced_label": "Verlaagd",
+        "reduced_with_quantity_label": "Slechts {{ quantity_available }} op voorraad",
+        "remove_from_cart_button_label": "Verwijderd uit winkelwagen",
+        "continue_shopping_button_label": "Doorgaan",
+        "go_back_to_cart_button_label": "Terug naar winkelwagen"
       }
     }
   }
