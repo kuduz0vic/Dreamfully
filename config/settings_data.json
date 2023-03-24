@@ -154,6 +154,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "15016193144043674625": {
+        "type": "shopify:\/\/apps\/fafix\/blocks\/app-embed\/a74c89dc-be66-4989-b56d-d281ecef63d5",
+        "disabled": false,
+        "settings": {
+          "pixel_id": ""
+        }
+      }
+    }
   }
 }
