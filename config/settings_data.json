@@ -36,8 +36,8 @@
         "type": "header",
         "settings": {
           "enable_quick_shopping": true,
-          "main-menu_desktop": "mobile-menu",
-          "main-menu_mobile": "mobile-menu",
+          "main-menu_desktop": "",
+          "main-menu_mobile": "",
           "quick-shop-title": "Shop",
           "quick-product": "the-meddybear-the-meditation-bear-for-kids",
           "product-title": "Meddy Bear",
@@ -62,36 +62,39 @@
           "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
             "type": "footer-menu",
             "settings": {
-              "main-menu_desktop": "mobile-menu",
+              "main-menu_desktop": "",
               "footer-block-title": "Legal"
             }
           },
           "1d843d26-17c8-4d76-8804-b583354abf72": {
             "type": "facebook-icon",
             "settings": {
-              "facebook-link": ""
+              "facebook-link": "https:\/\/www.facebook.com\/Dreamfully.nl"
             }
           },
           "0ca9f526-b2f8-4d14-82cd-ad8c09703d78": {
             "type": "instagram-icon",
             "settings": {
-              "instagram-link": ""
+              "instagram-link": "https:\/\/instagram.com\/dreamfully.nl"
             }
           },
           "f2059caa-d3b7-4749-88cc-2eeb0e0ca7fe": {
             "type": "twitter-icon",
+            "disabled": true,
             "settings": {
               "twitter-link": ""
             }
           },
           "a778d74c-0877-4fd2-8b11-b9564a9b00d2": {
             "type": "linkedin-icon",
+            "disabled": true,
             "settings": {
               "linkedin-link": ""
             }
           },
           "b0d88903-c678-4314-84a8-f6e439f6795f": {
             "type": "youtube-icon",
+            "disabled": true,
             "settings": {
               "youtube-link": ""
             }
