@@ -6,7 +6,7 @@
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
-    "checkout_sidebar_background_color": "#000",
+    "checkout_sidebar_background_color": "#f5f5f5",
     "checkout_accent_color": "#000",
     "checkout_button_color": "#e1908a",
     "sections": {
