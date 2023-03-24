@@ -240,9 +240,9 @@
         "17fa070d-a45b-4052-9bea-b6f81a36cebb"
       ],
       "settings": {
-        "heading": "Meditation by the Numbers",
-        "description": "The meditation bear is made with high-quality materials and has a soft design.",
-        "main_image": "shopify:\/\/shop_images\/DSC07717_5456.jpg"
+        "heading": "De positieve effecten van meditatie voor kinderen  ",
+        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan:",
+        "main_image": "shopify:\/\/shop_images\/DSC07250.jpg"
       }
     },
     "a9354b90-797c-4989-b7dc-a52bf02ba495": {
@@ -325,6 +325,17 @@
     },
     "1aeace6b-03c5-4033-8716-b660131661d4": {
       "type": "instagram-gallery",
+      "blocks": {
+        "e9d33b51-28e8-4d30-90ed-fa1d92915dd4": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/instagram.com\/dreamfully.nl"
+          }
+        }
+      },
+      "block_order": [
+        "e9d33b51-28e8-4d30-90ed-fa1d92915dd4"
+      ],
       "settings": {
         "heading": "Mindful Moments met Meddy Bear",
         "description": "",
