@@ -269,6 +269,11 @@
         "confirmation_number_label": "Bevestiging # {{ confirmation_number }}",
         "percent_off_shipping": "{{ percent }}% van de verzending af",
         "amount_off_shipping": "{{ amount }} van de verzending af"
+      },
+      "shipping": {
+        "title": "Verzending",
+        "shipping_method_title": "Verzendmethode",
+        "free_rate_label": "Gratis"
       }
     }
   }
