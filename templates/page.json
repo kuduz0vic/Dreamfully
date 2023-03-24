@@ -9,13 +9,15 @@
     },
     "cb50bb9f-d223-4459-bbff-332c75ced002": {
       "type": "why-section",
+      "disabled": true,
       "blocks": {
         "ab9676e8-1d0d-4d35-bf43-8f4b0da09741": {
           "type": "reason",
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
             "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block-color": "",
+            "text_aligment": "left"
           }
         },
         "895a53a7-58d3-4dad-9e01-188b7d89a029": {
@@ -23,7 +25,8 @@
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
             "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block-color": "",
+            "text_aligment": "left"
           }
         },
         "d05b5527-31cc-4e77-a0ac-3dd71c986554": {
@@ -31,7 +34,8 @@
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
             "block_description": "The guided meditation sessions are designed specifically for kids.",
-            "block-color": ""
+            "block-color": "",
+            "text_aligment": "left"
           }
         }
       },
@@ -46,6 +50,7 @@
     },
     "6a2c6db3-6ab4-4cc7-8e39-b6fb274101e1": {
       "type": "image-w-text",
+      "disabled": true,
       "settings": {
         "heading": "Struggling to get your child to relax and fall asleep?",
         "description": "Our meditation bear is here to help! Designed specifically for kids, this cuddly companion is a fun and interactive way to teach your child mindfulness and relaxation techniques.With the meditation bear, your child can learn to manage stress and emotions through guided breathing and relaxation exercises. The bear's soft and cozy design makes it a comforting presence for your child to snuggle up with during bedtime or anytime they need to take a break and relax."
@@ -53,6 +58,7 @@
     },
     "564352d8-d4c1-4c19-9f72-cb34374aaa16": {
       "type": "instagram-gallery",
+      "disabled": true,
       "settings": {
         "heading": "Mindful Moments with the Meditation Bear",
         "description": "Follow Us On Our Socials",
