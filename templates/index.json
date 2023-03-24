@@ -119,7 +119,7 @@
         "button_label": "Shop the Meddybear",
         "heading": "Breng rust in de wereld van jouw kind",
         "description": "Meddy Bear introduceert kinderen met de belangrijkste aspecten én voordelen van meditatie en draagt bij aan de ontwikkeling van jouw kind",
-        "button_link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids",
+        "button_link": "shopify:\/\/products\/meddy-bear",
         "button_link_text": "Bestel nu",
         "reviews": "<p><strong>4.1\/5<\/strong> uit <strong>15<\/strong> reviews op<\/p>",
         "trustpilot-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Trustpilot_Logo__2022.svg?v=1678788023"
@@ -250,7 +250,7 @@
     "3ee3a14a-f9d5-4b96-a3cb-f02e098b2055": {
       "type": "quick-atc",
       "settings": {
-        "main-product": "the-meddybear-the-meditation-bear-for-kids",
+        "main-product": "meddy-bear",
         "product-upsell": "upsell-test",
         "review-number": "14 reviews op trustpilot.",
         "shipping-text": "<p><strong>Gratis verzending<\/strong> - Vandaag besteld, morgen in huis.<\/p>",
