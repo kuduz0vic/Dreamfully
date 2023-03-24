@@ -249,7 +249,7 @@
         "shipping_label": "Verzending",
         "pickup_label": "Ophalen",
         "tip_label": "Fooi",
-        "calculating_shipping": "Uitrekenen..",
+        "calculating_shipping": "Berkenen..",
         "shipping_default_value": "Berekend bij de volgende stap",
         "shipping_pending_message": "Nog niet beschikbaaar",
         "shipping_policy_link": "Verzendkosten",
