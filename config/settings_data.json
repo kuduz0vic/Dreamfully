@@ -1,8 +1,7 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/fun4.png",
-    "checkout_header_image": "shopify:\/\/shop_images\/6.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_Dreamfully.svg",
+    "checkout_header_image": "shopify:\/\/shop_images\/Logo_Dreamfully.jpg",
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#f5f5f5",
     "checkout_accent_color": "#000",
