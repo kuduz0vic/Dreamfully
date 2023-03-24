@@ -16,7 +16,7 @@
         "d528ab18-cb75-4622-88ad-2b5c7be81c14": {
           "type": "review",
           "settings": {
-            "amount-review": "14 reviews op Trustpilot"
+            "amount-review": "15 reviews op Trustpilot"
           }
         },
         "0e83a47b-d1de-4d53-a7e5-0889b9088a42": {
@@ -291,7 +291,8 @@
           "settings": {
             "block_heading": "Introductie met meditatie",
             "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
-            "block-color": ""
+            "block-color": "",
+            "text_aligment": "left"
           }
         },
         "a5a93068-c780-4a13-a423-934285880cea": {
@@ -299,7 +300,8 @@
           "settings": {
             "block_heading": "Een vriendje voor jouw kind",
             "block_description": "Samen mediteren met Meddy Bear schept een band.",
-            "block-color": "#f0c7c5"
+            "block-color": "#f0c7c5",
+            "text_aligment": "left"
           }
         },
         "e5a44772-8c63-4740-963a-ca699f5824ae": {
@@ -307,7 +309,8 @@
           "settings": {
             "block_heading": "Kom tot rust",
             "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
-            "block-color": "#c8ccec"
+            "block-color": "#c8ccec",
+            "text_aligment": "left"
           }
         }
       },
