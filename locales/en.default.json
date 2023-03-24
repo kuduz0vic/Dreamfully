@@ -258,7 +258,7 @@
         "total_label": "Totaal",
         "total_outstanding_label": "Openstaande bedrag",
         "partial_total_label": "Totaal",
-        "free_total_label": "Gratis totaal",
+        "free_total_label": "Gratis verzending",
         "paid_label": "Betaald",
         "payment_due_label": "Betaald op",
         "description_label": "Beschrijving",
@@ -274,6 +274,13 @@
         "title": "Verzending",
         "shipping_method_title": "Verzendmethode",
         "free_rate_label": "Gratis"
+      },
+      "processing": {
+        "redirecting_page_title": "Doorverbinden..",
+        "redirecting_title": "Doorverbinden..",
+        "continue_to_payment_gateway_button_label": "Door naar betalen",
+        "continue_to_payment_gateway_button_label_error": "Betaalinformatie updaten",
+        "page_title": "Order processen"
       }
     }
   }
