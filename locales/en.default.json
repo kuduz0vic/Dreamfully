@@ -283,7 +283,9 @@
         "page_title": "Order processen"
       },
       "payment": {
-        "title": "Betaalgegevens"
+        "title": "Betaalgegevens",
+        "card_security_notice": "Alle betalingen zijn SSL beveiligd.",
+        "card_information_notice": "Alle betalingen zijn SSL beveiligd. Je kaartgegevens worden nooit opgeslagen"
       }
     }
   }
