@@ -1,6 +1,7 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/fun4.png",
+    "checkout_body_background_color": "#000",
     "sections": {
       "announcment-bar": {
         "type": "announcment-bar",
