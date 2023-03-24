@@ -69,6 +69,7 @@
           },
           "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
             "type": "footer-menu",
+            "disabled": true,
             "settings": {
               "main-menu_desktop": "",
               "footer-block-title": "Legal"
