@@ -132,7 +132,7 @@
         "all_rights_reserved": "Alle rechten voorbehouden - Dreamfully 2023",
         "print_policies_link_label": "Print",
         "cart": "Winkelwagen",
-        "close_modal_label": "Sluietn",
+        "close_modal_label": "Sluiten",
         "close_notice_label": "Sluiten",
         "expand_notice_label": "Meer weergeven",
         "continue_to_shipping_method": "Verder naar verzenden",
@@ -152,7 +152,16 @@
         "autocomplete_selection": "{{number}} van de {{total}}",
         "autocomplete_close": "Sluit suggesties",
         "tooltip_accessibility_label": "Meer informatie",
-        "full_price": "Volledige prijs:"
+        "full_price": "Volledige prijs:",
+        "forwarding_indicator": {
+          "new_window": "Opent in een nieuw venster",
+          "external": "Opent op een externe website",
+          "external_and_new_window": "Opent externe website in nieuw venster"
+        },
+        "errors": {
+          "session_identifier_not_unique_error": "Er ging iets mis tijdens de betaling, probeer het opnieuw",
+          "line_item_limit_reached": "Het maximale aantal producten is bereikt"
+        }
       },
       "contact": {
         "title": "Informatie",
@@ -270,7 +279,8 @@
         "percent_off_shipping": "{{ percent }}% van de verzending af",
         "amount_off_shipping": "{{ amount }} van de verzending af",
         "expand_order_summary": "Laat besteloverzicht zien",
-        "vat_label_html": "Waarvan {{ amount }} in BTW."
+        "vat_label_html": "Waarvan {{ amount }} in BTW.",
+        "collapse_order_summary": "Verberg besteloverzicht"
       },
       "shipping": {
         "title": "Verzending",
