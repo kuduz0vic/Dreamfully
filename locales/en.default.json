@@ -309,7 +309,9 @@
         "thank_you_title": "Je bestelling is bevestigd.",
         "thank_you_confirmed_order_with_email": "Je ontvangt spoedig een bevestigingsmail met je order nummer",
         "order_status_updates_with_email": "Je ontvangt verzendinformatie via de mail.",
-        "order_status_updates_with_email_and_phone": "Je ontvangt verzendinformatie via de mail."
+        "order_status_updates_with_email_and_phone": "Je ontvangt verzendinformatie via de mail.",
+        "order_updates_title": "Updates over je bestelling",
+        "order_updates_description_html": "Updates worden gestuurd naar {{ customer_contact }}"
       }
     }
   }
