@@ -311,7 +311,9 @@
         "order_status_updates_with_email": "Je ontvangt verzendinformatie via de mail.",
         "order_status_updates_with_email_and_phone": "Je ontvangt verzendinformatie via de mail.",
         "order_updates_title": "Updates over je bestelling",
-        "order_updates_description_html": "Updates worden gestuurd naar {{ customer_contact }}"
+        "order_updates_description_html": "Updates worden gestuurd naar {{ customer_contact }}",
+        "customer_information_title": "Klantinformatie",
+        "contact_information_title": "Contact informatie"
       }
     }
   }
