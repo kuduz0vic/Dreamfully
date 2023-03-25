@@ -268,7 +268,8 @@
         "product_image_label": "Productafbeelding",
         "confirmation_number_label": "Bevestiging # {{ confirmation_number }}",
         "percent_off_shipping": "{{ percent }}% van de verzending af",
-        "amount_off_shipping": "{{ amount }} van de verzending af"
+        "amount_off_shipping": "{{ amount }} van de verzending af",
+        "expand_order_summary": "Laat besteloverzicht zien"
       },
       "shipping": {
         "title": "Verzending",
