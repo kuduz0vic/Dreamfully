@@ -269,7 +269,8 @@
         "confirmation_number_label": "Bevestiging # {{ confirmation_number }}",
         "percent_off_shipping": "{{ percent }}% van de verzending af",
         "amount_off_shipping": "{{ amount }} van de verzending af",
-        "expand_order_summary": "Laat besteloverzicht zien"
+        "expand_order_summary": "Laat besteloverzicht zien",
+        "vat_label_html": "Waarvan {{ amount }} in BTW."
       },
       "shipping": {
         "title": "Verzending",
