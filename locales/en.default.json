@@ -304,6 +304,12 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Stuur mij een e-mail met nieuws en aanbiedingen"
+      },
+      "thank_you": {
+        "thank_you_title": "Je bestelling is bevestigd.",
+        "thank_you_confirmed_order_with_email": "Je ontvangt spoedig een bevestigingsmail met je order nummer",
+        "order_status_updates_with_email": "Je ontvangt verzendinformatie via de mail.",
+        "order_status_updates_with_email_and_phone": "Je ontvangt verzendinformatie via de mail."
       }
     }
   }
