@@ -313,7 +313,12 @@
         "order_updates_title": "Updates over je bestelling",
         "order_updates_description_html": "Updates worden gestuurd naar {{ customer_contact }}",
         "customer_information_title": "Klantinformatie",
-        "contact_information_title": "Contact informatie"
+        "contact_information_title": "Contact informatie",
+        "billing_address_title": "Factuuradres",
+        "shipping_address_title": "Verzendadres",
+        "payment_method_title": "Betaalmethode",
+        "shipping_method_title": "Verzendmethode",
+        "tracking_number": "Track & Trace nummer:"
       }
     }
   }
