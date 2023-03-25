@@ -301,6 +301,9 @@
         "billing_address_title": "Factuurgegevens",
         "billing_address_description": "Selecteer het adres dat bij je betaalgegevens past.",
         "offsite_gateway_redirect_hint": "Na het klikken op \"{{ button_label }}\", wordt je doorgelinked naar {{ gateway_label }} om je bestelling veilig af te ronden."
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Stuur mij een e-mail met nieuws en aanbiedingen"
       }
     }
   }
