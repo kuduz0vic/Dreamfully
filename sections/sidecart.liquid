@@ -113,6 +113,16 @@
   "id": "reward-checkbox",
   "label": "Show Rewards",
   "default": true
+},{
+"type": "textarea",
+"id": "upsell-title",
+"default": "Finish my Order",
+"label": "Upsell Title"
+},{
+"type": "textarea",
+"id": "upsell-button_label",
+"default": "Add to Cart",
+"label": "Upsell Button Label"
 }
 ]
 }
@@ -233,7 +243,7 @@
             {% endfor %}
           </div>
           {% for product in section.settings.swiper-products %}
-           <h1 class="heading upsell-heading">Finish My Order</h1>
+           <h1 class="heading upsell-heading">{{section.settings.upsell-title}}</h1>
           <div class="sidecart-upsell_wrappepr">
             <div class="upsell-block"><img
                 src="{{product.featured_image | img_url: 'master'}}"
@@ -247,7 +257,7 @@
             </div>
             <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}"
             type="submit"
-            data-ajax-cart-request-button class="upsell-cart_button w-button">Add To Cart - {{product.price | money}}</a>
+            data-ajax-cart-request-button class="upsell-cart_button w-button">{{section.settings.upsell-button_label}} - {{product.price | money}}</a>
           </div>
         {% endfor %}
         </div>

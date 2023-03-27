@@ -1,7 +1,9 @@
 <div class="legal-page_wrapper">
   <h1 class="legal-heading">{{ page.title }}</h1>
-  <p class="legal-content">{{ page.content }}</p>
-  <a href="{{section.settings-button-url}}" class="legal-button">{{ section.settings.button-label }}</a>
+  <div class="legal-content">{{ page.content }}</div>
+  {% if section.settings.button-label != blank %}
+    <a href="{{section.settings-button-url}}" class="legal-button">{{ section.settings.button-label }}</a>
+  {% endif %}
 </div>
 
 <div class="waves reverse position-inherit"><img

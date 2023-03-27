@@ -11,7 +11,7 @@
         {% form 'contact', class: 'contact2_form' %}
           <div class="form-field-2col">
             <div class="form-field-wrapper">
-              <label for="Contact-2-First-Name-2" class="field-label">First name</label><input
+              <label for="Contact-2-First-Name-2" class="field-label">{{ section.settings.label-name }}</label><input
                 type="text"
                 class="form-input-2 w-input"
                 maxlength="256"
@@ -20,7 +20,7 @@
                 placeholder=""
                 required=""></div>
             <div class="form-field-wrapper">
-              <label for="Contact-2-Last-Name" class="field-label">Last name</label><input
+              <label for="Contact-2-Last-Name" class="field-label">{{ section.settings.label-surname }}</label><input
                 type="text"
                 class="form-input-2 w-input"
                 maxlength="256"
@@ -31,7 +31,7 @@
           </div>
           <div class="form-field-2col is-mobile-1col">
             <div class="form-field-wrapper">
-              <label for="Contact-2-Email-2" class="field-label">Email</label><input
+              <label for="Contact-2-Email-2" class="field-label">{{ section.settings.label-email }}</label><input
                 type="email"
                 class="form-input-2 w-input"
                 maxlength="256"
@@ -40,7 +40,7 @@
                 placeholder=""
                 required=""></div>
             <div class="form-field-wrapper">
-              <label for="Contact-2-Phone" class="field-label">Phone number</label><input
+              <label for="Contact-2-Phone" class="field-label">{{ section.settings.label-phone }}</label><input
                 type="tel"
                 class="form-input-2 w-input"
                 maxlength="256"
@@ -50,7 +50,7 @@
                 required=""></div>
           </div>
           <div class="form-field-wrapper">
-            <label for="Contact-2-Select" class="field-label">Choose a topic</label>
+            <label for="Contact-2-Select" class="field-label">{{ section.settings.label-topic }}</label>
             <select
               id="Contact-2-Select"
               name="Contact-2-Select"
@@ -66,9 +66,9 @@
             </select>
           </div>
           <div class="form-field-wrapper">
-            <label for="Contact-2-Message" class="field-label">Message</label>
+            <label for="Contact-2-Message" class="field-label">{{ section.settings.label-message }}</label>
             <textarea
-              placeholder="Type your message..."
+              placeholder="{{section.settings.message-placeholder}}"
               maxlength="5000"
               name="contact[body]"
               id="message"
@@ -108,10 +108,59 @@
         "type": "text",
         "id": "title",
         "label": "Title"
-      }, {
+      },
+      {
         "type": "textarea",
         "id": "description",
         "label": "Description"
+      },
+      {
+        "type": "textarea",
+        "id": "titel",
+        "label": "Titel",
+        "default": "Contact us"
+      },
+      {
+        "type": "textarea",
+        "id": "paragraph",
+        "label": "Paragraph",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }, {
+        "type": "text",
+        "id": "label-name",
+        "label": "Label Name"
+      }, {
+        "type": "text",
+        "id": "label-surname",
+        "label": "Label Surname"
+      }, {
+        "type": "text",
+        "id": "label-email",
+        "label": "Label Email"
+      }, {
+        "type": "text",
+        "id": "label-phone",
+        "label": "Label Phone"
+      }, {
+        "type": "text",
+        "id": "label-topic",
+        "label": "Label Topic"
+      }, {
+        "type": "text",
+        "id": "label-message",
+        "label": "Label Message"
+      }, {
+        "type": "text",
+        "id": "option-placeholder",
+        "label": "Option Placeholder"
+      }, {
+        "type": "text",
+        "id": "message-placeholder",
+        "label": "Message Placeholder"
+      }, {
+        "type": "text",
+        "id": "button-label",
+        "label": "Button Label"
       }
     ],
     "blocks": [

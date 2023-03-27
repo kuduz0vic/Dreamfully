@@ -1,6 +1,19 @@
 <div bind="7a320698-45a4-7695-6ba4-34e0771c8bab" class="footer">
     <div class="page-padding">
       <div class="container_v2">
+
+      {% assign footer_menu_count = 0 %}
+
+{% comment %}
+Loop through all the blocks in the footer
+{% endcomment %}
+{% for block in section.blocks %}
+  {% if block.type == 'footer-menu' %}
+    {% assign footer_menu_count = footer_menu_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+        {% if footer_menu_count >= 2 %}
         <div class="w-layout-grid footer-top-content">
           <div class="w-layout-grid footer-left-wrapper">
             <div>
@@ -32,7 +45,7 @@
             {% form 'customer' %}
             <div bind="7a320698-45a4-7695-6ba4-34e0771c8bda" class="footer-form-block w-form">
               <div id="email-form" class="footer-form" aria-label="Email Form">
-              <input type="email" class="form-input w-input" maxlength="256" name="contact[email]" placeholder="Enter your email" id="email-2" required="" />
+              <input type="email" class="form-input w-input" maxlength="256" name="contact[email]" placeholder="{{section.settings.email-placeholder}}" id="email-2" required="" />
                 <input type="submit" value="Subscribe" class="secondairy-button w-button" />
                 </div>
               <div class="success-message w-form-done">
@@ -45,6 +58,54 @@
             {% endform %}
           </div>
         </div>
+
+        {% else %}
+
+
+        <div class="w-layout-grid footer-left-wrapper">
+            <div>
+              <div class="text-weight-semibold">{{section.settings.left-side_title}}</div>
+              <div class="footer-p">{{section.settings.left-side_description}}</div>
+              <a bind="7a320698-45a4-7695-6ba4-34e0771c8bb5" href="{{section.settings.left-side-button_url}}" class="secondairy-button w-button">{{section.settings.left-side-button_label}}</a>
+            </div>
+
+            {%- for block in section.blocks -%}
+              {%- if block.type == "footer-menu" -%}
+            <div class="footer2_link-list">
+              <div class="margin-bottom margin-xsmall">
+                <div class="text-weight-semibold">{{block.settings.footer-block-title}}</div>
+              </div>
+              {% for link in linklists[block.settings.main-menu_desktop].links %}
+              <a href="{{link.url}}" class="footer2_link">{{link.title}}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+          {% endfor %}
+          <div id="w-node-_7a320698-45a4-7695-6ba4-34e0771c8bd3-771c8bab" class="footer-right-wrapper">
+            <div class="margin-bottom margin-xsmall">
+              <div class="text-weight-semibold">{{section.settings.right-side_title}}</div>
+            </div>
+            <div class="margin-bottom margin-xsmall is-small-mobile">
+              <div class="footer-p">{{section.settings.right-side_description}}</div>
+            </div>
+            {% form 'customer' %}
+            <div bind="7a320698-45a4-7695-6ba4-34e0771c8bda" class="footer-form-block w-form">
+              <div id="email-form" class="footer-form" aria-label="Email Form">
+              <input type="email" class="form-input w-input" maxlength="256" name="contact[email]" placeholder="{{section.settings.email-placeholder}}" id="email-2" required="" />
+                <input type="submit" value="Subscribe" class="secondairy-button w-button" />
+                </div>
+              <div class="success-message w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="error-message w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+            {% endform %}
+          </div>
+        </div>
+           {% endif %}
+
         <div class="footer-bottom-content">
           <div class="w-layout-grid footer2_legal-list">
             <div id="w-node-_7a320698-45a4-7695-6ba4-34e0771c8be7-771c8bab" class="footer2_credit-text">2023 © Dreamfully B.V. • Development by EcomTraffic ✨.</div>
@@ -130,6 +191,11 @@
         "id": "right-side_description",
         "label": "Right Side Description",
         "default": "Join our newsletter to stay up to date on features and releases."
+      },
+      {
+        "type": "text",
+        "label": "E-mail Placeholder",
+        "id": "email-placeholder"
       }
     ],
       "blocks": [
