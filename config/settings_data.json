@@ -44,8 +44,8 @@
         "type": "header",
         "settings": {
           "enable_quick_shopping": true,
-          "main-menu_desktop": "",
-          "main-menu_mobile": "",
+          "main-menu_desktop": "desktop-menu",
+          "main-menu_mobile": "mobile-menu",
           "quick-shop-title": "Shop",
           "quick-product": "meddy-bear",
           "product-title": "Meddy Bear",
