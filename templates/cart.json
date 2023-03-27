@@ -4,7 +4,7 @@
       "type": "template-cart",
       "settings": {
         "swiper-products": [
-          "upsell-test"
+          "meddy-cushion"
         ],
         "freeshipping_threshold": 4000,
         "upsell-description": ""

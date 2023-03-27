@@ -16,7 +16,7 @@
         "d528ab18-cb75-4622-88ad-2b5c7be81c14": {
           "type": "review",
           "settings": {
-            "amount-review": "14 reviews op Trustpilot"
+            "amount-review": "15 reviews op Trustpilot"
           }
         },
         "0e83a47b-d1de-4d53-a7e5-0889b9088a42": {
@@ -44,7 +44,7 @@
         "51f4e09c-497b-4966-95e1-cd5a16957619": {
           "type": "payment_icons",
           "settings": {
-            "payments": "klarna,visa,master,american_express,maestro,shopify_pay,apple_pay,google_pay,"
+            "payments": "ideal, bancontact, klarna, visa,master,american_express,maestro,"
           }
         },
         "806c578a-bfad-4d3a-b975-37de07f551fb": {
@@ -72,13 +72,13 @@
           "type": "top_accordion",
           "settings": {
             "top-title": "De voordelen van Dreamfully",
-            "top-info": "<p>Meddy Bear ontmoet graag nieuwe vriendjes. Daarom verzenden we alle bestellingen snel, zodat Meddy Bear niet te lang hoeft te wachten.<br\/><br\/>🇳🇱: Op werkdagen <strong>vóór 23:59u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op maandag geleverd.<br\/><br\/>🇧🇪: Op werkdagen <strong>vóór 22:30u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op dinsdag geleverd.<br\/><br\/>Alle bestellingen worden gratis verzonden.<br\/><br\/>Meddy Bear moet soms even wennen. Daarom kun je Meddy Bear 14 dagen gratis uitproberen. <\/p>"
+            "top-info": "<p>Meddy Bear ontmoet graag nieuwe vriendjes. Daarom verzenden we alle bestellingen snel, zodat Meddy Bear niet te lang hoeft te wachten.<br\/><br\/>🇳🇱: Op werkdagen <strong>vóór 23:45u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op maandag geleverd.<br\/><br\/>🇧🇪: Op werkdagen <strong>vóór 22:30u besteld<\/strong> = <strong>morgen bezorgd<\/strong>. Bestel je in het weekend? Dan wordt je bestelling op dinsdag geleverd.<br\/><br\/>Alle bestellingen worden gratis verzonden.<br\/><br\/>Meddy Bear moet soms even wennen. Daarom kun je Meddy Bear 14 dagen gratis uitproberen. <\/p>"
           }
         },
         "cff04a63-b3f8-4252-99cb-a193a84c5a42": {
           "type": "upsell-block",
           "settings": {
-            "upsell-product": "upsell-test",
+            "upsell-product": "meddy-cushion",
             "upsell-description": "Maak je bestelling af met..",
             "upsell-button": "In winkelwagen"
           }
@@ -240,9 +240,9 @@
         "17fa070d-a45b-4052-9bea-b6f81a36cebb"
       ],
       "settings": {
-        "heading": "Meditation by the Numbers",
-        "description": "The meditation bear is made with high-quality materials and has a soft design.",
-        "main_image": "shopify:\/\/shop_images\/DSC07717_5456.jpg"
+        "heading": "De positieve effecten van meditatie voor kinderen  ",
+        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan:",
+        "main_image": "shopify:\/\/shop_images\/DSC07250.jpg"
       }
     },
     "a9354b90-797c-4989-b7dc-a52bf02ba495": {
@@ -291,7 +291,8 @@
           "settings": {
             "block_heading": "Introductie met meditatie",
             "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
-            "block-color": ""
+            "block-color": "",
+            "text_aligment": "left"
           }
         },
         "a5a93068-c780-4a13-a423-934285880cea": {
@@ -299,7 +300,8 @@
           "settings": {
             "block_heading": "Een vriendje voor jouw kind",
             "block_description": "Samen mediteren met Meddy Bear schept een band.",
-            "block-color": "#f0c7c5"
+            "block-color": "#f0c7c5",
+            "text_aligment": "left"
           }
         },
         "e5a44772-8c63-4740-963a-ca699f5824ae": {
@@ -307,7 +309,8 @@
           "settings": {
             "block_heading": "Kom tot rust",
             "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
-            "block-color": "#c8ccec"
+            "block-color": "#c8ccec",
+            "text_aligment": "left"
           }
         }
       },
@@ -322,11 +325,23 @@
     },
     "1aeace6b-03c5-4033-8716-b660131661d4": {
       "type": "instagram-gallery",
+      "disabled": true,
+      "blocks": {
+        "e9d33b51-28e8-4d30-90ed-fa1d92915dd4": {
+          "type": "instagram-blocks",
+          "settings": {
+            "instagram-link": "https:\/\/instagram.com\/dreamfully.nl"
+          }
+        }
+      },
+      "block_order": [
+        "e9d33b51-28e8-4d30-90ed-fa1d92915dd4"
+      ],
       "settings": {
-        "heading": "Mindful Moments met Meddy Bear",
+        "heading": "Volg Dreamfully op Instagram",
         "description": "",
-        "button_label": "Volg ons op instagram",
-        "button_url": "",
+        "button_label": "Volg nu",
+        "button_url": "https:\/\/instagram.com\/dreamfully.nl",
         "button_url_text": "Button"
       }
     }

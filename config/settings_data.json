@@ -1,6 +1,14 @@
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/fun4.png",
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32_9a51567b-f178-48cf-a7ab-9014634e7307.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/Logo_Dreamfully_3.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_Dreamfully.jpg",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_sidebar_background_color": "#f5f5f5",
+    "checkout_accent_color": "#000",
+    "checkout_button_color": "#000128",
     "sections": {
       "announcment-bar": {
         "type": "announcment-bar",
@@ -8,7 +16,7 @@
           "33e3696c-2641-4b22-acef-0637f8e63987": {
             "type": "announcment-text",
             "settings": {
-              "announcment-text_slide": "Vandaag besteld = morgen in huis"
+              "announcment-text_slide": "Op werkdagen besteld = morgen in huis"
             }
           },
           "029e6011-9197-4429-8a02-609564913bef": {
@@ -36,10 +44,10 @@
         "type": "header",
         "settings": {
           "enable_quick_shopping": true,
-          "main-menu_desktop": "mobile-menu",
+          "main-menu_desktop": "desktop-menu",
           "main-menu_mobile": "mobile-menu",
           "quick-shop-title": "Shop",
-          "quick-product": "the-meddybear-the-meditation-bear-for-kids",
+          "quick-product": "meddy-bear",
           "product-title": "Meddy Bear",
           "product-image": "shopify:\/\/shop_images\/fun.png",
           "product-button-text": "Shop",
@@ -61,37 +69,41 @@
           },
           "cc5de487-31b3-4a2d-b0d3-f2cbb3579d0c": {
             "type": "footer-menu",
+            "disabled": true,
             "settings": {
-              "main-menu_desktop": "mobile-menu",
+              "main-menu_desktop": "",
               "footer-block-title": "Legal"
             }
           },
           "1d843d26-17c8-4d76-8804-b583354abf72": {
             "type": "facebook-icon",
             "settings": {
-              "facebook-link": ""
+              "facebook-link": "https:\/\/www.facebook.com\/Dreamfully.nl"
             }
           },
           "0ca9f526-b2f8-4d14-82cd-ad8c09703d78": {
             "type": "instagram-icon",
             "settings": {
-              "instagram-link": ""
+              "instagram-link": "https:\/\/instagram.com\/dreamfully.nl"
             }
           },
           "f2059caa-d3b7-4749-88cc-2eeb0e0ca7fe": {
             "type": "twitter-icon",
+            "disabled": true,
             "settings": {
               "twitter-link": ""
             }
           },
           "a778d74c-0877-4fd2-8b11-b9564a9b00d2": {
             "type": "linkedin-icon",
+            "disabled": true,
             "settings": {
               "linkedin-link": ""
             }
           },
           "b0d88903-c678-4314-84a8-f6e439f6795f": {
             "type": "youtube-icon",
+            "disabled": true,
             "settings": {
               "youtube-link": ""
             }
@@ -107,12 +119,12 @@
           "b0d88903-c678-4314-84a8-f6e439f6795f"
         ],
         "settings": {
-          "left-side_title": "Questions?",
-          "left-side_description": "We’re here to help.",
-          "left-side-button_label": "Contact Us!",
+          "left-side_title": "Vragen?",
+          "left-side_description": "We helpen je graag",
+          "left-side-button_label": "Neem contact op",
           "left-side-button_url": "",
-          "right-side_title": "Subscribe",
-          "right-side_description": "Join our newsletter to stay up to date on features and releases."
+          "right-side_title": "Aanmelden",
+          "right-side_description": "Meld je aan en blijf op de hoogte van Dreamfully"
         }
       },
       "sidecart": {
@@ -130,10 +142,10 @@
           "free_from2": ")",
           "maak_af": "Eenmalige Deal!",
           "total": "Totaal",
-          "checkout_btn": "Veilig Afrekenen",
-          "payments": "klarna,visa,master,american_express,maestro,shopify_pay,apple_pay,google_pay,",
+          "checkout_btn": "Veilig afrekenen",
+          "payments": "ideal, bancontact, klarna,visa,master,american_express,maestro",
           "swiper-products": [
-            "upsell-test"
+            "meddy-cushion"
           ],
           "upsell-description": "",
           "product-description": "",
@@ -143,6 +155,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "15016193144043674625": {
+        "type": "shopify:\/\/apps\/fafix\/blocks\/app-embed\/a74c89dc-be66-4989-b56d-d281ecef63d5",
+        "disabled": false,
+        "settings": {
+          "pixel_id": "353924819403034"
+        }
+      }
+    }
   }
 }
