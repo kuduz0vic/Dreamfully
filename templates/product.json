@@ -200,7 +200,8 @@
         "heading": "But how does it work?",
         "block_label": "Shop the Meddybear",
         "block_url_text": "Button",
-        "button-audio": ""
+        "button-audio": "",
+        "waves-visible": false
       }
     },
     "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
