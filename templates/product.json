@@ -172,22 +172,22 @@
         "476599eb-58a7-4994-aa08-a5276b1f8415": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Focus op ademhaling",
+            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten"
           }
         },
         "c382eb70-bbe8-4b09-ae23-c2136c296a62": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Guided Meditatie",
+            "block_description": "De guided meditatie neemt kinderen mee in een verhaal om hun hoofd leeg te maken"
           }
         },
         "75bf476e-957b-4e5a-949a-05c5f679c481": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Cuddle.",
-            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+            "block_heading": "Rustgevende muziek",
+            "block_description": "De rustgevende muziek brengt kinderen tot rust en zorgt er misschien wel voor dat ze zachtjes in slaap vallen"
           }
         }
       },
@@ -197,10 +197,11 @@
         "75bf476e-957b-4e5a-949a-05c5f679c481"
       ],
       "settings": {
-        "heading": "But how does it work?",
-        "block_label": "Shop the Meddybear",
-        "block_url_text": "Button",
-        "button-audio": "",
+        "heading": "Hoe werkt het?",
+        "block_label": "Shop the Meddy Bear",
+        "main_image": "shopify:\/\/shop_images\/DSC07565.jpg",
+        "block_url_text": "Beluister nu",
+        "button-audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/sneakpeek-meddybear.mp3?v=1679647606",
         "waves-visible": false
       }
     },
