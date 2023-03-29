@@ -166,6 +166,43 @@
         "main_image": "shopify:\/\/shop_images\/DSC07565_5102.jpg"
       }
     },
+    "74846396-b09e-40bb-a343-01219b347ca5": {
+      "type": "how-to-section",
+      "blocks": {
+        "476599eb-58a7-4994-aa08-a5276b1f8415": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        },
+        "c382eb70-bbe8-4b09-ae23-c2136c296a62": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        },
+        "75bf476e-957b-4e5a-949a-05c5f679c481": {
+          "type": "feature_block",
+          "settings": {
+            "block_heading": "Cuddle.",
+            "block_description": "The meditation bear is made with high-quality materials and has a soft design."
+          }
+        }
+      },
+      "block_order": [
+        "476599eb-58a7-4994-aa08-a5276b1f8415",
+        "c382eb70-bbe8-4b09-ae23-c2136c296a62",
+        "75bf476e-957b-4e5a-949a-05c5f679c481"
+      ],
+      "settings": {
+        "heading": "But how does it work?",
+        "block_label": "Shop the Meddybear",
+        "block_url_text": "Button",
+        "button-audio": ""
+      }
+    },
     "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
       "type": "faq-section",
       "blocks": {
@@ -349,6 +386,7 @@
   "order": [
     "template",
     "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a",
+    "74846396-b09e-40bb-a343-01219b347ca5",
     "3f0ab3ec-1832-4a6a-a615-4793a4311657",
     "ede47aa0-a9a6-4214-8feb-fee6009286af",
     "a9354b90-797c-4989-b7dc-a52bf02ba495",
