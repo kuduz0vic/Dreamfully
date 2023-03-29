@@ -125,7 +125,10 @@
                     class="upsell-img">
                   <div class="upsell-title-wrapper">
                     <div class="upsell-title">{{ section.settings.upsell-description }}</div>
-                    <div>{{ upsellproduct.price | money }}</div>
+                    <div style="display: flex;flex-direction: row; gap: 8px;">
+                      <div>{{ upsellproduct.price | money }}</div>
+                     <div style="text-decoration: line-through;">{{ upsellproduct.compare_at_price | money }}</div>
+                    </div>
                   </div>
                 </div>
                 <form method="post" action="/cart/add">
