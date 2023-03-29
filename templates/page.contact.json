@@ -5,6 +5,7 @@
       "blocks": {
         "f0a12957-b810-4cda-a6c1-145879ba230d": {
           "type": "options",
+          "disabled": true,
           "settings": {
             "option": ""
           }
