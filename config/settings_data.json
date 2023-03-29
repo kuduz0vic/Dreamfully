@@ -122,10 +122,10 @@
           "left-side_title": "Vragen?",
           "left-side_description": "We helpen je graag",
           "left-side-button_label": "Neem contact op",
-          "left-side-button_url": "",
+          "left-side-button_url": "shopify:\/\/pages\/contact",
           "right-side_title": "Aanmelden",
           "right-side_description": "Meld je aan en blijf op de hoogte van Dreamfully",
-          "email-placeholder": ""
+          "email-placeholder": "Email"
         }
       },
       "sidecart": {
