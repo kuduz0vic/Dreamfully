@@ -2,27 +2,40 @@
   "sections": {
     "contact-form": {
       "type": "contact",
+      "blocks": {
+        "f0a12957-b810-4cda-a6c1-145879ba230d": {
+          "type": "options",
+          "settings": {
+            "option": ""
+          }
+        }
+      },
+      "block_order": [
+        "f0a12957-b810-4cda-a6c1-145879ba230d"
+      ],
       "settings": {
-        "title": "Contact us",
+        "title": "Neem contact op",
         "description": "Neem 24\/7 contact met ons op. Wij reageren zo snel mogelijk.",
-        "titel": "Contact us",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "label-name": "",
-        "label-surname": "",
-        "label-email": "",
-        "label-phone": "",
-        "label-topic": "",
-        "label-message": "",
+        "titel": "Neem contact op",
+        "paragraph": "Neem 24\/7 contact met ons op. Wij reageren zo snel mogelijk.",
+        "label-name": "Naam",
+        "label-surname": "Achternaam",
+        "label-email": "Email",
+        "label-phone": "Telefoon",
+        "label-topic": "Onderwerp",
+        "label-message": "Bericht",
         "option-placeholder": "",
         "message-placeholder": "",
-        "button-label": ""
+        "button-label": "Versturen"
       }
     },
     "16923e02-df8b-4e51-9e8d-b988795d8298": {
       "type": "why-section",
+      "disabled": true,
       "blocks": {
         "42b761ae-2599-40d1-8563-0d2202e2d00c": {
           "type": "reason",
+          "disabled": true,
           "settings": {
             "block_heading": "Verbeterde nachtrust",
             "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten",
@@ -32,6 +45,7 @@
         },
         "10dbe335-cce2-44cd-8015-92db4d7accec": {
           "type": "reason",
+          "disabled": true,
           "settings": {
             "block_heading": "Teach Your Kids Mindfulness",
             "block_description": "Meditatie zorgt voor een betere concentratie en meer balans in emoties",
@@ -41,6 +55,7 @@
         },
         "88918f0c-688c-4362-9d5b-732b0ae7857c": {
           "type": "reason",
+          "disabled": true,
           "settings": {
             "block_heading": "Meer zelfvertrouwen",
             "block_description": "Meditatie helpt bij een open en milde houding tegenover jezelf wat bijdraagt aan een positiever zelfbeeld",
