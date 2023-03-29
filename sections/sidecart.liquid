@@ -252,7 +252,10 @@
                 alt="" class="upsell-image">
               <div class="upsell-tap_wrapper">
                 <h1 class="upsell-title sidecart-upsell_title">{{product.title}}</h1>
-                <h1 class="upsell-price">{{product.price | money}}</h1>
+                  <div style="display: flex;flex-direction: row; gap: 8px;">
+                      <h1 class="upsell-price">{{product.price | money}}</h1>
+                     <h1 class="upsell-price" style="text-decoration: line-through;">{{ product.compare_at_price | money }}</div>
+                    </div>
               </div>
             </div>
             <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}"
