@@ -1,5 +1,46 @@
 {
   "sections": {
+    "a81f76ec-9369-4a58-9290-03418fa49fe0": {
+      "type": "why-section",
+      "disabled": true,
+      "blocks": {
+        "6040b76a-8749-4786-bd15-18d2db097104": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Introductie met meditatie",
+            "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
+            "block-color": "",
+            "text_aligment": "left"
+          }
+        },
+        "a5a93068-c780-4a13-a423-934285880cea": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Een vriendje voor jouw kind",
+            "block_description": "Samen mediteren met Meddy Bear schept een band.",
+            "block-color": "#f0c7c5",
+            "text_aligment": "left"
+          }
+        },
+        "e5a44772-8c63-4740-963a-ca699f5824ae": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Kom tot rust",
+            "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
+            "block-color": "#c8ccec",
+            "text_aligment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "6040b76a-8749-4786-bd15-18d2db097104",
+        "a5a93068-c780-4a13-a423-934285880cea",
+        "e5a44772-8c63-4740-963a-ca699f5824ae"
+      ],
+      "settings": {
+        "heading": "Maak kennis met Meddy Bear"
+      }
+    },
     "template": {
       "type": "main-product",
       "blocks": {
@@ -281,7 +322,7 @@
       "settings": {
         "heading": "De positieve effecten van meditatie voor kinderen  ",
         "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan:",
-        "main_image": "shopify:\/\/shop_images\/DSC07250.jpg"
+        "main_image": "shopify:\/\/shop_images\/DSC07717_5456.jpg"
       }
     },
     "a9354b90-797c-4989-b7dc-a52bf02ba495": {
@@ -322,46 +363,6 @@
         "description": "Hét vriendje van kinderen (en stiekem ook de ouders)"
       }
     },
-    "a81f76ec-9369-4a58-9290-03418fa49fe0": {
-      "type": "why-section",
-      "blocks": {
-        "6040b76a-8749-4786-bd15-18d2db097104": {
-          "type": "reason",
-          "settings": {
-            "block_heading": "Introductie met meditatie",
-            "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
-            "block-color": "",
-            "text_aligment": "left"
-          }
-        },
-        "a5a93068-c780-4a13-a423-934285880cea": {
-          "type": "reason",
-          "settings": {
-            "block_heading": "Een vriendje voor jouw kind",
-            "block_description": "Samen mediteren met Meddy Bear schept een band.",
-            "block-color": "#f0c7c5",
-            "text_aligment": "left"
-          }
-        },
-        "e5a44772-8c63-4740-963a-ca699f5824ae": {
-          "type": "reason",
-          "settings": {
-            "block_heading": "Kom tot rust",
-            "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
-            "block-color": "#c8ccec",
-            "text_aligment": "left"
-          }
-        }
-      },
-      "block_order": [
-        "6040b76a-8749-4786-bd15-18d2db097104",
-        "a5a93068-c780-4a13-a423-934285880cea",
-        "e5a44772-8c63-4740-963a-ca699f5824ae"
-      ],
-      "settings": {
-        "heading": "Maak kennis met Meddy Bear"
-      }
-    },
     "1aeace6b-03c5-4033-8716-b660131661d4": {
       "type": "instagram-gallery",
       "disabled": true,
@@ -386,13 +387,13 @@
     }
   },
   "order": [
+    "a81f76ec-9369-4a58-9290-03418fa49fe0",
     "template",
     "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a",
     "74846396-b09e-40bb-a343-01219b347ca5",
     "3f0ab3ec-1832-4a6a-a615-4793a4311657",
     "ede47aa0-a9a6-4214-8feb-fee6009286af",
     "a9354b90-797c-4989-b7dc-a52bf02ba495",
-    "a81f76ec-9369-4a58-9290-03418fa49fe0",
     "1aeace6b-03c5-4033-8716-b660131661d4"
   ]
 }
