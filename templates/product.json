@@ -79,7 +79,7 @@
           "type": "upsell-block",
           "settings": {
             "upsell-product": "meddy-cushion",
-            "upsell-description": "Maak je bestelling af met..",
+            "upsell-description": "Maak je bestelling compleet met...",
             "upsell-button": "In winkelwagen"
           }
         },
