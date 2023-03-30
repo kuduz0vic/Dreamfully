@@ -49,22 +49,24 @@
                 placeholder=""
                 required=""></div>
           </div>
-          <div class="form-field-wrapper">
-            <label for="Contact-2-Select" class="field-label">{{ section.settings.label-topic }}</label>
-            <select
-              id="Contact-2-Select"
-              name="Contact-2-Select"
-              data-name="Contact 2 Select"
-              required=""
-              class="form-input-2 is-select-input w-select">
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'options' %}
-                  <option class="contact-option" value="Third">{{ block.settings.option }}</option>
-                {% endcase %}
-              {% endfor %}
-            </select>
-          </div>
+          {% if section.settings.options-visible %}
+            <div class="form-field-wrapper">
+              <label for="Contact-2-Select" class="field-label">{{ section.settings.label-topic }}</label>
+              <select
+                id="Contact-2-Select"
+                name="Contact-2-Select"
+                data-name="Contact 2 Select"
+                required=""
+                class="form-input-2 is-select-input w-select">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'options' %}
+                    <option class="contact-option" value="Third">{{ block.settings.option }}</option>
+                  {% endcase %}
+                {% endfor %}
+              </select>
+            </div>
+          {% endif %}
           <div class="form-field-wrapper">
             <label for="Contact-2-Message" class="field-label">{{ section.settings.label-message }}</label>
             <textarea
@@ -86,16 +88,17 @@
   </div>
 </div>
 
-<div class="waves reverse position-inherit"><img
-    src="{{ 'reversed-wave.svg' | asset_url }}"
-    loading="lazy"
-    alt=""
-    class="desktop-img"><img
-    src="{{ 'tweede-mob-wave.svg' | asset_url }}"
-    loading="lazy"
-    alt=""
-    class="mobile-img"></div>
-
+{% if section.settings.waves-visible %}
+  <div class="waves reverse position-inherit"><img
+      src="{{ 'reversed-wave.svg' | asset_url }}"
+      loading="lazy"
+      alt=""
+      class="desktop-img"><img
+      src="{{ 'tweede-mob-wave.svg' | asset_url }}"
+      loading="lazy"
+      alt=""
+      class="mobile-img"></div>
+{% endif %}
 
 {% schema %}
   {
@@ -161,6 +164,14 @@
         "type": "text",
         "id": "button-label",
         "label": "Button Label"
+      }, {
+        "type": "checkbox",
+        "id": "waves-visible",
+        "label": "Waves Visible"
+      }, {
+        "type": "checkbox",
+        "id": "options-visible",
+        "label": "Options Visible"
       }
     ],
     "blocks": [
