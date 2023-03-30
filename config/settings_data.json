@@ -51,7 +51,7 @@
           "product-title": "Meddy Bear",
           "product-image": "shopify:\/\/shop_images\/fun.png",
           "product-button-text": "Shop",
-          "product-button-link": "shopify:\/\/products\/the-meddybear-the-meditation-bear-for-kids",
+          "product-button-link": "shopify:\/\/products\/meddy-bear",
           "navigation-heading": "Menu",
           "header-tp_text": "",
           "header-tp_svg": ""
@@ -122,9 +122,10 @@
           "left-side_title": "Vragen?",
           "left-side_description": "We helpen je graag",
           "left-side-button_label": "Neem contact op",
-          "left-side-button_url": "",
+          "left-side-button_url": "shopify:\/\/pages\/contact",
           "right-side_title": "Aanmelden",
-          "right-side_description": "Meld je aan en blijf op de hoogte van Dreamfully"
+          "right-side_description": "Meld je aan en blijf op de hoogte van Dreamfully",
+          "email-placeholder": "Email"
         }
       },
       "sidecart": {
@@ -149,7 +150,9 @@
           ],
           "upsell-description": "",
           "product-description": "",
-          "reward-checkbox": false
+          "reward-checkbox": false,
+          "upsell-title": "Maak je bestelling compleet en profiteer van korting",
+          "upsell-button_label": "Toevoegen"
         }
       }
     },
@@ -162,6 +165,12 @@
         "disabled": false,
         "settings": {
           "pixel_id": "353924819403034"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
         }
       }
     }

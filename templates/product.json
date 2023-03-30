@@ -1,5 +1,46 @@
 {
   "sections": {
+    "a81f76ec-9369-4a58-9290-03418fa49fe0": {
+      "type": "why-section",
+      "disabled": true,
+      "blocks": {
+        "6040b76a-8749-4786-bd15-18d2db097104": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Introductie met meditatie",
+            "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
+            "block-color": "",
+            "text_aligment": "left"
+          }
+        },
+        "a5a93068-c780-4a13-a423-934285880cea": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Een vriendje voor jouw kind",
+            "block_description": "Samen mediteren met Meddy Bear schept een band.",
+            "block-color": "#f0c7c5",
+            "text_aligment": "left"
+          }
+        },
+        "e5a44772-8c63-4740-963a-ca699f5824ae": {
+          "type": "reason",
+          "settings": {
+            "block_heading": "Kom tot rust",
+            "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
+            "block-color": "#c8ccec",
+            "text_aligment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "6040b76a-8749-4786-bd15-18d2db097104",
+        "a5a93068-c780-4a13-a423-934285880cea",
+        "e5a44772-8c63-4740-963a-ca699f5824ae"
+      ],
+      "settings": {
+        "heading": "Maak kennis met Meddy Bear"
+      }
+    },
     "template": {
       "type": "main-product",
       "blocks": {
@@ -79,7 +120,7 @@
           "type": "upsell-block",
           "settings": {
             "upsell-product": "meddy-cushion",
-            "upsell-description": "Maak je bestelling af met..",
+            "upsell-description": "Maak je bestelling compleet met...",
             "upsell-button": "In winkelwagen"
           }
         },
@@ -166,83 +207,43 @@
         "main_image": "shopify:\/\/shop_images\/DSC07565_5102.jpg"
       }
     },
-    "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
-      "type": "faq-section",
+    "74846396-b09e-40bb-a343-01219b347ca5": {
+      "type": "how-to-section",
       "blocks": {
-        "ffa83a1e-42f6-4848-9993-b6f040472ed4": {
-          "type": "faq_block",
+        "476599eb-58a7-4994-aa08-a5276b1f8415": {
+          "type": "feature_block",
           "settings": {
-            "question": "Hoe gebruik ik Meddy Bear?",
-            "answer": "De Meddy Bear kan op meerdere manieren gebruikt worden. Mediteren kan gedurende de hele dag. Het is daarom belangrijk dat je een rustig moment uitkiest.\n\nVaak is het fijn voor je kind om er een vast ritueel van te maken zoals bijvoorbeeld voor het slapen gaan. Je kan de beer op een kastje zetten of op een 'veilige' afstand van je kind."
+            "block_heading": "Focus op ademhaling",
+            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten"
           }
         },
-        "d139f39c-67b4-477d-9b77-3011d8884cf3": {
-          "type": "faq_block",
+        "c382eb70-bbe8-4b09-ae23-c2136c296a62": {
+          "type": "feature_block",
           "settings": {
-            "question": "Worden er batterijen meegeleverd met Meddy Bear?",
-            "answer": "Nee. Meddy Bear heeft 2 AA batterijen nodig en deze worden niet meegeleverd met de knuffel. De reden dat deze niet worden meegeleverd is omdat dit brand gevaarlijk kan zijn gedurende het verzendproces."
+            "block_heading": "Guided Meditatie",
+            "block_description": "De guided meditatie neemt kinderen mee in een verhaal om hun hoofd leeg te maken"
           }
         },
-        "b17cc16f-ca39-4307-a8da-678f7321feda": {
-          "type": "faq_block",
+        "75bf476e-957b-4e5a-949a-05c5f679c481": {
+          "type": "feature_block",
           "settings": {
-            "question": "Wat moet ik doen als mijn vraag er niet tussen staat?",
-            "answer": "Het kan natuurlijk zijn dat je nog andere vragen hebt. Stuur een mail met je vraag naar hello@dreamfully.nl en we beantwoorden deze zo snel mogelijk."
+            "block_heading": "Rustgevende muziek",
+            "block_description": "De rustgevende muziek brengt kinderen tot rust en zorgt er misschien wel voor dat ze zachtjes in slaap vallen"
           }
         }
       },
       "block_order": [
-        "ffa83a1e-42f6-4848-9993-b6f040472ed4",
-        "d139f39c-67b4-477d-9b77-3011d8884cf3",
-        "b17cc16f-ca39-4307-a8da-678f7321feda"
+        "476599eb-58a7-4994-aa08-a5276b1f8415",
+        "c382eb70-bbe8-4b09-ae23-c2136c296a62",
+        "75bf476e-957b-4e5a-949a-05c5f679c481"
       ],
       "settings": {
-        "heading": "Hoe gebruik ik Meddy Bear?",
-        "description": "De Meddy Bear kan op meerdere manieren gebruikt worden. Mediteren kan gedurende de hele dag. Het is daarom belangrijk dat je een rustig moment uitkiest.\n\nVaak is het fijn voor je kind om er een vast ritueel van te maken zoals bijvoorbeeld voor het slapen gaan. Je kan de beer op een kastje zetten of op een 'veilige' afstand van je kind."
-      }
-    },
-    "ede47aa0-a9a6-4214-8feb-fee6009286af": {
-      "type": "product-statistic-section",
-      "blocks": {
-        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305": {
-          "type": "statistics_block",
-          "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
-            "block_description": "Makkelijker in slaap vallen"
-          }
-        },
-        "c8c3cf9e-662f-4877-9c8d-f59cadce5479": {
-          "type": "statistics_block",
-          "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/school_bag.svg?v=1677598442",
-            "block_description": "Minder verzuim op school"
-          }
-        },
-        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
-          "type": "statistics_block",
-          "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/no_phone.svg?v=1677598442",
-            "block_description": "Minder schermtijd"
-          }
-        },
-        "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
-          "type": "statistics_block",
-          "settings": {
-            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Zen.svg?v=1677598442",
-            "block_description": "Meer rustmomenten"
-          }
-        }
-      },
-      "block_order": [
-        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305",
-        "c8c3cf9e-662f-4877-9c8d-f59cadce5479",
-        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb",
-        "17fa070d-a45b-4052-9bea-b6f81a36cebb"
-      ],
-      "settings": {
-        "heading": "De positieve effecten van meditatie voor kinderen  ",
-        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan:",
-        "main_image": "shopify:\/\/shop_images\/DSC07250.jpg"
+        "heading": "Hoe werkt het?",
+        "block_label": "Shop the Meddy Bear",
+        "main_image": "shopify:\/\/shop_images\/DSC07250.jpg",
+        "block_url_text": "Beluister nu",
+        "button-audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/sneakpeek-meddybear.mp3?v=1679647606",
+        "waves-visible": true
       }
     },
     "a9354b90-797c-4989-b7dc-a52bf02ba495": {
@@ -283,44 +284,84 @@
         "description": "Hét vriendje van kinderen (en stiekem ook de ouders)"
       }
     },
-    "a81f76ec-9369-4a58-9290-03418fa49fe0": {
-      "type": "why-section",
+    "3f0ab3ec-1832-4a6a-a615-4793a4311657": {
+      "type": "faq-section",
       "blocks": {
-        "6040b76a-8749-4786-bd15-18d2db097104": {
-          "type": "reason",
+        "ffa83a1e-42f6-4848-9993-b6f040472ed4": {
+          "type": "faq_block",
           "settings": {
-            "block_heading": "Introductie met meditatie",
-            "block_description": "Laat je kind op jonge leeftijd kennis maken met de talloze voordelen van meditatie",
-            "block-color": "",
-            "text_aligment": "left"
+            "question": "Hoe gebruik ik Meddy Bear?",
+            "answer": "De Meddy Bear kan op meerdere manieren gebruikt worden. Mediteren kan gedurende de hele dag. Het is daarom belangrijk dat je een rustig moment uitkiest.\n\nVaak is het fijn voor je kind om er een vast ritueel van te maken zoals bijvoorbeeld voor het slapen gaan. Je kan de beer op een kastje zetten of op een 'veilige' afstand van je kind."
           }
         },
-        "a5a93068-c780-4a13-a423-934285880cea": {
-          "type": "reason",
+        "d139f39c-67b4-477d-9b77-3011d8884cf3": {
+          "type": "faq_block",
           "settings": {
-            "block_heading": "Een vriendje voor jouw kind",
-            "block_description": "Samen mediteren met Meddy Bear schept een band.",
-            "block-color": "#f0c7c5",
-            "text_aligment": "left"
+            "question": "Worden er batterijen meegeleverd met Meddy Bear?",
+            "answer": "Nee. Meddy Bear heeft 2 AA batterijen nodig en deze worden niet meegeleverd met de knuffel. De reden dat deze niet worden meegeleverd is omdat dit brand gevaarlijk kan zijn gedurende het verzendproces."
           }
         },
-        "e5a44772-8c63-4740-963a-ca699f5824ae": {
-          "type": "reason",
+        "b17cc16f-ca39-4307-a8da-678f7321feda": {
+          "type": "faq_block",
           "settings": {
-            "block_heading": "Kom tot rust",
-            "block_description": "Creeër meer rustmomenten voor je kind én jezelf",
-            "block-color": "#c8ccec",
-            "text_aligment": "left"
+            "question": "Wat moet ik doen als mijn vraag er niet tussen staat?",
+            "answer": "Het kan natuurlijk zijn dat je nog andere vragen hebt. Stuur een mail met je vraag naar hello@dreamfully.nl en we beantwoorden deze zo snel mogelijk."
           }
         }
       },
       "block_order": [
-        "6040b76a-8749-4786-bd15-18d2db097104",
-        "a5a93068-c780-4a13-a423-934285880cea",
-        "e5a44772-8c63-4740-963a-ca699f5824ae"
+        "ffa83a1e-42f6-4848-9993-b6f040472ed4",
+        "d139f39c-67b4-477d-9b77-3011d8884cf3",
+        "b17cc16f-ca39-4307-a8da-678f7321feda"
       ],
       "settings": {
-        "heading": "Maak kennis met Meddy Bear"
+        "heading": "Antwoord op jouw vragen",
+        "description": "Toch nog een andere vraag? Stuur een mail met je vraag naar hello@dreamfully.nl en we beantwoorden deze zo snel mogelijk."
+      }
+    },
+    "ede47aa0-a9a6-4214-8feb-fee6009286af": {
+      "type": "product-statistic-section",
+      "disabled": true,
+      "blocks": {
+        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305": {
+          "type": "statistics_block",
+          "settings": {
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/svgviewer-output.svg?v=1677358433",
+            "block_description": "Makkelijker in slaap vallen"
+          }
+        },
+        "c8c3cf9e-662f-4877-9c8d-f59cadce5479": {
+          "type": "statistics_block",
+          "settings": {
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/school_bag.svg?v=1677598442",
+            "block_description": "Minder verzuim op school"
+          }
+        },
+        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb": {
+          "type": "statistics_block",
+          "settings": {
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/no_phone.svg?v=1677598442",
+            "block_description": "Minder schermtijd"
+          }
+        },
+        "17fa070d-a45b-4052-9bea-b6f81a36cebb": {
+          "type": "statistics_block",
+          "settings": {
+            "statistics-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/Zen.svg?v=1677598442",
+            "block_description": "Meer rustmomenten"
+          }
+        }
+      },
+      "block_order": [
+        "f010a02a-5f7e-4aac-b7e0-39c6fdcc6305",
+        "c8c3cf9e-662f-4877-9c8d-f59cadce5479",
+        "662a03a6-9af3-4bdd-9f1b-60eb2c15fadb",
+        "17fa070d-a45b-4052-9bea-b6f81a36cebb"
+      ],
+      "settings": {
+        "heading": "De positieve effecten van meditatie voor kinderen  ",
+        "description": "Meditatie heeft tal van voordelen die een positieve bijdrage leveren aan:",
+        "main_image": "shopify:\/\/shop_images\/DSC07717_5456.jpg"
       }
     },
     "1aeace6b-03c5-4033-8716-b660131661d4": {
@@ -347,12 +388,13 @@
     }
   },
   "order": [
+    "a81f76ec-9369-4a58-9290-03418fa49fe0",
     "template",
     "34ef7a7e-3669-4268-ba7e-1c9a6ce3039a",
+    "74846396-b09e-40bb-a343-01219b347ca5",
+    "a9354b90-797c-4989-b7dc-a52bf02ba495",
     "3f0ab3ec-1832-4a6a-a615-4793a4311657",
     "ede47aa0-a9a6-4214-8feb-fee6009286af",
-    "a9354b90-797c-4989-b7dc-a52bf02ba495",
-    "a81f76ec-9369-4a58-9290-03418fa49fe0",
     "1aeace6b-03c5-4033-8716-b660131661d4"
   ]
 }

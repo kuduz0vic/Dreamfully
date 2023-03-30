@@ -60,6 +60,7 @@
     </div>
   </div>
 </div>
+{% if section.settings.waves-visible %}
 <div class="waves"><img
     src="{{ 'frame.svg' | asset_url }}"
     loading="eager"
@@ -69,7 +70,7 @@
     loading="eager"
     alt=""
     class="desktop-img"></div>
-
+{% endif %}
 
 <script>
   var currentSection = document.currentScript.closest('.shopify-section');
@@ -136,6 +137,11 @@
         "type": "url",
         "id": "button-audio",
         "label": "Button Audio"
+      }, {
+        "type": "checkbox",
+        "id": "waves-visible",
+        "label": "Waves Visible",
+        "default": true
       }
     ],
     "blocks": [
