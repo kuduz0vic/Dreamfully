@@ -922,18 +922,21 @@
       type="submit"
       value="Add to cart"
       class="sticky-atc_mobile"
-      onclick="fbq('track', 'AddToCart', {
+      onclick="const allVariants = window.Fafix.productVariants;
+            let selectedVariantId = document.querySelector('[name=id]').value;
+			let selectedVariant = allVariants.find((o) => o.id == selectedVariantId);
+            fbq('track', 'AddToCart', {
 				content_ids: [window.Fafix.productId],
-				content_name: selectedVariant.name,
+				content_name: window.Fafix.productName,
 				content_type: window.Fafix.productType || 'product',
 				contents: [
 					{
 						id: window.Fafix.productId,
-						quantity: quantity,
+						quantity: 1,
 					},
 				],
 				currency: window.Shopify.currency.active || 'EUR',
-				value: value,
+				value: selectedVariants.price,
 			});return true;">{{ section.settings.sticky-atc_label }} - {{ product.price | money }}</button>
   </div>
 {% endform %}
