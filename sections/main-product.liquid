@@ -921,7 +921,20 @@
     <button
       type="submit"
       value="Add to cart"
-      class="sticky-atc_mobile">{{ section.settings.sticky-atc_label }} - {{ product.price | money }}</button>
+      class="sticky-atc_mobile"
+      onclick="fbq('track', 'AddToCart', {
+				content_ids: [window.Fafix.productId],
+				content_name: selectedVariant.name,
+				content_type: window.Fafix.productType || 'product',
+				contents: [
+					{
+						id: window.Fafix.productId,
+						quantity: quantity,
+					},
+				],
+				currency: window.Shopify.currency.active || 'EUR',
+				value: value,
+			});return true;">{{ section.settings.sticky-atc_label }} - {{ product.price | money }}</button>
   </div>
 {% endform %}
 
