@@ -120,6 +120,7 @@
           "type": "upsell-block",
           "settings": {
             "upsell-product": "meddy-cushion",
+            "upsell-image": "shopify:\/\/shop_images\/DSC087252000.jpg",
             "upsell-description": "Maak je bestelling compleet met...",
             "upsell-button": "In winkelwagen"
           }
