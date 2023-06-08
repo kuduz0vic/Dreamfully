@@ -213,22 +213,22 @@
         "476599eb-58a7-4994-aa08-a5276b1f8415": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Focus op ademhaling",
-            "block_description": "Meditatie zorgt voor ontspanning van het lichaam en het loslaten van gedachten"
+            "block_heading": "Zorg voor rust",
+            "block_description": "Zoek een rustige plek om te mediteren en het meditatiekussen neer te leggen."
           }
         },
         "c382eb70-bbe8-4b09-ae23-c2136c296a62": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Guided Meditatie",
-            "block_description": "De guided meditatie neemt kinderen mee in een verhaal om hun hoofd leeg te maken"
+            "block_heading": "Gebruik Meddy Cushion",
+            "block_description": "Leg het meditatiekussen op een vlakke ondergrond. Ga zitten met een rechte rug. Je kunt je benen kruisen of comfortabel naar voren plaatsen."
           }
         },
         "75bf476e-957b-4e5a-949a-05c5f679c481": {
           "type": "feature_block",
           "settings": {
-            "block_heading": "Rustgevende muziek",
-            "block_description": "De rustgevende muziek brengt kinderen tot rust en zorgt er misschien wel voor dat ze zachtjes in slaap vallen"
+            "block_heading": "Gebruik Meddy Bear",
+            "block_description": "Meddy Bear zorgt ervoor dat kinderen kennis maken met mediteren en de voordelen hiervan."
           }
         }
       },
@@ -241,8 +241,8 @@
         "heading": "Hoe werkt het?",
         "block_label": "Shop the Meddy Bear",
         "main_image": "shopify:\/\/shop_images\/DSC07250.jpg",
-        "block_url_text": "Koop nu",
-        "button-audio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0689\/5239\/1965\/files\/sneakpeek-meddybear.mp3?v=1679647606",
+        "block_url_text": "Koop Meddy Bear",
+        "button-audio": "shopify:\/\/products\/meddy-bear",
         "waves-visible": true
       }
     },
@@ -280,7 +280,7 @@
         "0d10b845-7dbb-47a9-9537-9e776bac4af9"
       ],
       "settings": {
-        "heading": "Fans van Meddy Bear",
+        "heading": "Fans van Meddy Bear en Meddy Cushion",
         "description": "Hét vriendje van kinderen (en stiekem ook de ouders)"
       }
     },
@@ -290,15 +290,15 @@
         "ffa83a1e-42f6-4848-9993-b6f040472ed4": {
           "type": "faq_block",
           "settings": {
-            "question": "Hoe gebruik ik Meddy Bear?",
-            "answer": "De Meddy Bear kan op meerdere manieren gebruikt worden. Mediteren kan gedurende de hele dag. Het is daarom belangrijk dat je een rustig moment uitkiest.\n\nVaak is het fijn voor je kind om er een vast ritueel van te maken zoals bijvoorbeeld voor het slapen gaan. Je kan de beer op een kastje zetten of op een 'veilige' afstand van je kind."
+            "question": "Hoe gebruik ik Meddy Cushion?",
+            "answer": "Meddy Cushion kan op meerdere manieren gebruikt worden. Het is belangrijk om met een paar zaken rekening te houden:\n\n1. Zorg voor een rustige ruimte en vlakke ondergrond voor het meditatiekussen. \n2. Ga zitten op het kussen in een comfortabele houding met een rechte rug. \n3. Je kunt je benen kruisen of op een comfortabele manier naar voren plaatsen.\n4. Start de meditatie als je Meddy Bear hebt. \n\nVaak is het fijn voor je kind om er een vast ritueel van te maken. Ook helpt het (zeker in het begin) om samen met je kind te mediteren."
           }
         },
         "d139f39c-67b4-477d-9b77-3011d8884cf3": {
           "type": "faq_block",
           "settings": {
-            "question": "Worden er batterijen meegeleverd met Meddy Bear?",
-            "answer": "Nee. Meddy Bear heeft 2 AA batterijen nodig en deze worden niet meegeleverd met de knuffel. De reden dat deze niet worden meegeleverd is omdat dit brand gevaarlijk kan zijn gedurende het verzendproces."
+            "question": "Wordt Meddy Cushion standaard geleverd bij Meddy Bear?",
+            "answer": "Nee. Meddy Bear moet je apart bestellen van Meddy Cushion. Wel kun je Meddy Cushion met korting krijgen als je Meddy Bear koopt."
           }
         },
         "b17cc16f-ca39-4307-a8da-678f7321feda": {
